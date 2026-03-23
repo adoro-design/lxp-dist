@@ -1,0 +1,2850 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="description" content="File List" />
+		<meta name="author" content="" />
+
+		<title>원광대학교 NAVI | 퍼블리싱 파일 목록</title>
+
+		<!-- Favicon icon-->
+		<link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+			@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 100%;
+				box-sizing: border-box;
+				font-family: "Montserrat", "Noto Sans KR", monospace;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			body {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-color: #f2f2f2;
+			}
+
+			#wrap {
+				position: relative;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding: 20px;
+				min-width: 800px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			hr {
+				width: 90%;
+				margin: 110px auto 80px;
+				border: 0;
+				border-bottom: 2px solid #666;
+			}
+
+			caption {
+				display: none;
+			}
+
+			table {
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto 60px;
+				font-size: 1.5rem;
+				border-collapse: collapse;
+				background-color: #fff;
+				box-shadow: 0 50px 80px -50px rgba(50, 50, 50, 0.12), 0 50px 50px -30px rgba(20, 20, 20, 0.1);
+				color: #555;
+			}
+
+			th {
+				padding: 12px;
+				font-size: 1.6rem;
+				color: #fff;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				border: 0;
+				background-color: #4b4c53;
+			}
+
+			table.first th {
+				background-color: #4b4c53;
+			}
+
+			td {
+				padding: 14px 20px;
+				font-size: 1.4rem;
+				font-weight: 600;
+				border-top: 1px solid #ededed;
+				background-color: #fff;
+				border: 1px solid #ededed;
+				border-right: 0;
+			}
+
+			tr > td:first-child {
+				font-weight: 500;
+				color: #000;
+				border-left: 0;
+				letter-spacing: -0.03em;
+			}
+
+			td[rowspan] {
+				/* font-size: 15px; */
+				letter-spacing: 1.5px;
+				text-align: center;
+			}
+
+			.link {
+				letter-spacing: 0.03em;
+				font-weight: 600;
+			}
+
+			a {
+				color: #333;
+			}
+
+			a:hover,
+			a:focus {
+				color: #ff7473;
+				outline: 0;
+			}
+
+			.first a:hover {
+				color: #ff7473;
+			}
+
+			.first a:hover {
+				color: #ff7473;
+			}
+			.ta_c {
+				text-align: center;
+			}
+			.pd_0 {
+				padding: 0;
+			}
+
+			h1 {
+				display: none;
+			}
+
+			h2 {
+				padding: 20px 0;
+				text-align: center;
+				font-size: 2.8rem;
+				letter-spacing: -0.06rem;
+				font-weight: bold;
+				color: #fff;
+				background-color: #3f51b5;
+			}
+
+			h3 {
+				padding: 8px 0;
+				font-size: 1.8rem;
+				letter-spacing: -0.06rem;
+			}
+
+			.horizon {
+				width: 80%;
+				height: 1px;
+				margin: 40px auto;
+				background-color: #aaa;
+			}
+
+			.update {
+				display: inline-block;
+				margin: 18px 0 30px 0;
+				padding: 18px 26px;
+				text-align: left;
+				font-weight: bold;
+				font-size: 1.95rem;
+				border: 1px solid #888;
+				background: #fff;
+			}
+
+			.update small {
+				display: block;
+				margin-top: 4px;
+				font-size: 70%;
+				color: #666;
+				font-weight: 400;
+			}
+
+			.update .version1 {
+				display: inline-block;
+				width: 20px;
+				height: 10px;
+				background-color: rgba(255, 180, 182, 0.4);
+			}
+
+			.rmks {
+				font-size: 1.2rem;
+				font-weight: 400;
+			}
+
+			.borderTop {
+				border-top: 2px solid #e4e4e4;
+			}
+
+			.borderTop2 {
+				border-top: 2px solid #d3d3d3;
+			}
+
+			@media screen and (max-width: 800px) {
+				html {
+					font-size: 55%;
+				}
+
+				#wrap {
+					min-width: 320px;
+				}
+
+				thead > tr > th:first-child,
+				thead > tr > th:nth-child(2),
+				thead > tr > th:nth-child(5) {
+					display: none;
+				}
+
+				td[rowspan] {
+					display: none;
+				}
+
+				.desc,
+				.rmks {
+					display: none;
+				}
+			}
+
+			.new td {
+				color: #ff0000;
+				background-color: rgba(214, 255, 180, 0.2);
+			}
+
+			.new td[rowspan] {
+				background-color: #fff;
+			}
+
+			.notyet {
+				color: gray;
+				text-decoration: line-through;
+				pointer-events: none;
+			}
+
+			.fc_red {
+				color: #ff0000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<p class="update">원광대학교 NAVI 퍼블리싱 파일 리스트</p>
+
+			<table>
+				<colgroup>
+					<col width="80px" />
+					<col width="400px" />
+					<col />
+					<col width="120px" />
+					<col width="200px" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>파일명(LINK)</th>
+						<th>화면 내용</th>
+						<th>수정여부</th>
+						<th>비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="" colspan="5"><strong>공통 페이지 및 레이아웃</strong></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td><a href="lxp_common_ui/lxp_common_01.html" target="lms_page" class="link">lxp_common_01.html</a></td>
+						<td>나의강의실 > 개발강의 > 강의홈(강의실 전용메뉴 노출)</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td><a href="lxp_common_ui/lxp_common_02.html" target="lms_page" class="link">lxp_common_02.html</a></td>
+						<td>나의 강의실</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="lxp_common_ui/lxp_common_ctl_01.html" target="lms_page" class="link">lxp_common_ctl_01.html</a>
+						</td>
+						<td>CTL 1</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/lxp_common_ctl_02.html" target="lms_page" class="link">lxp_common_ctl_02.html</a>
+						</td>
+						<td>CTL 2</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr>
+						<td class="" colspan="5"><strong>Components</strong></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_list.html" target="lms_page" class="link"
+								>lxp_common_ui_components_list.html</a
+							>
+						</td>
+						<td>목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.17<br/>2025.10.15 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_search.html" target="lms_page" class="link"
+								>lxp_common_ui_components_search.html</a
+							>
+						</td>
+						<td>검색</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.17<br />2025.09.19 업데이트<br />2025.09.22 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_tab.html" target="lms_page" class="link"
+								>lxp_common_ui_components_tab.html</a
+							>
+						</td>
+						<td>탭</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">4</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_table.html" target="lms_page" class="link"
+								>lxp_common_ui_components_table.html</a
+							>
+						</td>
+						<td>테이블</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">5</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_button_bedge.html" target="lms_page" class="link"
+								>lxp_common_ui_components_button_bedge.html</a
+							>
+						</td>
+						<td>버튼, 뱃지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.24<br/>2025.10.15 업데이트<br/>2025.11.28 업데이트<br/>2025.12.05 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">6</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_page.html" target="lms_page" class="link"
+								>lxp_common_ui_components_page.html</a
+							>
+						</td>
+						<td>핵심역량 관련 - 페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">7</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_counsel.html" target="lms_page" class="link"
+								>lxp_common_ui_components_counsel.html</a
+							>
+						</td>
+						<td>핵심역량 관련 - 상담</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">8</td>
+						<td>
+							<a href="lxp_common_components/lxp_common_ui_components_eportfolio.html" target="lms_page" class="link"
+								>lxp_common_ui_components_eportfolio.html</a
+							>
+						</td>
+						<td>핵심역량 관련 - e포트폴리오</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.22</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">9</td>
+						<td><a href="lxp_common_components/lxp_common_ui_components_email.html" target="lms_page" class="link">lxp_common_ui_components_email.html</a></td>
+						<td>이메일폼</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td><a href="lxp_common_components/00.html" target="lms_page" class="link"></a></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td><a href="lxp_common_components/00.html" target="lms_page" class="link"></a></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td><a href="lxp_common_components/00.html" target="lms_page" class="link"></a></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr>
+						<td class="" colspan="5"><strong>로그인 및 아이디/비밀번호 찾기</strong></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td><a href="lxp_common_ui/00_로그인.html" target="lms_page" class="link">00_로그인.html</a></td>
+						<td>메인 > 로그인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2-1</td>
+						<td>
+							<a href="lxp_common_ui/00_아이디찾기_본인인증방법.html" target="lms_page" class="link"
+								>00_아이디찾기_본인인증방법.html</a
+							>
+						</td>
+						<td>메인 > 아이디 찾기 > 본인인증방법</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_아이디찾기_정보입력.html" target="lms_page" class="link"
+								>00_아이디찾기_정보입력.html</a
+							>
+						</td>
+						<td>메인 > 아이디 찾기 > 정보입력</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_아이디찾기_정보입력_경고메시지.html" target="lms_page" class="link"
+								>00_아이디찾기_정보입력_경고메시지.html</a
+							>
+						</td>
+						<td>메인 > 아이디 찾기 > 정보입력(경고메시지)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_아이디찾기_인증완료.html" target="lms_page" class="link"
+								>00_아이디찾기_인증완료.html</a
+							>
+						</td>
+						<td>메인 > 아이디 찾기 > 인증완료</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2-2</td>
+						<td>
+							<a href="lxp_common_ui/00_비밀번호찾기_본인인증방법.html" target="lms_page" class="link"
+								>00_비밀번호찾기_본인인증방법.html</a
+							>
+						</td>
+						<td>메인 > 비밀번호 찾기 > 본인인증방법</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_비밀번호찾기_정보입력.html" target="lms_page" class="link"
+								>00_비밀번호찾기_정보입력.html</a
+							>
+						</td>
+						<td>메인 > 비밀번호 찾기 > 정보입력</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_비밀번호찾기_정보입력_경고메시지.html" target="lms_page" class="link"
+								>00_비밀번호찾기_정보입력_경고메시지.html</a
+							>
+						</td>
+						<td>메인 > 비밀번호 찾기 > 정보입력(경고메시지)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_비밀번호찾기_인증완료.html" target="lms_page" class="link"
+								>00_비밀번호찾기_인증완료.html</a
+							>
+						</td>
+						<td>메인 > 비밀번호 찾기 > 인증완료</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.09</td>
+					</tr>
+					<tr>
+						<td class="" colspan="5"><strong>아이디 통합</strong></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3-1</td>
+						<td>
+							<a
+								href="lxp_common_ui/00_아이디통합하기_01_로그인전일반로그인후_01_정보입력.html"
+								target="lms_page"
+								class="link"
+								>00_아이디통합하기_01_로그인전일반로그인후_01_정보입력.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 로그인전, 일반로그인후</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="lxp_common_ui/00_아이디통합하기_01_로그인전일반로그인후_02_인증및통합확인_1.html"
+								target="lms_page"
+								class="link"
+								>00_아이디통합하기_01_로그인전일반로그인후_02_인증및통합확인_1.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 로그인전, 일반로그인후 > 인증 및 통합확인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="lxp_common_ui/00_아이디통합하기_01_로그인전일반로그인후_02_인증및통합확인_2.html"
+								target="lms_page"
+								class="link"
+								>00_아이디통합하기_01_로그인전일반로그인후_02_인증및통합확인_2.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 로그인전, 일반로그인후 > 인증 및 통합확인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="lxp_common_ui/00_아이디통합하기_01_로그인전일반로그인후_02_인증및통합확인_3.html"
+								target="lms_page"
+								class="link"
+								>00_아이디통합하기_01_로그인전일반로그인후_02_인증및통합확인_3.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 로그인전, 일반로그인후 > 인증 및 통합확인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="lxp_common_ui/00_아이디통합하기_01_로그인전일반로그인후_03_통합완료.html"
+								target="lms_page"
+								class="link"
+								>00_아이디통합하기_01_로그인전일반로그인후_03_통합완료.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 로그인전, 일반로그인후 > 통합완료</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3-2</td>
+						<td>
+							<a
+								href="lxp_common_ui/00_아이디통합하기_02_통합로그인후_01_인증및통합확인_1.html"
+								target="lms_page"
+								class="link"
+								>00_아이디통합하기_02_통합로그인후_01_인증및통합확인_1.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 통합로그인후 > 인증및통합확인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="lxp_common_ui/00_아이디통합하기_02_통합로그인후_01_인증및통합확인_2.html"
+								target="lms_page"
+								class="link"
+								>00_아이디통합하기_02_통합로그인후_01_인증및통합확인_2.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 통합로그인후 > 인증및통합확인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_아이디통합하기_02_통합로그인후_02_통합완료.html" target="lms_page" class="link"
+								>00_아이디통합하기_02_통합로그인후_02_통합완료.html</a
+							>
+						</td>
+						<td>메인 > 아이디 통합하기 > 통합로그인후 > 통합완료</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr>
+						<td class="" colspan="5"><strong>회원가입</strong></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">4</td>
+						<td>
+							<a href="lxp_common_ui/00_회원가입_01_인증.html" target="lms_page" class="link"
+								>00_회원가입_01_인증.html</a
+							>
+						</td>
+						<td>메인 > 회원가입 > 인증</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_회원가입_01_인증_이메일인증.html" target="lms_page" class="link"
+								>00_회원가입_01_인증_이메일인증.html</a
+							>
+						</td>
+						<td>메인 > 회원가입 > 이메일인증</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_회원가입_02_정보입력및약관동의.html" target="lms_page" class="link"
+								>00_회원가입_02_정보입력및약관동의.html</a
+							>
+						</td>
+						<td>메인 > 회원가입 > 정보입력 및 약관동의</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_회원가입_03_가입완료.html" target="lms_page" class="link"
+								>00_회원가입_03_가입완료.html</a
+							>
+						</td>
+						<td>메인 > 회원가입 > 가입완료</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_회원가입_04_학습관심사설정_1.html" target="lms_page" class="link"
+								>00_회원가입_04_학습관심사설정_1.html</a
+							>
+						</td>
+						<td>메인 > 회원가입 > 가입완료 > 학습관림사 설정(선호하는 강의 유형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_회원가입_04_학습관심사설정_2.html" target="lms_page" class="link"
+								>00_회원가입_04_학습관심사설정_2.html</a
+							>
+						</td>
+						<td>메인 > 회원가입 > 가입완료 > 학습관림사 설정(관심분야)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="lxp_common_ui/00_회원가입_04_학습관심사설정_3.html" target="lms_page" class="link"
+								>00_회원가입_04_학습관심사설정_3.html</a
+							>
+						</td>
+						<td>메인 > 회원가입 > 가입완료 > 학습관림사 설정(내 관심 강의)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">7</td>
+						<td>
+							<a href="lxp_common_ui/00_비밀번호 변경_modal.html" target="lms_page" class="link"
+								>00_비밀번호 변경_modal.html</a
+							>
+						</td>
+						<td>메인 > 비밀번호 변경 > (90일 후 로그인하면 자동노출)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.10</td>
+					</tr>
+
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>학생</h2></td>
+					</tr>
+					<tr class="">
+						<td colspan="5" class="rmks">
+							<h3>대시보드</h3>
+						</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/01_메인_요약대시보드.html" target="lms_page" class="link"
+								>01_메인_요약대시보드.html</a>
+						</td>
+						<td>메인 > 요약대시보드</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.19<br/>2025.11.28 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/01_메인_요약대시보드_데이터가없을경우.html" target="lms_page" class="link"
+								>01_메인_요약대시보드_데이터가없을경우.html</a>
+						</td>
+						<td>메인 > 요약대시보드(데이터가 없을 경우)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.19<br/>2025.11.28 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_01_마이페이지_상세대시보드.html" target="lms_page" class="link"
+								>09_마이페이지_01_마이페이지_상세대시보드.html</a>
+						</td>
+						<td>마이페이지 > 상세대시보드</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.11.24<br/>2025.11.28 업데이트</td>
+					</tr>					
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/01_나의강의실_00_강의실_외부.html" target="lms_page" class="link"
+								>01_나의강의실_00_강의실_외부.html</a
+							>
+						</td>
+						<td>나의강의실 > 나의 강의실 입장(강의실 외부)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.04<br/>2025.12.15 업데이트</td>
+					</tr>
+					<tr class="">
+						<td colspan="5" class="rmks">
+							<h3>개별 과목 강의실</h3>
+						</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">0</td>
+						<td></td>
+						<td>나의강의실 > 강의홈</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td></td>
+						<td>나의강의실 > 강의계획서</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/02_나의강의실_01_창의융합과정_02_나만의시간표.html" target="lms_page" class="link"
+								>02_나의강의실_01_창의융합과정_02_나만의시간표.html</a
+							>
+						</td>
+						<td>나의강의실 > 창의융합과정 > 나만의 시간표</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="layout_navi_base/lxp_std/02_나의강의실_01_창의융합과정_02_나만의시간표_modal_인재유형보기.html"
+								target="lms_page"
+								class="link"
+								>02_나의강의실_01_창의융합과정_02_나만의시간표_modal_인재유형보기.html</a
+							>
+						</td>
+						<td>나의강의실 > 창의융합과정 > 인재유형 모두보기(modal)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="layout_navi_base/lxp_std/02_나의강의실_01_창의융합과정_02_나만의시간표_modal_나만의시간표만들기.html"
+								target="lms_page"
+								class="link"
+								>02_나의강의실_01_창의융합과정_02_나만의시간표_modal_나만의시간표만들기.html</a
+							>
+						</td>
+						<td>나의강의실 > 창의융합과정 > 나만의 시간표 만들기(modal)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a
+								href="layout_navi_base/lxp_std/02_나의강의실_01_창의융합과정_03_강의관리_modal_강좌설명.html"
+								target="lms_page"
+								class="link"
+								>02_나의강의실_01_창의융합과정_03_강의관리_modal_강좌설명.html</a
+							>
+						</td>
+						<td>
+							나의강의실 > 창의융합과정 > modal_강좌설명<br />
+							※ 회차명 옆 북마크 아이콘 클릭시 modal이 노출됩니다.
+						</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/02_나의강의실_01_창의융합과정_03_강의수강_학습창(AI튜터)_modal.html" target="lms_page" class="link">02_나의강의실_01_창의융합과정_03_강의수강_학습창(AI튜터)_modal.html</a>
+						</td>
+						<td>나의강의실 > 창의융합과정 > modal_학습창(AI튜터)</td>
+						<td class="rmks">탭영역에 세로 스크롤 적용</td>
+						<td class="rmks">2025.10.31<br/>2025.11.20 업데이트<br/>2026.1.19 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/02_나의강의실_01_창의융합과정_04_학습요소_프리테스트_01_목록.html" target="lms_page" class="link">02_나의강의실_01_창의융합과정_04_학습요소_프리테스트_01_목록.html</a>
+						</td>
+						<td>나의강의실 > 창의융합과정 > 프리테스트(목록)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/02_나의강의실_01_창의융합과정_04_학습요소_프리테스트_02_응시결과.html" target="lms_page" class="link">02_나의강의실_01_창의융합과정_04_학습요소_프리테스트_02_응시결과.html</a>
+						</td>
+						<td>나의강의실 > 창의융합과정 > 프리테스트(응시결과)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/02_나의강의실_02_비교과프로그램_00_프로그램홈(강의홈).html" target="lms_page" class="link">02_나의강의실_02_비교과프로그램_00_프로그램홈(강의홈).html</a>
+						</td>
+						<td>나의강의실 > 비교과프로그램 > 프로그램홈(강의홈)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.30</td>
+					</tr>					
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td colspan="5" class="rmks">
+							<h3>홈페이지</h3>
+						</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/03_비교과프로그램_01_목록.html" target="lms_page" class="link">03_비교과프로그램_01_목록.html</a>
+						</td>
+						<td>비교과프로그램</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.25</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/03_비교과프로그램_01_목록_modal_신규팀개설(팀원추가등).html" target="lms_page" class="link">03_비교과프로그램_01_목록_modal_신규팀개설(팀원추가등).html</a>
+						</td>
+						<td>비교과프로그램 > 각종 모달(신규팀개설, 상세보기, 신규팀원추가)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.15</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/03_비교과프로그램_02_상세페이지.html" target="lms_page" class="link">03_비교과프로그램_02_상세페이지.html</a>
+						</td>
+						<td>비교과프로그램 > 상세페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.25</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/04_비학위과정_01_일반과정_목록.html" target="lms_page" class="link">04_비학위과정_01_일반과정_목록.html</a>
+						</td>
+						<td>비학위과정 > 일반과정</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/04_비학위과정_01_일반과정_상세페이지.html" target="lms_page" class="link">04_비학위과정_01_일반과정_상세페이지.html</a>
+						</td>
+						<td>비학위과정 > 일반과정 > 상세페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/04_비학위과정_02_공개과정_목록.html" target="lms_page" class="link">04_비학위과정_02_공개과정_목록.html</a>
+						</td>
+						<td>비학위과정 > 공개과정</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/04_비학위과정_02_공개과정_상세페이지.html" target="lms_page" class="link">04_비학위과정_02_공개과정_상세페이지.html</a>
+						</td>
+						<td>비학위과정 > 공개과정 > 상세페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.26</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks">5</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_전공진로_01_전공_검색및초기화면.html" target="lms_page" class="link">05_전공진로_01_전공_검색및초기화면.html</a>
+						</td>
+						<td>전공진로 > 전공 > 검색 및 초기화면</td>
+						<td class="rmks">
+							좋아요 버튼 클릭시 : 토스트 팝업 노출.
+						</td>
+						<td class="rmks">2025.12.05<br/>2026.02.02</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_전공진로_01_전공_검색및초기화면_나의찜 빈화면.html" target="lms_page" class="link">05_전공진로_01_전공_검색및초기화면_나의찜 빈화면.html</a>
+						</td>
+						<td>전공진로 > 전공 > 검색 및 초기화면(나의찜 빈 화면)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_전공진로_01_전공_검색및초기화면_검색결과상세.html" target="lms_page" class="link">05_전공진로_01_전공_검색및초기화면_검색결과상세.html</a>
+						</td>
+						<td>전공진로 > 전공 > 상세페이지</td>
+						<td class="rmks">퍼블수정완료</td>
+						<td class="rmks">2025.12.05<br/>2025.12.09</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_전공진로_02_진로(커리어검색)_검색및초기화면.html" target="lms_page" class="link">05_전공진로_02_진로(커리어검색)_검색및초기화면.html</a>
+						</td>
+						<td>전공진로 > 진로(커리어검색) > 초기화면</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.05</td>
+					</tr>					
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_전공진로_02_진로(커리어검색)_검색및초기화면_검색결과상세.html" target="lms_page" class="link">05_전공진로_02_진로(커리어검색)_검색및초기화면_검색결과상세.html</a>
+						</td>
+						<td>전공진로 > 진로(커리어검색) > 상세페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_전공진로_02_진로(커리어검색)_검색및초기화면_검색결과.html" target="lms_page" class="link">05_전공진로_02_진로(커리어검색)_검색및초기화면_검색결과.html</a>
+						</td>
+						<td>전공진로 > 진로(커리어검색) > 검색결과</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_전공진로_02_진로(커리어검색)_검색및초기화면_검색결과(검색결과목록이없을때).html" target="lms_page" class="link">05_전공진로_02_진로(커리어검색)_검색및초기화면_검색결과(검색결과목록이없을때).html</a>
+						</td>
+						<td>전공진로 > 진로(커리어검색) > 검색결과(검색결과 목록이 없을 때)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/000.html" target="lms_page" class="link">000.html</a>
+						</td>
+						<td>전공진로 > 나의관심분야</td>
+						<td class="rmks">마이페이지와 중복되는 부분으로 검토중</td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/05_커리어키트_01_활동성과관리.html" target="lms_page" class="link">05_커리어키트_01_활동성과관리.html</a>
+						</td>
+						<td>커리어키트 > 활동성과관리</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.18</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">6</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_01_셀프체크_결과.html" target="lms_page" class="link"
+								>06_진단룸_01_셀프체크_결과.html</a
+							>
+						</td>
+						<td>진단룸 > 셀프체크 > 결과</td>
+						<td class="rmks">퍼블 수정완료</td>
+						<td class="rmks">2025.11.04<br/>2025.11.20 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_01_셀프체크_목록.html" target="lms_page" class="link"
+								>06_진단룸_01_셀프체크_목록.html</a
+							>
+						</td>
+						<td>진단룸 > 셀프체크 > 목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_02_핵심역량진단_01_진단안내및목록.html" target="lms_page" class="link"
+								>06_진단룸_02_핵심역량진단_01_진단안내및목록.html</a
+							>
+						</td>
+						<td>진단룸 > 핵심역량진단 > 진단안내 및 목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.30</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_02_핵심역량진단_02_진단결과.html" target="lms_page" class="link"
+								>06_진단룸_02_핵심역량진단_02_진단결과.html</a
+							>
+						</td>
+						<td>진단룸 > 핵심역량진단 > 진단결과</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.30</td>
+					</tr>					
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_03_기초학습진단_01_진단안내및목록.html" target="lms_page" class="link"
+								>06_진단룸_03_기초학습진단_01_진단안내및목록.html</a
+							>
+						</td>
+						<td>진단룸 > 기초학습진단 > 진단안내 및 목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.30</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_03_기초학습진단_02_진단결과.html" target="lms_page" class="link"
+								>06_진단룸_03_기초학습진단_02_진단결과.html</a
+							>
+						</td>
+						<td>진단룸 > 기초학습진단 > 진단결과</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.30</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_04_SSDL진단_진단안내및목록.html" target="lms_page" class="link"
+								>06_진단룸_04_SSDL진단_진단안내및목록.html</a
+							>
+						</td>
+						<td>진단룸 > SSDL진단 > 진단안내 및 목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_04_SSDL진단_진단안내및목록.html" target="lms_page" class="link"
+								>06_진단룸_04_SSDL진단_진단안내및목록.html</a
+							>
+						</td>
+						<td>진단룸 > SSDL진단 > 진단안내 및 목록 > modal_SSDL진단하기</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.08</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/06_진단룸_04_SSDL진단결과.html" target="lms_page" class="link"
+								>06_진단룸_04_SSDL진단결과.html</a
+							>
+						</td>
+						<td>진단룸 > SSDL진단 > 진단결과</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.08<br/>2026.02.24업데이트</td>
+					</tr>
+					<tr class="">
+					<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">8</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_01_목록.html" target="lms_page" class="link">08_상담_01_상담신청_01_목록.html</a>
+						</td>
+						<td>상담 > 상담신청</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_02_심리상담.html" target="lms_page" class="link">08_상담_01_상담신청_02_심리상담.html</a>
+						</td>
+						<td>상담 > 상담신청 > 심리상담</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_02_심리상담_내용입력.html" target="lms_page" class="link">08_상담_01_상담신청_02_심리상담_내용입력.html</a>
+						</td>
+						<td>상담 > 상담신청 > 심리상담(내용입력)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_03_심리검사해석상담.html" target="lms_page" class="link">08_상담_01_상담신청_03_심리검사해석상담.html</a>
+						</td>
+						<td>상담 > 상담신청 > 심리검사 해석상담</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_03_심리검사해석상담_내용입력.html" target="lms_page" class="link">08_상담_01_상담신청_03_심리검사해석상담_내용입력.html</a>
+						</td>
+						<td>상담 > 상담신청 > 심리검사 해석상담(내용입력)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_04_집단상담.html" target="lms_page" class="link">08_상담_01_상담신청_04_집단상담.html</a>
+						</td>
+						<td>상담 > 상담신청 > 집단상담</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_04_집단상담_내용입력.html" target="lms_page" class="link">08_상담_01_상담신청_04_집단상담_내용입력.html</a>
+						</td>
+						<td>상담 > 상담신청 > 집단상담(내용입력)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_05_인권센터상담.html" target="lms_page" class="link">08_상담_01_상담신청_05_인권센터상담.html</a>
+						</td>
+						<td>상담 > 상담신청 > 인권센터상담</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_05_인권센터상담_내용입력.html" target="lms_page" class="link">08_상담_01_상담신청_05_인권센터상담_내용입력.html</a>
+						</td>
+						<td>상담 > 상담신청 > 인권센터상담(내용입력)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_06_학과교수상담.html" target="lms_page" class="link">08_상담_01_상담신청_06_학과교수상담.html</a>
+						</td>
+						<td>상담 > 상담신청 > 학과 교수상담</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_01_상담신청_06_학과교수상담_내용입력.html" target="lms_page" class="link">08_상담_01_상담신청_06_학과교수상담_내용입력.html</a>
+						</td>
+						<td>상담 > 상담신청 > 학과 교수상담(내용입력)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_02_나의상담현황.html" target="lms_page" class="link">08_상담_02_나의상담현황.html</a>
+						</td>
+						<td>상담 > 나의 상담 현황<br/>(상담내역확인(온,오프라인), 만족도조사 포함)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08<br/>2025.12.12</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/08_상담_02_나의상담현황_상담내역확인.html" target="lms_page" class="link">08_상담_02_나의상담현황_상담내역확인.html</a>
+						</td>
+						<td>상담 > 나의 상담 현황 > 상담내역확인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					
+					<tr class="">
+						<td class="rmks">9</td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_02_플래너.html" target="lms_page" class="link">09_마이페이지_02_플래너.html</a>
+						</td>
+						<td>마이페이지 > 플래너</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.26<br/>2025.12.22 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_03_알림.html" target="lms_page" class="link">09_마이페이지_03_알림.html</a>
+						</td>
+						<td>마이페이지 > 알림</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.02</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_03_알림(알림이없을경우).html" target="lms_page" class="link">09_마이페이지_03_알림(알림이없을경우).html</a>
+						</td>
+						<td>마이페이지 > 알림(알림이 없을 경우)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.12</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_03_알림_설정.html" target="lms_page" class="link">09_마이페이지_03_알림_설정.html</a>
+						</td>
+						<td>마이페이지 > 알림 > 설정</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.02</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_04_나의관심(찜).html" target="lms_page" class="link">09_마이페이지_04_나의관심(찜).html</a>
+						</td>
+						<td>마이페이지 > 나의관심(찜)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.14</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_05_나의수강현황.html" target="lms_page" class="link">09_마이페이지_05_나의수강현황.html</a>
+						</td>
+						<td>마이페이지 > 나의 수강현황(나의 수강평 모달 포함)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.24<br/>2026.02.10업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_06_나의수강평.html" target="lms_page" class="link">09_마이페이지_06_나의수강평.html</a>
+						</td>
+						<td>마이페이지 > 나의 수강평</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.09.24</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_07_결제정보[비학위과정].html" target="lms_page" class="link">09_마이페이지_07_결제정보[비학위과정].html</a>
+						</td>
+						<td>마이페이지 > 결제 정보 [비학위 과정] - 취소/환불정책, 환불계좌등록 포함</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.12.18</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_08_디지털배지.html" target="lms_page" class="link">09_마이페이지_08_디지털배지.html</a>
+						</td>
+						<td>마이페이지 > 디지털배지</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.12.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_09_마일리지인증시간_01_마일리지.html" target="lms_page" class="link">09_마이페이지_09_마일리지인증시간_01_마일리지.html</a>
+						</td>
+						<td>마이페이지 > 마일리지</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.12.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_09_마일리지인증시간_01_마일리지_장학마일리지.html" target="lms_page" class="link">09_마이페이지_09_마일리지인증시간_01_마일리지_장학마일리지.html</a>
+						</td>
+						<td>마이페이지 > 마일리지 > 장학마일리지</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.12.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_09_마일리지인증시간_02_인증시간.html" target="lms_page" class="link">09_마이페이지_09_마일리지인증시간_02_인증시간.html</a>
+						</td>
+						<td>마이페이지 > 인증시간</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.12.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_10_포트폴리오.html" target="lms_page" class="link">09_마이페이지_10_포트폴리오.html</a>
+						</td>
+						<td>마이페이지 > 포트폴리오</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.12.18</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/09_마이페이지_11_나의정보.html" target="lms_page" class="link">09_마이페이지_11_나의정보.html</a>
+						</td>
+						<td>마이페이지 > 나의 정보 : 나의 정보 수정, 간편 로그인 설정, 학습관심사</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2025.12.20</td>
+					</tr>
+					
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_std/10_매뉴얼.html" target="lms_page" class="link">10_매뉴얼.html</a>
+						</td>
+						<td>알림 > 매뉴얼</td>
+						<td class="rmks fc_red"></td>
+						<td class="rmks">2026.01.23</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>교수</h2></td>
+					</tr>
+					<tr class="">
+						<td colspan="5" class="rmks">
+							<h3>대시보드</h3>
+						</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_메인_요약대시보드.html" target="lms_page" class="link"
+								>01_메인_요약대시보드.html</a>
+						</td>
+						<td>메인 > 요약대시보드</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.18<br/>2025.11.28 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_메인_요약대시보드_데이터가없을경우.html" target="lms_page" class="link"
+								>01_메인_요약대시보드_데이터가없을경우.html</a>
+						</td>
+						<td>메인 > 요약대시보드(데이터가 없을 경우)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.19<br/>2025.11.28 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/04_마이페이지_01_마이페이지_상세대시보드.html" target="lms_page" class="link"
+								>04_마이페이지_01_마이페이지_상세대시보드.html</a>
+						</td>
+						<td>마이페이지 > 상세대시보드</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.18<br/>2025.11.28 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/04_마이페이지_01_마이페이지_상세대시보드_학습자별패턴분석.html" target="lms_page" class="link"
+								>04_마이페이지_01_마이페이지_상세대시보드_학습자별패턴분석.html</a>
+						</td>
+						<td>마이페이지 > 상세대시보드 > 학습자별 패턴분석</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.22</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_00_강의실_외부.html" target="lms_page" class="link"
+								>01_나의강의실_00_강의실_외부.html</a>
+						</td>
+						<td>나의강의실 > 나의 강의실 입장(강의실 외부)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.03</td>
+					</tr>
+					<tr class="">
+						<td colspan="5" class="rmks">
+							<h3>개별 과목 강의실</h3>
+						</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_01_강의정보_02_수강생정보.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_01_강의정보_02_수강생정보.html</a>
+						</td>
+						<td>나의강의실 > 강의정보 > 수강생정보</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.31</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_01_회차추가수정_modal.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_01_회차추가수정_modal.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > 회차추가수정 modal</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.29</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_01_강좌설명_modal.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_01_강좌설명_modal.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > 강좌설명 modal</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.03</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_02_AI보조교사_modal.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_02_AI보조교사_modal.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > AI보조교사 modal</td>
+						<td class="rmks">퍼블 수정 완료</td>
+						<td class="rmks">2025.10.15<br/>2025.11.21 업데이트<br/>2025.12.16 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_05_학습요소등록_콘텐츠등록.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_05_학습요소등록_콘텐츠등록.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > 학습요소등록 > 콘텐츠 등록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.03</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_05_학습요소등록_자료등록.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_01_강의관리_05_학습요소등록_자료등록.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > 학습요소등록 > 자료 등록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.03</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_06_시험퀴즈_03_프리테스트관리_01_목록.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_06_시험퀴즈_03_프리테스트관리_01_목록.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 시험/퀴즈 > 프리테스트 목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.24</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_06_시험퀴즈_03_프리테스트관리_02_등록.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_06_시험퀴즈_03_프리테스트관리_02_등록.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 시험/퀴즈 > 프리테스트 등록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.24</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_06_시험퀴즈_03_프리테스트관리_03_결과확인.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_06_시험퀴즈_03_프리테스트관리_03_결과확인.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 시험/퀴즈 > 프리테스트 결과확인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.24</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_01_수동형_1.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_01_수동형_1.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(수동형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_01_수동형_2.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_01_수동형_2.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(수동형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_02_랜덤형_1.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_02_랜덤형_1.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(랜덤형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_02_랜덤형_2.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_02_랜덤형_2.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(랜덤형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_03_균형형_1.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_03_균형형_1.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(균형형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_03_균형형_2.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_03_균형형_2.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(균형형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_04_이전팀불러오기_1.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_04_이전팀불러오기_1.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(이전팀불러오기)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_04_이전팀불러오기_2.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_02_학습요소_07_팀프로젝트_팀구성_04_이전팀불러오기_2.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 팀프로젝트 > 팀구성(이전팀불러오기)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.19</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">4</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_04_출석성적_02_출석부_회차별출석부(주차형).html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_04_출석성적_02_출석부_회차별출석부(주차형).html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > 출석/성적 > 출석부_회차별출석부(주차형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.03</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_04_출석성적_02_출석부_회차별출석부(자율형).html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_04_출석성적_02_출석부_회차별출석부(자율형).html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > 출석/성적 > 출석부_회차별출석부(자율형)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.03</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_04_출석성적_00_학습현황_버튼정렬.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_04_출석성적_00_학습현황_버튼정렬.html</a>
+						</td>
+						<td>나의강의실 > 학습요소 > 강의관리 > 출석/성적 > 학습현황 버튼 정렬</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.17</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_05_기타관리_01_학습참여점검_01_전체학습참여점검.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_05_기타관리_01_학습참여점검_01_전체학습참여점검.html</a>
+						</td>
+						<td>나의강의실 > 기타관리 > 학습참여점검 > 전체 학습참여 점검(메시지발송 모달 포함)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.21</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/01_나의강의실_01_개별과목강의실_05_기타관리_01_학습참여점검_02_학습참여점검.html" target="lms_page" class="link"
+								>01_나의강의실_01_개별과목강의실_05_기타관리_01_학습참여점검_02_학습참여점검.html</a>
+						</td>
+						<td>나의강의실 > 기타관리 > 학습참여점검 > 학습참여 점검(탭)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.22</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">5</td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/02_교수학습역량진단_01_사례선택modal.html" target="lms_page" class="link"
+								>02_교수학습역량진단_01_사례선택modal.html</a>
+						</td>
+						<td>교수학습역량진단 > 사례선택 모달, 선택된 사레 요약</td>
+						<td class="rmks">1/15: 선택된 사레 요약 추가함.</td>
+						<td class="rmks">2026.1.14<br/>2026.1.15</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/02_교수학습역량진단_02_진단결과.html" target="lms_page" class="link"
+								>02_교수학습역량진단_02_진단결과.html</a>
+						</td>
+						<td>교수학습역량진단 > 진단결과</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.1.14</td>
+					</tr>
+
+					<tr class="">
+						<td colspan="5" class="rmks">
+							<h3>홈페이지</h3>
+						</td>
+					</tr>
+
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/03_상담_01_상담현황.html" target="lms_page" class="link">03_상담_01_상담현황.html</a>
+						</td>
+						<td>상담 > 상담현황</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/03_상담_02_온라인상담관리.html" target="lms_page" class="link">03_상담_02_온라인상담관리.html</a>
+						</td>
+						<td>상담 > 온라인 상담관리</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/03_상담_02_온라인상담관리_상세페이지.html" target="lms_page" class="link">03_상담_02_온라인상담관리_상세페이지.html</a>
+						</td>
+						<td>상담 > 온라인 상담관리 > 상세페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/03_상담_03_오프라인상담관리.html" target="lms_page" class="link">03_상담_03_오프라인상담관리.html</a>
+						</td>
+						<td>상담 > 오프라인 상담관리(상담일정등록 모달 포함)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.10</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/03_상담_04_비신청상담등록.html" target="lms_page" class="link">03_상담_04_비신청상담등록.html</a>
+						</td>
+						<td>상담 > 비신청 상담 등록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.12</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/03_상담_05_통계.html" target="lms_page" class="link">03_상담_05_통계.html</a>
+						</td>
+						<td>상담 > 통계</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.12</td>
+					</tr>
+
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/05_미래성장설계_01_검색및초기화면.html" target="lms_page" class="link">05_미래성장설계_01_검색및초기화면.html</a>
+						</td>
+						<td>미래성장설계 > 초기화면</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/05_미래성장설계_02_담당학생조회.html" target="lms_page" class="link">05_미래성장설계_02_담당학생조회.html</a>
+						</td>
+						<td>미래성장설계 > 담당 학생 조회</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.12.08</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/06_수업관리_01_강좌별조회_회차점검.html" target="lms_page" class="link">06_수업관리_01_강좌별조회_회차점검.html</a>
+						</td>
+						<td>수업관리 > 강좌별조회, 회차점검</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.13</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/06_수업관리_02_온라인수업.html" target="lms_page" class="link">06_수업관리_02_온라인수업.html</a>
+						</td>
+						<td>수업관리 > 온라인 수업</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.13<br/>2026.03.03 업데이트</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/06_수업관리_03_오프라인수업.html" target="lms_page" class="link">06_수업관리_03_오프라인수업.html</a>
+						</td>
+						<td>수업관리 > 오프라인 수업</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.13<br/>2026.03.03 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/07_휴보강신청_01.html" target="lms_page" class="link">07_휴보강신청_01.html</a>
+						</td>
+						<td>휴/보강신청</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.13</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/07_휴보강신청_02_휴보강신청서작성.html" target="lms_page" class="link">07_휴보강신청_02_휴보강신청서작성.html</a>
+						</td>
+						<td>휴/보강신청서 작성</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.23</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/08_수업일정상세_01.html" target="lms_page" class="link">08_수업일정상세_01.html</a>
+						</td>
+						<td>수업일정 상세</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.23</td>
+					</tr>
+
+					<tr class="">
+						<td colspan="5" class="rmks">
+							<h3>교육 만족도조사</h3>
+						</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/09_std_sub_01역량진단_02교육만족도_교육만족도_리스트.html" target="lms_page" class="link">09_std_sub_01역량진단_02교육만족도_교육만족도_리스트.html</a>
+						</td>
+						<td>교육만족도 - 리스트<br/>
+							만족도 조사 참여하기 모달 포함</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.26</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/09_prof_sub_01역량진단_02교육만족도_교육만족도결과1_리스트.html" target="lms_page" class="link">09_prof_sub_01역량진단_02교육만족도_교육만족도결과1_리스트.html</a>
+						</td>
+						<td>교육만족도 결과1 - 리스트</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.26</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/09_prof_sub_01역량진단_02교육만족도_교육만족도결과1_상세보기.html" target="lms_page" class="link">09_prof_sub_01역량진단_02교육만족도_교육만족도결과1_상세보기.html</a>
+						</td>
+						<td>교육만족도 결과1 - 상세보기</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.26</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_base/lxp_pro/09_prof_sub_01역량진단_02교육만족도_교육만족도결과2_상세보기.html" target="lms_page" class="link">09_prof_sub_01역량진단_02교육만족도_교육만족도결과2_상세보기.html</a>
+						</td>
+						<td>교육만족도 결과2 - 상세보기</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.26</td>
+					</tr>					
+
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>평생능력개발원 - PLUS</h2></td>
+					</tr>
+					<tr>
+						<td class="" colspan="5"><strong>공통영역</strong></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">0</td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/common_준비중입니다.html" target="lms_page" class="link">common_준비중입니다.html</a>
+						</td>
+						<td>준비중입니다.</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.20</td>
+					</tr>
+					
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/index.html" target="lms_page" class="link">index.html</a>
+						</td>
+						<td>메인 - 로그인 전</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.14<br/>2025.10.24 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/index_login_after.html" target="lms_page" class="link">index_login_after.html</a>
+						</td>
+						<td>메인 - 로그인 후</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.14</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/common_sub_layout.html" target="lms_page" class="link">common_sub_layout.html</a>
+						</td>
+						<td>서브 공통 레이아웃</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.14</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/common_sub_강의실헤더.html" target="lms_page" class="link">common_sub_강의실헤더.html</a>
+						</td>
+						<td>서브 공통 강의실헤더</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_마이페이지_01_찜강의.html" target="lms_page" class="link">sub_마이페이지_01_찜강의.html</a>
+						</td>
+						<td>마이페이지 > 찜강의</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_마이페이지_02_비교과수강내역.html" target="lms_page" class="link">sub_마이페이지_02_비교과수강내역.html</a>
+						</td>
+						<td>마이페이지 > 비교과 수강내역</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_마이페이지_03_결제내역.html" target="lms_page" class="link">sub_마이페이지_03_결제내역.html</a>
+						</td>
+						<td>마이페이지 > 결제내역</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_마이페이지_04_수강및결제정보_01.html" target="lms_page" class="link">sub_마이페이지_04_수강및결제정보_01.html</a>
+						</td>
+						<td>마이페이지 > 수강 및 결제정보</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_마이페이지_04_수강및결제정보_02.html" target="lms_page" class="link">sub_마이페이지_04_수강및결제정보_02.html</a>
+						</td>
+						<td>마이페이지 > 수강 및 결제정보</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_마이페이지_04_수강및결제정보_03.html" target="lms_page" class="link">sub_마이페이지_04_수강및결제정보_03.html</a>
+						</td>
+						<td>마이페이지 > 수강 및 결제정보</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_마이페이지_05_정보변경.html" target="lms_page" class="link">sub_마이페이지_05_정보변경.html</a>
+						</td>
+						<td>마이페이지 > 정보변경</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">4</td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_검색_01.html" target="lms_page" class="link">sub_검색_01.html</a>
+						</td>
+						<td>검색</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.21</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_검색_02_검색결과없을경우.html" target="lms_page" class="link">sub_검색_02_검색결과없을경우.html</a>
+						</td>
+						<td>검색 > 검색결과없을경우</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.21</td>
+					</tr>
+					
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_01_인사말.html" target="lms_page" class="link">sub_01_평생능력개발원소개_01_인사말.html</a>
+						</td>
+						<td>평생능력개발원소개 - 인사말</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_02_비전및미션.html" target="lms_page" class="link">sub_01_평생능력개발원소개_02_비전및미션.html</a>
+						</td>
+						<td>평생능력개발원소개 - 비전 및 미션</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.16</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_03_연혁.html" target="lms_page" class="link">sub_01_평생능력개발원소개_03_연혁.html</a>
+						</td>
+						<td>평생능력개발원소개 - 연혁</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.16</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_04_조직소개.html" target="lms_page" class="link">sub_01_평생능력개발원소개_04_조직소개.html</a>
+						</td>
+						<td>평생능력개발원소개 - 조직소개</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_05_교수및강사소개.html" target="lms_page" class="link">sub_01_평생능력개발원소개_05_교수및강사소개.html</a>
+						</td>
+						<td>평생능력개발원소개 - 교수 및 강사소개<br/>(강사소개 모달 포함)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05<br/>2026.02.10 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_06_규정.html" target="lms_page" class="link">sub_01_평생능력개발원소개_06_규정.html</a>
+						</td>
+						<td>평생능력개발원소개 - 규정</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_07_시설안내.html" target="lms_page" class="link">sub_01_평생능력개발원소개_07_시설안내.html</a>
+						</td>
+						<td>평생능력개발원소개 - 시설안내</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_01_평생능력개발원소개_08_오시는길.html" target="lms_page" class="link">sub_01_평생능력개발원소개_08_오시는길.html</a>
+						</td>
+						<td>평생능력개발원소개 - 오시는 길</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_02_학습지원_01_수강신청.html" target="lms_page" class="link">sub_02_학습지원_01_수강신청.html</a>
+						</td>
+						<td>학습지원 - 수강신청</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_02_학습지원_01_수강신청_과목상세보기.html" target="lms_page" class="link">sub_02_학습지원_01_수강신청_과목상세보기.html</a>
+						</td>
+						<td>학습지원 - 수강신청 - 과목상세보기</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_02_학습지원_02_등록안내.html" target="lms_page" class="link">sub_02_학습지원_02_등록안내.html</a>
+						</td>
+						<td>학습지원 - 등록안내</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_02_학습지원_03_학사일정.html" target="lms_page" class="link">sub_02_학습지원_03_학사일정.html</a>
+						</td>
+						<td>학습지원 - 학사일정</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_02_학습지원_04_장학제도.html" target="lms_page" class="link">sub_02_학습지원_04_장학제도.html</a>
+						</td>
+						<td>학습지원 - 장학제도</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_02_학습지원_05_환불취소안내.html" target="lms_page" class="link">sub_02_학습지원_05_환불취소안내.html</a>
+						</td>
+						<td>학습지원 - 환불취소안내</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_03_교육과정_01_교육과정안내.html" target="lms_page" class="link">sub_03_교육과정_01_교육과정안내.html</a>
+						</td>
+						<td>교육과정 - 교육과정안내</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.28</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_04_특별과정_01_지역연계특별과정.html" target="lms_page" class="link">sub_04_특별과정_01_지역연계특별과정.html</a>
+						</td>
+						<td>특별과정 - 지역연계 특별과정</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.04</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_04_특별과정_02_위탁과정.html" target="lms_page" class="link">sub_04_특별과정_02_위탁과정.html</a>
+						</td>
+						<td>특별과정 - 위탁과정</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_04_특별과정_03_파일럿과정.html" target="lms_page" class="link">sub_04_특별과정_03_파일럿과정.html</a>
+						</td>
+						<td>특별과정 - 파일럿과정</td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_05_공지사항_목록.html" target="lms_page" class="link">sub_05_공지사항_목록.html</a>
+						</td>
+						<td>공지사항 > 목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_05_공지사항_상세보기.html" target="lms_page" class="link">sub_05_공지사항_상세보기.html</a>
+						</td>
+						<td>공지사항 > 상세보기</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_06_마이페이지_01_나의정보.html" target="lms_page" class="link">sub_06_마이페이지_01_나의정보.html</a>
+						</td>
+						<td>마이페이지 > 나의정보</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_06_마이페이지_02_프로필설정.html" target="lms_page" class="link">sub_06_마이페이지_02_프로필설정.html</a>
+						</td>
+						<td>마이페이지 > 프로필설정</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_06_마이페이지_03_나의강의실.html" target="lms_page" class="link">sub_06_마이페이지_03_나의강의실.html</a>
+						</td>
+						<td>마이페이지 > 나의 강의실</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_06_마이페이지_04_수강신청내역.html" target="lms_page" class="link">sub_06_마이페이지_04_수강신청내역.html</a>
+						</td>
+						<td>마이페이지 > 수강신청내역</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_06_마이페이지_05_이수현황및수료증발급.html" target="lms_page" class="link">sub_06_마이페이지_05_이수현황및수료증발급.html</a>
+						</td>
+						<td>마이페이지 > 이수현황 및 수료증발급</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_06_마이페이지_06_찜강의.html" target="lms_page" class="link">sub_06_마이페이지_06_찜강의.html</a>
+						</td>
+						<td>마이페이지 > 찜강의</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<!-- <tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_자격증과정_01_목록.html" target="lms_page" class="link">sub_자격증과정_01_목록.html</a>
+						</td>
+						<td>자격증과정 > 목록</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.22</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_plus/lxp_home/sub_자격증과정_02_상세보기.html" target="lms_page" class="link">sub_자격증과정_02_상세보기.html</a>
+						</td>
+						<td>자격증과정 > 상세보기</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.10.22</td>
+					</tr> -->
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>원광대학교 CTL</h2></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">0</td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/index.html" target="lms_page" class="link">index.html</a>
+						</td>
+						<td>index</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_01_교수지원_01_교수지원체계.html" target="lms_page" class="link">sub_01_교수지원_01_교수지원체계.html</a>
+						</td>
+						<td>교수지원 > 교수지원체계</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_01_교수지원_02_교수역량진단.html" target="lms_page" class="link">sub_01_교수지원_02_교수역량진단.html</a>
+						</td>
+						<td>교수지원 > 교수역량진단</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_01_교수지원_03_교수역량강화.html" target="lms_page" class="link">sub_01_교수지원_03_교수역량강화.html</a>
+						</td>
+						<td>교수지원 > 교수역량강화</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_01_교수지원_04_교수연구지원.html" target="lms_page" class="link">sub_01_교수지원_04_교수연구지원.html</a>
+						</td>
+						<td>교수지원 > 교수연구지원</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_01_교수지원_05_교수법적용사례확산.html" target="lms_page" class="link">sub_01_교수지원_05_교수법적용사례확산.html</a>
+						</td>
+						<td>교수지원 > 교수법적용사례확산</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.26</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">2</td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_02_학습지원_01_WK-SSDL.html" target="lms_page" class="link">sub_02_학습지원_01_WK-SSDL.html</a>
+						</td>
+						<td>학습지원 > WK-SSDL</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_02_학습지원_02_학습법특강.html" target="lms_page" class="link">sub_02_학습지원_02_학습법특강.html</a>
+						</td>
+						<td>학습지원 > 학습법특강</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_02_학습지원_03_Win-win스터디·WK-PASS.html" target="lms_page" class="link">sub_02_학습지원_03_Win-win스터디·WK-PASS.html</a>
+						</td>
+						<td>학습지원 > Win-win스터디 · WK-PASS</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_02_학습지원_04_러닝업·독서학습코칭·학습코칭.html" target="lms_page" class="link">sub_02_학습지원_04_러닝업·독서학습코칭·학습코칭.html</a>
+						</td>
+						<td>학습지원 > 러닝업 · 독서학습코칭 · 학습코칭</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_02_학습지원_05_학습공모전.html" target="lms_page" class="link">sub_02_학습지원_05_학습공모전.html</a>
+						</td>
+						<td>학습지원 > 학습공모전</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_03_원격교육지원과_01_wafflei.html" target="lms_page" class="link">sub_03_원격교육지원과_01_wafflei.html</a>
+						</td>
+						<td>원격교육지원과 > WAFFLE-I</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_03_원격교육지원과_02_파놉토.html" target="lms_page" class="link">sub_03_원격교육지원과_02_파놉토.html</a>
+						</td>
+						<td>원격교육지원과 > 파놉토</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_03_원격교육지원과_03_원격수업가이드.html" target="lms_page" class="link">sub_03_원격교육지원과_03_원격수업가이드.html</a>
+						</td>
+						<td>원격교육지원과 > 원격수업가이드</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_03_원격교육지원과_04_원격수업강의지원.html" target="lms_page" class="link">sub_03_원격교육지원과_04_원격수업강의지원.html</a>
+						</td>
+						<td>원격교육지원과 > 원격수업강의지원</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_03_원격교육지원과_05_자료실.html" target="lms_page" class="link">sub_03_원격교육지원과_05_자료실.html</a>
+						</td>
+						<td>원격교육지원과 > 자료실</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_03_원격교육지원과_05_자료실_상세페이지.html" target="lms_page" class="link">sub_03_원격교육지원과_05_자료실_상세페이지.html</a>
+						</td>
+						<td>원격교육지원과 > 자료실 상세페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.29</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_04_센터소개_01_소개.html" target="lms_page" class="link">sub_04_센터소개_01_소개.html</a>
+						</td>
+						<td>센터소개 > 소개</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.29</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td>
+							<a href="layout_navi_ctl/lxp_home/sub_04_센터소개_02_조직도.html" target="lms_page" class="link">sub_04_센터소개_02_조직도.html</a>
+						</td>
+						<td>센터소개 > 조직도</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.29</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>한양대 대학 기초융합교육 컨소시엄</h2></td>
+					</tr>
+					<tr class="new">
+						<td class="rmks">0</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/00_로그인.html" target="lms_page" class="link">00_로그인.html</a>
+						</td>
+						<td>메인 - 로그인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.3.12</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks">0</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/index.html" target="lms_page" class="link">index.html</a>
+						</td>
+						<td>메인 - index</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.1.14<br/>2026.3.12 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">0</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/sub_00_강의실헤더.html" target="lms_page" class="link">sub_00_강의실헤더.html</a>
+						</td>
+						<td>강의실 헤더영역 적용</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.1.27</td>
+					</tr>
+					
+					
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/sub_01_기초융합교육소개_01_컨소시엄소개.html" target="lms_page" class="link">sub_01_기초융합교육소개_01_컨소시엄소개.html</a>
+						</td>
+						<td>컨소시엄 소개</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.03</td>
+					</tr>					
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/sub_01_기초융합교육소개_02_참여대학현황.html" target="lms_page" class="link">sub_01_기초융합교육소개_02_참여대학현황.html</a>
+						</td>
+						<td>참여대학 현황</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/sub_03_학사안내_01_수업운영안내.html" target="lms_page" class="link">sub_03_학사안내_01_수업운영안내.html</a>
+						</td>
+						<td>수업운영안내</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.06</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">3</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/sub_03_학사안내_02_학사일정.html" target="lms_page" class="link">sub_03_학사안내_02_학사일정.html</a>
+						</td>
+						<td>학사일정</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.06</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">4</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/sub_04_알림마당_04_배지취득현황.html" target="lms_page" class="link">sub_04_알림마당_04_배지취득현황.html</a>
+						</td>
+						<td>배지취득현황-예시화면</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.1.27</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">4</td>
+						<td>
+							<a href="layout_navi_plus/lxp_hanyang/sub_04_팀프로젝트_동료평가팀수동배정_modal.html" target="lms_page" class="link">sub_04_팀프로젝트_동료평가팀수동배정_modal.html</a>
+						</td>
+						<td>팀프로젝트 > 동료평가 > 팀수동배정 모달</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>건양대 LXP</h2></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="kunyang/00_로그인.html" target="lms_page" class="link"
+								>00_로그인.html</a
+							>
+						</td>
+						<td>로그인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.04</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="kunyang/00_로그인2.html" target="lms_page" class="link"
+								>00_로그인2.html</a
+							>
+						</td>
+						<td>로그인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2025.11.05</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="kunyang/01_LXP 학습자로그인후메인페이지.html" target="lms_page" class="link"
+								>01_LXP 학습자로그인후메인페이지.html</a
+							>
+						</td>
+						<td>LXP 학습자로그인후메인페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.1.20</td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="kunyang/01_LXP 교수자로그인후메인페이지.html" target="lms_page" class="link"
+								>01_LXP 교수자로그인후메인페이지.html</a
+							>
+						</td>
+						<td>LXP 교수자로그인후메인페이지</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.1.20</td>
+					</tr>
+					<tr class="new">
+						<td class="rmks">1</td>
+						<td>
+							<a href="kunyang/06_진단룸_02_핵심역량진단_01_진단안내및목록.html" target="lms_page" class="link"
+								>06_진단룸_02_핵심역량진단_01_진단안내및목록.html</a
+							>
+						</td>
+						<td>핵심역량진단 목록(6대역량)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.1.26<br/>2026.02.03 업데이트</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="new">
+						<td class="rmks">2</td>
+						<td>
+							<a href="kunyang/02_sub_비교과교육.html" target="lms_page" class="link"
+								>02_sub_비교과교육.html</a
+							>
+						</td>
+						<td>비교과교육</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.02</td>
+					</tr>					
+					<tr class="new">
+						<td class="rmks"></td>
+						<td>
+							<a href="kunyang/02_sub_교육수요자만족도조사.html" target="lms_page" class="link"
+								>02_sub_교육수요자만족도조사.html</a
+							>
+						</td>
+						<td>교육 수요자 만족도조사</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.03</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>대동대 LXP</h2></td>
+					</tr>
+					<tr class="">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_base/lxp_daedong/04_마이페이지_01_마이페이지_상세대시보드.html" target="lms_page" class="link"
+								>04_마이페이지_01_마이페이지_상세대시보드.html</a
+							>
+						</td>
+						<td>유저패널 참고(학생, 교수)</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.01.29</td>
+					</tr>
+					<tr>
+						<td class="ta_c pd_0" colspan="5"><h2>화성의과학대 LXP</h2></td>
+					</tr>
+					<tr class="new">
+						<td class="rmks">1</td>
+						<td>
+							<a href="layout_navi_base/lxp_hwasung/00_로그인.html" target="lms_page" class="link">00_로그인.html</a>
+						</td>
+						<td>로그인</td>
+						<td class="rmks"></td>
+						<td class="rmks">2026.02.13</td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+					<tr class="">
+						<td class="rmks"></td>
+						<td></td>
+						<td></td>
+						<td class="rmks"></td>
+						<td class="rmks"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

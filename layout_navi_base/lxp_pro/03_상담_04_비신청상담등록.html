@@ -1,0 +1,3724 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Lxp_Base_Theme" data-layout="vertical">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="../../assets/css/custom_css.css" />
+
+  <title>디유넷 LXP</title>
+
+  <link rel="stylesheet" href="../../assets/libs/select2/dist/css/select2.min.css">
+
+  <!-- 날짜 기간선택 -->
+  <link rel="stylesheet" href="../../assets/libs/daterangepicker/daterangepicker.css">
+
+</head>
+
+<body class="">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="../../assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+
+  <!-- -------------------------------------------- -->
+  <!-- Header start -->
+  <!-- -------------------------------------------- -->
+  <!-- ------------------------------------- -->
+  <!-- Header : ctl Start -->
+  <!-- ------------------------------------- -->
+  <header class="p-0 w-100 bg-white">
+    <div class="bg-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center py-2">
+        <div class="d-flex justify-content-center align-items-center gap-2 text-white">
+          구글 언어팩 노출
+        </div>
+
+        <div class="top-mymenu d-flex align-items-center gap-2 position-relative">
+
+          <!-- 메일 및 쪽지 -->
+          <div class="">
+            <a href="#" class="d-block pe-6 position-relative">
+              <i class="ri-mail-line fs-5 text-white"></i>
+              <div class="d-flex px-1 py-0 justify-content-center align-items-center rounded-pill text-white bg-danger fs-1 position-absolute top-0 start-25 ms-1 ">
+                <span>99</span>
+              </div>
+            </a>
+          </div>
+          <!--// -->
+
+          <!-- 알림 -->
+          <div class="">
+            <a href="#" class="d-inline-block pe-6 position-relative">
+              <i class="ri-notification-3-line fs-5 text-white"></i>
+              <div class="d-flex px-1 py-0 justify-content-center align-items-center rounded-pill text-white bg-danger fs-1 position-absolute top-0 start-25 ms-1">
+                <span>0</span>
+              </div>
+            </a>
+          </div>
+          <!--// -->
+
+          <!-- LCMS -->
+          <a href="#" class="text-white d-none d-md-block">LCMS</a>
+
+          <!-- 파놉토 -->
+          <a href="#" class="text-white d-none d-md-block">파놉토</a>
+
+          <a href="#" class="title d-flex align-items-center gap-2">
+            <div class="text-white">류건우님</div>
+            <div class="rounded-circleoverflow-hidden" style="width:25px;">
+              <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+            </div>
+            <i class="ri-arrow-down-s-fill text-white"></i>
+          </a>
+
+          <!-- 개인 메뉴 모달 -->
+          <div class="modal-mymenu" style="display: none;">
+            <div class="text-end position-relative">
+              <a href="#" class="btn-modal-mymenu-close">
+                <i class="ri-close-line fs-7"></i>
+              </a>
+            </div>
+            <!-- 프로필 영역 -->
+            <div class="d-flex align-items-center pb-2 mb-2 border-bottom" style="">
+              <div class="position-relative flex-shrink-0" style="width:60px;">
+                <div class="rounded-circle overflow-hidden">
+                  <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+                </div>
+              </div>
+              <div class="px-2 text-dark" style="width:200px !important;">
+                <div class="mb-1">
+                  <strong class="fs-4">류건우</strong>
+                </div>
+                <div class="">
+                  <ul class="fs-2">
+                    <li class="d-flex gap-2">
+                      <div>학번</div>
+                      <div class="text-wrap">2025002365</div>
+                    </li>
+                    <li class="d-flex gap-2">
+                      <div>전공</div>
+                      <div class="text-wrap">전자공학과 ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁ SDF SD S D</div>
+                    </li>
+                    <li class="d-flex gap-2">
+                      <div>이메일</div>
+                      <div class="text-wrap">hgd123@dunet.kr</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--// 프로필 영역 -->
+
+            <!-- 권한선택 -->
+            <div class="pb-2">
+              <label class="form-label mb-0">* 권한선택</label>
+              <select class="form-select" data-placeholder="Choose a Category" tabindex="1">
+                <option value="Category 1">학생</option>
+                <option value="Category 2">교수자</option>
+                <option value="Category 3">시스템관리자</option>
+              </select>
+            </div>
+            <!--// 권한선택 -->
+
+            <!-- 개인 메뉴 영역 -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="javascript:void(0)" class="">
+                  <i class="ri-line-chart-line"></i> 대시보드
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="javascript:void(0)" class="">
+                  <i class="ri-user-settings-line"></i> 관리자
+              </li>
+              <li class="list-group-item">
+                <a href="javascript:void(0)" class="">
+                  <i class="ri-computer-line"></i> 강의실
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="javascript:void(0)" class="">
+                  <i class="ri-information-line"></i> 정보수정
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="javascript:void(0)" class="">
+                  <i class="ri-logout-box-r-line"></i> 로그아웃
+                </a>
+              </li>
+            </ul>
+            <!--// 개인 메뉴 영역 -->
+          </div>
+          <!--// 개인 메뉴 모달 -->
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg py-10">
+      <div class="container-fluid d-flex justify-content-between position-relative">
+        <div class="site-logo flex-shrink-0">
+          <a href="#" class="text-nowrap logo-img">
+            <img src="../../assets/images/logos/logo.png" alt="Logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSideMenu" aria-controls="offcanvasRight">
+          <i class="ti ti-menu-2 fs-8"></i>
+        </button>
+
+        <div class="d-flex align-items-center gnb_box">
+          <ul class="gnb d-flex align-items-center flex-wrap">
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">나의 강의실</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="javascript:void(0)">학습 결과 리포트</a>
+                </div>
+                <div class="menu-row">
+                  <a href="#">나의 강의실</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">비교과 프로그램</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="#">프로그램 목록</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">비학위 과정</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="#">과정 목록</a>
+                </div>
+                <div class="menu-row">
+                  <a href="#">공개강의</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">미래성장설계</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="#">전공 시뮬레이터</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">커리어 검색</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">상담</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="javascript:void(0)">예약하기</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">예약조회</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">상담내역</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">진단룸</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="#">셀프체크</a>
+                </div>
+                <div class="menu-row">
+                  <a href="#">핵심역량진단</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">기초학력진단</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">전공역량진단</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">커리어키트</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="#">이력서, 자기소개서 도우미</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">포트폴리오</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">활동 성과 관리</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">알림마당</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="javascript:void(0)">공지사항</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">Q&A</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">FAQ</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">자료실</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">매뉴얼</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="title text-dark">마이페이지</a>
+              <div class="gnb-submenu">
+                <div class="menu-row">
+                  <a href="#">대시보드</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">나의 수강현황</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">플래너</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">알림</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">찜</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">결제정보</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">최근활동</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">디지털배지</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">마일리지</a>
+                </div>
+                <div class="menu-row">
+                  <a href="javascript:void(0)">설정</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hover-dd mega-dropdown ">
+            <button class="nav-link" type="button" href="#" aria-expanded="false" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="ri-menu-2-line fs-7" title="전체 메뉴 보기"></i>
+            </button>
+
+            <!-- 전체 메뉴 -->
+            <div class="dropdown-menu dropdown-menu-nav border dropdown-menu-animate-up py-0 overflow-hidden">
+              <div class="position-relative">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="p-4 pb-3">
+
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="position-relative">
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">나의강의실</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">학습 결과 리포트</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">나의 강의실</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">비교과프로그램</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">프로그램 목록</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">비학위과정</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">과정목록</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">공개강의</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="position-relative">
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">미래성장설계</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">전공시뮬레이터</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">커리어검색</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">상담</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">예약하기</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">예약조회</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">상담내역</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">진단룸</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">셀프체크</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">핵심역량진단</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">기초학력진단</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">전공역량진단</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div clas="position-relative">
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">커리어키트</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">이력서, 자기소개서 도우미</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">포트폴리오</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">활동성과관리</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">알림마당</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">공지사항</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">Q&A</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">FAQ</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">자료실</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">매뉴얼</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div clas="position-relative">
+                            <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                              <div>
+                                <h6 class="mb-0">마이페이지</h6>
+                              </div>
+                            </a>
+                            <div class="p-3 mb-3">
+                              <ul>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">대시보드</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">나의 수강현황</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">플래너</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">알림</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">찜</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">결제정보</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">최근활동</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">디지털배지</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">마일리지</a>
+                                </li>
+                                <li class="py-1">
+                                  <a href="#" class="text-muted link-primary">설정</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// 전체 메뉴 -->
+          </div>
+
+          <button type="button" class="btn btn-total-search" data-bs-toggle="modal" data-bs-target="#searchModal" title="검색하기">
+            <i class="ri-search-line fs-5 text-dark fs-6"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- -------------------------------------------- -->
+  <!-- Header End -->
+  <!-- -------------------------------------------- -->
+
+  <!-- 브레드크럼 -->
+  <section class="py-3 bg-light-gray d-none d-md-block">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-end">
+        <div class="d-flex align-items-center gap-6">
+          <a href="../../main/frontend-landingpage.html" class="text-muted fw-bolder link-primary fs-3 text-uppercase">
+            홈
+          </a>
+          <iconify-icon icon="solar:alt-arrow-right-outline" class="fs-5 text-muted"></iconify-icon>
+          <a href="#" class="text-muted fw-bolder link-primary fs-3 text-uppercase">
+            1뎁스 메뉴
+          </a>
+          <iconify-icon icon="solar:alt-arrow-right-outline" class="fs-5 text-muted"></iconify-icon>
+          <a href="#" class="text-primary link-primary fw-bolder fs-3 text-uppercase">
+            2뎁스 메뉴
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--// 브레드크럼 -->
+
+  <!-- 검색 모달 -->
+  <div class="modal fade" id="searchModal" tabindex="-1" style="" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <button class="btn bg-primary text-white" type="button">검색</button>
+          </div>
+          <a href="javascript:void(0)" data-bs-dismiss="modal" class="lh-1">
+            <i class="ti ti-x fs-5 ms-3"></i>
+          </a>
+        </div>
+
+        <div class="modal-body">
+          <div class="simplebar-wrapper" style="margin: -16px;">
+
+            <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content">
+
+              <div class="simplebar-content" style="padding: 16px;">
+                <h5 class="mb-0 fs-5 p-1">최근 검색어</h5>
+
+                <ul class="list mb-0 py-2">
+                  <li class="p-1 mb-1 bg-hover-light-black rounded px-2 d-flex justify-content-between">
+                    <a href="javascript:void(0)" class="fs-4">강의계획서</a>
+                    <a href="javascript:void(0)">
+                      <i class="ri-delete-bin-line"></i>
+                    </a>
+                  </li>
+                  <li class="p-1 mb-1 bg-hover-light-black rounded px-2 d-flex justify-content-between">
+                    <a href="javascript:void(0)" class="fs-4">데이터 사이언스</a>
+                    <a href="javascript:void(0)">
+                      <i class="ri-delete-bin-line"></i>
+                    </a>
+                  </li>
+                  <li class="p-1 mb-1 bg-hover-light-black rounded px-2 d-flex justify-content-between">
+                    <a href="javascript:void(0)" class="fs-4">출석</a>
+                    <a href="javascript:void(0)">
+                      <i class="ri-delete-bin-line"></i>
+                    </a>
+                  </li>
+                  <li class="p-1 mb-1 bg-hover-light-black rounded px-2 d-flex justify-content-between">
+                    <a href="javascript:void(0)" class="fs-4">팀프로젝트</a>
+                    <a href="javascript:void(0)">
+                      <i class="ri-delete-bin-line"></i>
+                    </a>
+                  </li>
+                  <li class="p-1 mb-1 bg-hover-light-black rounded px-2 d-flex justify-content-between">
+                    <a href="javascript:void(0)" class="fs-4">수강신청</a>
+                    <a href="javascript:void(0)">
+                      <i class="ri-delete-bin-line"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 검색 모달 -->
+
+  <!-- -------------------------------------------- -->
+  <!-- Header End -->
+  <!-- -------------------------------------------- -->
+
+  <div class="main-wrapper overflow-hidden">
+    <!-- ------------------------------------- -->
+    <!-- 페이지 타이틀 Start -->
+    <!-- ------------------------------------- -->
+    <section class="bg-light-gray">
+      <div class="container-fluid pb-2">
+        <h2 class="fs-20 fw-bolder ">비신청 상담등록</h2>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- 페이지 타이틀 End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- List Start -->
+    <!-- ------------------------------------- -->
+    <section class="bg-light-gray pb-12">
+      <div class="container-fluid">
+
+
+        <div class="overflow-hidden" style="border-radius:10px;">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  <strong class="fs-5">Step 01. 학생기본정보</strong>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="form-horizontal r-separator">
+                    <div class="form-group p-3 mb-3 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">이름</label>
+                        <div class="col-sm-9 py-2">
+                          <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal_std_search">학생 조회하기</button> 류건우
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">학번</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          2025002365
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">대학</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          디유넷대학
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">학과 학부</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          전자공학과
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">연락처</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          010-1111-1111
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">이메일</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          hgd123@dunet.kr
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center py-3">
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modal_std_dashboard">
+                      <i class="ri-dashboard-line"></i> 학생 대시보드 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <strong class="fs-5">Step 02. 상담요청내역</strong>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <form class="form-horizontal r-separator">
+                    <div class="card-body">
+                      <h5 class="d-flex align-items-center gap-2">
+                        <span class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-dark text-white">1</span>상담유형
+                      </h5>
+                    </div>
+                    <div class="form-group p-3 mb-3">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end  col-form-label">상담 분야</label>
+                        <div class="col-sm-9">
+                          <select name="" id="" class="form-select">
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0">
+                      <div class="row">
+                        <label for="inputText1" class="col-sm-3 text-start text-sm-end  col-form-label">상담유형</label>
+                        <div class="col-sm-9">
+                          <select name="" id="" class="form-select">
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0">
+                      <div class="row">
+                        <label for="inputEmail4" class="col-sm-3 text-start text-sm-end  col-form-label">캠퍼스</label>
+                        <div class="col-sm-9">
+                          <select name="" id="" class="form-select">
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0">
+                      <div class="row">
+                        <label for="inputEmail4" class="col-sm-3 text-start text-sm-end  col-form-label">센터</label>
+                        <div class="col-sm-9">
+                          <select name="" id="" class="form-select">
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="d-flex align-items-center gap-2">
+                        <span class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-dark text-white">2</span>상담일정
+                      </h5>
+                    </div>
+                    <div class="form-group p-3 mb-3">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end  col-form-label">상담 일시</label>
+                        <div class="col-sm-9">
+                          <div class="input-group">
+                            <input type="date" class="form-control" />
+                            <input type="time" class="form-control" id="" placeholder="">
+                            <div class="input-group-text bg-light">
+                              ~
+                            </div>
+                            <input type="date" class="form-control" />
+                            <input type="time" class="form-control" id="" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="d-flex align-items-center gap-2">
+                        <span class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-dark text-white">3</span>상담자
+                      </h5>
+                    </div>
+                    <div class="form-group p-3 mb-3 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">이름</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          <ul class="d-flex flex-column flex-sm-row gap-3">
+                            <li>
+                              <div class="form-check">
+                                <input type="radio" id="answer1" name="answer" class="form-check-input" checked>
+                                <label class="form-check-label" for="answer1">나 (배수지)</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input type="radio" id="answer2" name="answer" class="form-check-input">
+                                <label class="form-check-label" for="answer2">다른 상담자</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input type="radio" id="answer3" name="answer" class="form-check-input">
+                                <label class="form-check-label" for="answer3">다른 상담교수</label>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <!-- 다른 상담자 선택 -->
+                          <div class="input-group mt-2">
+                            <select name="" id="" class="form-select">
+                              <option value="">다른 상담자 선택</option>
+                            </select>
+                          </div>
+                          <!--// 다른 상담자 선택 -->
+
+                          <!-- 다른 상담교수 선택 -->
+                          <div class="input-group mt-2">
+                            <select name="" id="" class="form-select">
+                              <option value="">대학</option>
+                            </select>
+                            <select name="" id="" class="form-select">
+                              <option value="">학부학과</option>
+                            </select>
+                            <select name="" id="" class="form-select">
+                              <option value="">상담교수 선택</option>
+                            </select>
+                          </div>
+                          <!--// 다른 상담교수 선택 -->
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">상담 장소</label>
+                        <div class="col-sm-9 text-dark">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="상담 장소를 입력해주세요." />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">연락처</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          010-1111-1111
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">이메일</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          dunet123@dunet.kr
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="d-flex align-items-center gap-2">
+                        <span class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-dark text-white">4</span>상세내역
+                      </h5>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">상담 제목</label>
+                        <div class="col-sm-9 text-dark">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="상담 제목을 입력해주세요." />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">상담 내용</label>
+                        <div class="col-sm-9 text-dark">
+                          <textarea class="form-control" id="inputEmail3" rows="5" placeholder="상담 내용을 입력해주세요."></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">파일첨부</label>
+                        <div class="col-sm-9">
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="form-control" id="inputGroupFile01">
+                            </div>
+                          </div>
+                          <div class="mt-2">(업로드 가능 최대용량: 10MB)</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="d-flex align-items-center gap-2">
+                        <span class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-dark text-white">5</span>설문내역
+                      </h5>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-3">
+                      </div>
+                      <div class="col-sm-9">
+                        <div class="mb-3 fs-4 fw-bolder">
+                          4. 프로그램 운영 시기 및 장소가 적절했다.
+                        </div>
+
+                        <ul>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer1" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer1">매우 그렇다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer2" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer2">그렇다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer3" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer3">보통이다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer4" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer4">그렇지않다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer5" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer5">매우 그렇지않다</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-sm-3">
+                      </div>
+                      <div class="col-sm-9">
+                        <div class="mb-3 fs-4 fw-bolder">
+                          5. 프로그램(강사)의 진행은 안정적이고 의사전달이 명확했다.
+                        </div>
+
+                        <ul>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer1" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer1">매우 그렇다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer2" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer2">그렇다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer3" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer3">보통이다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer4" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer4">그렇지않다</label>
+                            </div>
+                          </li>
+                          <li class="py-1">
+                            <div class="form-check">
+                              <input type="radio" id="answer5" name="answer" class="form-check-input">
+                              <label class="form-check-label" for="answer5">매우 그렇지않다</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-sm-3">
+                      </div>
+                      <div class="col-sm-9">
+                        <div class="mb-1 fs-4 fw-bolder">
+                          6. 향후 현장실습지원센터를 통하여 듣고 싶은 사전교육은 무엇입니까?
+                        </div>
+
+                        <div class="">
+                          <textarea class="form-control" id="inputEmail3" rows="5" placeholder=""></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <strong class="fs-5">Step 03. 상담결과내역</strong>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <form class="form-horizontal r-separator">
+                    <div class="card-body">
+                      <h5 class="d-flex align-items-center gap-2">
+                        <span class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-dark text-white">1</span>결과작성
+                      </h5>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">학생 공개 여부</label>
+                        <div class="col-sm-9 py-2 text-dark">
+                          <div class="d-flex flex-row gap-4">
+                            <div>
+                              <input type="radio" class="" name="public" id="public_on" />
+                              <label class="" for="public_on">공개</label>
+                            </div>
+
+                            <div>
+                              <input type="radio" class="" name="public" id="public_off" />
+                              <label class="" for="public_off">비공개</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">상담의견</label>
+                        <div class="col-sm-9 text-dark">
+                          <textarea class="form-control" id="inputEmail3" rows="5" placeholder="상담 의견을 입력해주세요."></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">파일첨부</label>
+                        <div class="col-sm-9">
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="form-control" id="inputGroupFile01">
+                            </div>
+                          </div>
+                          <div class="mt-2">(업로드 가능 최대용량: 10MB)</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="d-flex align-items-center gap-2">
+                        <span class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-dark text-white">2</span>기타관리
+                      </h5>
+                    </div>
+                    <div class="form-group mb-3 p-3 pt-0 fs-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 text-start text-sm-end py-2 col-form-label">상담 상태</label>
+                        <div class="col-sm-9 py-2 text-dark">
+
+                          <div class="d-flex flex-row gap-4 mb-2">
+                            <div>
+                              <input type="radio" class="" name="complete" id="complete_yet" />
+                              <label class="" for="complete_yet">미완료</label>
+                            </div>
+
+                            <div>
+                              <input type="radio" class="" name="complete" id="complete_pefect" />
+                              <label class="" for="complete_pefect">완료</label>
+                            </div>
+                          </div>
+
+                          ※ 비신청 상담 등록은 완료대기 또는 상담완료 상태로만 저장 가능합니다.
+                          <br />
+                          ※ 미완료로 저장 시, 학생에게 상담 일정, 답변이 보여지지 않으며, 완료로 저장 시에만, 지정한 학생의 화면에서 해당 상담이 기록됩니다.
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="py-3 d-flex justify-content-end gap-3">
+          <button type="button" class="btn btn-outline-dark">임시저장</button>
+          <button type="button" class="btn btn-primary">저장</button>
+        </div>
+
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- List End  -->
+    <!-- ------------------------------------- -->
+  </div>
+
+  <!-- Footer Start -->
+  <div class="bg-dark">
+    <div class="container-fluid">
+      <div class="row py-4">
+        <div class="col-lg-12">
+          <ul class="d-flex gap-9 mb-0">
+            <li>
+              <a href="javascript:void(0)" class="fs-3 text-secondary">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="fs-3 text-light">이메일무단수집거부</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-13 border-top border-dark-subtle">
+        <div class="text-white gap-3">
+          03737 서울특별시 서대문구 충정로29 동아일보사건물 15층 ㈜디유넷
+          <br />
+          TEL 02-6380-7206 FAX 02-364-7711
+
+          <p class="text-white opacity-50 mt-3 mb-0">COPYRIGHT ⓒ 2025 DUNET. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Mobile SideMenu Start -->
+  <!-- ------------------------------------- -->
+  <!-- Responsive Header Start -->
+  <!-- ------------------------------------- -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="mobileSideMenu" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="javascript:void(0)" class="text-nowrap logo-img mobile-logo">
+        <img src="../../assets/images/logos/logo.png" alt="Logo" />
+      </a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <!-- 사용자 정보 -->
+      <div class="mb-3">
+        <div class="d-flex align-items-center">
+          <div class="position-relative" style="width:90px;">
+            <div class="rounded-circle overflow-hidden">
+              <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+            </div>
+          </div>
+          <div class="px-2 text-dark">
+            <div class="mb-1">
+              <strong class="fs-5">유건우</strong>
+            </div>
+            <div class="fs-2 text-gray opacity-50">
+              다시 만나 반가워요!
+              <br />오늘도 한 걸음 성장하는 하루 되세요.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// 사용자 정보 -->
+
+      <div class="row m-1">
+        <div class="col-5 m-0 p-0">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">나의 강의실</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">비교과 프로그램</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">비학위 과정</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">미래성장설계</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">상담</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-6">진단룸</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-7">커리어키트</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-8">알림마당</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-9">마이페이지</a>
+          </div>
+        </div>
+        <div class="col-7 m-0 p-0">
+          <div class="position-relative p-3 overflow-auto" style="height:350px" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" tabindex="0">
+            <h6 id="list-item-1">
+              <i class="ri-tablet-line"></i> 나의 강의실
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">학습 결과 리포트</a>
+            </div>
+            <div class="py-1">
+              <a href="#">나의 강의실</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-2" class="pt-3 border-top">
+              <i class="ri-article-line"></i> 비교과 프로그램
+            </h6>
+            <p class="ps-2">
+            <div class="py-1">
+              <a href="#">프로그램 목록</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-3" class="pt-3 border-top">
+              <i class="ri-article-line"></i> 비학위 과정
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="#">과정 목록</a>
+            </div>
+            <div class="py-1">
+              <a href="#">공개강의</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-4" class="pt-3 border-top">
+              <i class="ri-plant-line"></i> 미래성장설계
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="#">전공 시뮬레이터</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">커리어 검색</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-5" class="pt-3 border-top">
+              <i class="ri-question-answer-line"></i> 상담
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">예약하기</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">예약조회</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">상담내역</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-6" class="pt-3 border-top">
+              <i class="ri-checkbox-circle-line"></i> 진단룸
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="#">셀프체크</a>
+            </div>
+            <div class="py-1">
+              <a href="#">핵심역량진단</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">기초학력진단</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">전공역량진단</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-7" class="pt-3 border-top">
+              <i class="ri-hourglass-line"></i> 커리어키트
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="#">이력서, 자기소개서 도우미</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">포트폴리오</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">활동 성과 관리</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-8" class="pt-3 border-top">
+              <i class="ri-notification-3-line"></i> 알림마당
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">공지사항</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">Q&A</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">FAQ</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">자료실</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">매뉴얼</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-9" class="pt-3 border-top">
+              <i class="ri-user-star-line"></i> 마이페이지
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="#">대시보드</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">나의 수강현황</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">플래너</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">알림</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">찜</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">결제정보</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">최근활동</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">디지털배지</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">마일리지</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">설정</a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-2 text-end">
+        <button type="button" class="btn">로그아웃</button>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- Responsive Header End -->
+  <!-- ------------------------------------- -->
+  <!-- Mobile SideMenu End -->
+
+  <!-- Floating Menu Start -->
+  <!-- ------------------------------------- -->
+  <!-- 플로팅 개인 메뉴 Start -->
+  <!-- ------------------------------------- -->
+  <div class="d-flex flex-column gap-1 position-fixed bottom-0 end-0 pb-7 translate-middle z-3">
+    <a href="#" class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-secondary text-white fs-6" data-bs-toggle="offcanvas" data-bs-target="#selfinfo_box" aria-controls="offcanvasRight">
+      <i class="ri-user-3-line"></i>
+    </a>
+    <a href="#" class="d-flex justify-content-center align-items-center round-40 rounded-circle bg-secondary text-white fs-6">
+      <i class="ri-question-line"></i>
+    </a>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="selfinfo_box" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+        학습자 프로필
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body py-0">
+
+      <!-- 즐겨찾기 편집 화면 -->
+      <div class="favorite-edit" style="display:none;">
+
+        <!-- 즐겨찾기 목록 -->
+        <div class="py-3">
+          <div class="d-flex align-items-top gap-2">
+            <div>
+              <a href="#" class="btn-favorite-back" title="뒤로가기">
+                <i class="ri-arrow-left-line fs-7"></i>
+              </a>
+            </div>
+            <div>
+              <h5 class="m-0">즐겨찾기 편집 <span class="fs-3 ms-1">
+                  <strong class="text-danger">5</strong>/6
+                </span>
+              </h5>
+              <div class="text-dark fs-2">아래에서 자주 이용하는 기능을 추가해보세요.</div>
+            </div>
+          </div>
+          <div class="p-2 row text-center mb-2">
+            <div class="col-4 py-2">
+              <a href="#" class="d-inline-block">
+                <span class="bg-primary-subtle rounded-2 p-2 d-inline-block position-relative">
+                  <!-- 북마크 -->
+                  <div class="d-flex justify-content-center align-items-center round-20 rounded-circle text-white bg-danger position-absolute" style="top:-5px; right:-5px;">
+                    <i class="ri-pushpin-fill fs-2"></i>
+                  </div>
+                  <!--// 북마크 -->
+                  <i class="ti ti-heart-plus fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">찜</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block position-relative">
+                  <!-- 북마크 -->
+                  <div class="d-flex justify-content-center align-items-center round-20 rounded-circle text-white bg-danger position-absolute" style="top:-5px; right:-5px;">
+                    <i class="ri-pushpin-fill fs-2"></i>
+                  </div>
+                  <!--// 북마크 -->
+                  <i class="ti ti-notebook fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">플래너</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block position-relative">
+                  <!-- 북마크 -->
+                  <div class="d-flex justify-content-center align-items-center round-20 rounded-circle text-white bg-danger position-absolute" style="top:-5px; right:-5px;">
+                    <i class="ri-pushpin-fill fs-2"></i>
+                  </div>
+                  <!--// 북마크 -->
+                  <i class="ti ti-calendar-time fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">상담예약</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block position-relative">
+                  <!-- 북마크 -->
+                  <div class="d-flex justify-content-center align-items-center round-20 rounded-circle text-white bg-danger position-absolute" style="top:-5px; right:-5px;">
+                    <i class="ri-pushpin-fill fs-2"></i>
+                  </div>
+                  <!--// 북마크 -->
+                  <i class="ti ti-chart-histogram fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">학습현황</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="미래의학과 정보의학">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block position-relative">
+                  <!-- 북마크 -->
+                  <div class="d-flex justify-content-center align-items-center round-20 rounded-circle text-white bg-danger position-absolute" style="top:-5px; right:-5px;">
+                    <i class="ri-pushpin-fill fs-2"></i>
+                  </div>
+                  <!--// 북마크 -->
+                  <i class="ti ti-device-imac fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">교과 강의실</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#" class="">
+                <span class="rounded-2 p-2 d-inline-block bg-hover-primary">
+                  <i class="ti ti-plus fs-8"></i>
+                </span>
+                <div class="pt-1 fs-2">추가하기</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--// 즐겨찾기 목록 -->
+
+        <!-- 등록 가능한 대메뉴별 목록 -->
+        <div>
+
+          <h6>
+            <i class="ri-check-line"></i> 나의 강의실
+          </h6>
+          <div class="pb-2 mb-3">
+
+            <div class="p-1 d-flex justify-content-between align-items-center border-top">
+              <div class="text-dark">학습 결과 리포트</div>
+              <div class="flex-shrink-0">
+                <a href="#" class="d-flex justify-content-center align-items-center round-32 rounded-circle text-white bg-dark opacity-25">
+                  <i class="ri-pushpin-line fs-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="p-1 d-flex justify-content-between align-items-center border-top">
+              <div class="text-dark">교과 강의실 <i class="ri-arrow-drop-right-line"></i> 미래의학과 정보의학 정보의학 정보의학 정보의학</div>
+              <div class="flex-shrink-0">
+                <a href="#" class="d-flex justify-content-center align-items-center round-32 rounded-circle text-white bg-dark opacity-25">
+                  <i class="ri-pushpin-fill fs-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="p-1 d-flex justify-content-between align-items-center border-top">
+              <div class="text-dark">교과 강의실 <i class="ri-arrow-drop-right-line"></i> 병태생리학 기초</div>
+              <div class="flex-shrink-0">
+                <a href="#" class="d-flex justify-content-center align-items-center round-32 rounded-circle text-white bg-danger">
+                  <i class="ri-pushpin-fill fs-4"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <h6>
+            <i class="ri-check-line"></i> 미래성장설계
+          </h6>
+          <div class="pb-2 mb-3">
+
+            <div class="p-1 d-flex justify-content-between align-items-center border-top">
+              <div class="text-dark">전공 시뮬레이터</div>
+              <div class="flex-shrink-0">
+                <a href="#" class="d-flex justify-content-center align-items-center round-32 rounded-circle text-white bg-dark opacity-25">
+                  <i class="ri-pushpin-line fs-4"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <h6>
+            <i class="ri-check-line"></i> 마이페이지
+          </h6>
+          <div class="pb-2 mb-3">
+
+            <div class="p-1 d-flex justify-content-between align-items-center border-top">
+              <div class="text-dark">마일리지</div>
+              <div class="flex-shrink-0">
+                <a href="#" class="d-flex justify-content-center align-items-center round-32 rounded-circle text-white bg-dark opacity-25">
+                  <i class="ri-pushpin-line fs-4"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 저장/취소 버튼 -->
+          <div class="d-flex justify-content-center gap-2 py-3 border-top">
+            <button type="button" class="btn btn-outline-dark">취소</button>
+            <button type="button" class="btn btn-primary">저장</button>
+          </div>
+          <!--// 저장/취소 버튼 -->
+
+        </div>
+        <!--// 등록 가능한 대메뉴별 목록 -->
+
+      </div>
+      <!--// 즐겨찾기 편집 화면 -->
+
+      <!-- 알림 목록 화면 -->
+
+      <!-- 기본 화면 -->
+      <div class="default-view">
+
+        <!-- 사용자 정보 -->
+        <div class="p-3 position-relative">
+
+          <!-- <div class="position-absolute top-5 end-0">
+          <a href="#" class="d-inline-block pe-6 position-relative">
+            <i class="ri-notification-3-line fs-5"></i>
+            <div class="d-flex justify-content-center align-items-center round-20 rounded-circle text-white bg-danger fs-2 position-absolute bottom-50 end-0">
+              <span class="">33</span>  
+            </div>
+          </a>
+        </div>-->
+
+          <div class="d-flex align-items-center">
+            <div class="position-relative flex-shrink-0" style="width:70px;">
+              <div class="rounded-circle overflow-hidden">
+                <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+              </div>
+            </div>
+            <div class="px-2 text-dark">
+              <div class="mb-1">
+                <strong class="fs-5">류건우</strong>
+              </div>
+              <div class="mb-1">
+                <select class="form-select" data-placeholder="Choose a Category" tabindex="1" style="padding:5px 10px;">
+                  <option value="Category 1">학생</option>
+                  <option selected value="Category 2">교수자</option>
+                  <option value="Category 3">시스템관리자</option>
+                </select>
+              </div>
+              <div class="">
+                <ul class="fs-2">
+                  <li class="d-flex gap-2">
+                    <div>학번</div>
+                    <div>2025002365</div>
+                  </li>
+                  <li class="d-flex gap-2">
+                    <div>전공</div>
+                    <div>전자공학과</div>
+                  </li>
+                  <li class="d-flex gap-2">
+                    <div>학번</div>
+                    <div>hgd123@dunet.kr</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// 사용자 정보 -->
+
+        <!-- 활동지수 -->
+        <div class="p-3 mb-2 rounded-2 border-top">
+          <h6>활동지수</h6>
+          <div class="py-1">
+            <div class="text-center text-dark">
+              <strong class="fs-10">78.7</strong>/ 100
+            </div>
+            <div class="p-2 rounded-1 text-center text-dark bg-cyan bg-opacity-25">
+              <strong class="text-cyan">상상력</strong>을
+              <br />
+              조금 더 신경 써보면 좋을 것 같아요 😊
+            </div>
+          </div>
+        </div>
+        <!--// 활동지수 -->
+
+        <!-- 즐겨찾기 -->
+        <div class="p-3 rounded-2 bg-light-gray">
+          <div class="d-flex justify-content-between align-items-center m-1">
+            <h6 class="m-0">즐겨찾기</h6>
+            <a href="#" class="fs-2 btn-favorite-edit d-flex align-items-center gap-1">편집 <i class="ri-settings-4-line"></i>
+            </a>
+          </div>
+          <div class="row text-center mb-2">
+            <div class="col-4 py-2">
+              <a href="#" class="d-inline-block">
+                <span class="bg-primary-subtle rounded-2 p-2 d-inline-block">
+                  <i class="ti ti-heart-plus fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">찜</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block">
+                  <i class="ti ti-notebook fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">플래너</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block">
+                  <i class="ti ti-calendar-time fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">상담예약</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block">
+                  <i class="ti ti-chart-histogram fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">학습현황</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#">
+                <span class="bg-primary-subtle rounded-2 p-2 text-white d-inline-block">
+                  <i class="ti ti-device-imac fs-8 text-primary"></i>
+                </span>
+                <div class="pt-1 fs-2">교과 강의실</div>
+              </a>
+            </div>
+            <div class="col-4 py-2">
+              <a href="#" class="">
+                <span class="rounded-2 p-2 d-inline-block bg-hover-primary">
+                  <i class="ti ti-plus fs-8"></i>
+                </span>
+                <div class="pt-1 fs-2">추가하기</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--// 즐겨찾기 -->
+
+        <!-- 획득 배지 -->
+        <div class="p-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6>획득 배지</h6>
+            <div>
+              <a href="#" class="fs-2 d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="top">더보기<i class="ri-add-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 text-dark mt-2">
+
+            <div class="d-flex align-items-center justify-content-center gap-1">
+              <span class="d-flex justify-content-center align-items-center rounded-circle bg-danger" style="width:30px; height:30px;">
+                <iconify-icon icon="solar:medal-ribbon-star-bold" class="text-white fs-5"></iconify-icon>
+              </span>
+              <div class="fs-2">성실의 아이콘</div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-1">
+              <span class="d-flex justify-content-center align-items-center rounded-circle bg-warning" style="width:30px; height:30px;">
+                <iconify-icon icon="solar:medal-ribbons-star-bold" class="text-white fs-5"></iconify-icon>
+              </span>
+              <div class="fs-2">열정의 아이콘</div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-1">
+              <span class="d-flex justify-content-center align-items-center rounded-circle bg-cyan" style="width:30px; height:30px;">
+                <iconify-icon icon="solar:medal-ribbons-star-bold-duotone" class="text-white fs-5"></iconify-icon>
+              </span>
+              <div class="fs-2">금자탑 아이콘</div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-1">
+              <span class="d-flex justify-content-center align-items-center rounded-circle bg-info" style="width:30px; height:30px;">
+                <iconify-icon icon="solar:medal-star-bold" class="text-white fs-5"></iconify-icon>
+              </span>
+              <div class="fs-2">협업의 아이콘</div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-1">
+              <span class="d-flex justify-content-center align-items-center rounded-circle bg-secondary" style="width:30px; height:30px;">
+                <iconify-icon icon="solar:medal-star-bold-duotone" class="text-white fs-5"></iconify-icon>
+              </span>
+              <div class="fs-2">나눔의 아이콘</div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-1">
+              <span class="d-flex justify-content-center align-items-center rounded-circle bg-primary" style="width:30px; height:30px;">
+                <iconify-icon icon="solar:medal-star-circle-bold" class="text-white fs-5"></iconify-icon>
+              </span>
+              <div class="fs-2">꾸준함의 아이콘</div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-1">
+              <span class="d-flex justify-content-center align-items-center rounded-circle bg-success" style="width:30px; height:30px;">
+                <iconify-icon icon="solar:medal-star-square-bold" class="text-white fs-5"></iconify-icon>
+              </span>
+              <div class="fs-2">성실의 아이콘</div>
+            </div>
+
+          </div>
+        </div>
+        <!--// 획득 배지 -->
+
+        <!-- 최근활동 -->
+        <div class="p-3">
+          <h6>최근활동</h6>
+          <div class="text-dark mt-2">
+
+            <ul class="active_last overflow-auto" data-bs-spy="scroll">
+              <li class="d-flex justify-content-between p-1">
+                <div>
+                  <a href="#" class="bg-hover-primary">나의 강의실 > 인간관계와 자기표현(010반) > 학습요소 > 자료실</a>
+                </div>
+                <div>
+                  <a href="#">
+                    <i class="ri-close-circle-line"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li class="d-flex justify-content-between p-1">
+                <div>
+                  <a href="#" class="bg-hover-primary">강의실 > 미디어커뮤니케이션</a>
+                </div>
+                <div>
+                  <a href="#">
+                    <i class="ri-close-circle-line"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li class="d-flex justify-content-between p-1">
+                <div>
+                  <a href="#" class="bg-hover-primary">강의실 > 스토리텔링창작실습(1)</a>
+                </div>
+                <div>
+                  <a href="#">
+                    <i class="ri-close-circle-line"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li class="d-flex justify-content-between p-1">
+                <div>
+                  <a href="#" class="bg-hover-primary">학습 보강 > 창작과 글쓰기</a>
+                </div>
+                <div>
+                  <a href="#">
+                    <i class="ri-close-circle-line"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <!--// 최근활동 -->
+
+      </div>
+      <!--// 기본 화면 -->
+
+    </div>
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- 플로팅 개인 메뉴 End -->
+  <!-- ------------------------------------- -->
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('a.btn-favorite-edit').forEach(function(el){
+      el.addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector('.default-view').style.display = 'none';
+        document.querySelector('.favorite-edit').style.display = '';
+      });
+    });
+  });
+</script>
+  <!-- Floating Menu End -->
+
+  <!-- Scroll Top -->
+  <a href="javascript:void(0)" class="top-btn btn btn-primary d-flex align-items-center justify-content-center round-54 p-0 rounded-circle">
+    <i class="ti ti-arrow-up fs-7"></i>
+  </a>
+
+
+  <!-- 학생 조회 modal content -->
+  <div id="modal_std_search" class="modal fade" tabindex="-1" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal-colored-header bg-primary text-white">
+          <h4 class="modal-title text-white" id="primary-header-modalLabel">
+            학생 조회
+          </h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="table-responsive border rounded-1 mb-4">
+            <table class="table text-nowrap mb-0">
+              <colgroup>
+                <col width="20%" />
+                <col width="" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th class="">캠퍼스</th>
+                  <td class="">
+                    <div class="d-flex flex-row gap-4">
+                      <div>
+                        <input type="radio" class="" name="public" id="public_on" />
+                        <label class="" for="public_on">공개</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" class="" name="public" id="public_off" />
+                        <label class="" for="public_off">비공개</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">대학/학부,학과</th>
+                  <td class="">
+                    <div class="input-group">
+                      <select name="" id="" class="form-select w-25">
+                        <option value="">선택</option>
+                      </select>
+                      <select name="" id="" class="form-select w-25">
+                        <option value="">선택</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">학년</th>
+                  <td class="">
+                    <div class="d-flex flex-row gap-4">
+                      <div>
+                        <input type="checkbox" class="" name="grade" id="grade1" />
+                        <label class="" for="grade1">전체</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" class="" name="grade" id="grade2" />
+                        <label class="" for="grade2">1학년</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" class="" name="grade" id="grade3" />
+                        <label class="" for="grade3">2학년</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" class="" name="grade" id="grade4" />
+                        <label class="" for="grade4">3학년</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" class="" name="grade" id="grade5" />
+                        <label class="" for="grade5">4학년</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">검색어</th>
+                  <td class="">
+                    <div class="input-group">
+                      <select name="" id="" class="form-select w-25">
+                        <option value="">학생명</option>
+                      </select>
+                      <input type="text" class="form-control w-50">
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="">성별</th>
+                  <td>
+                    <div class="d-flex flex-row gap-4">
+                      <div>
+                        <input type="radio" class="" name="sex" id="sex_total" />
+                        <label class="" for="sex_total">전체</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" class="" name="sex" id="sex1" />
+                        <label class="" for="sex1">남</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" class="" name="sex" id="sex2" />
+                        <label class="" for="sex2">여</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">검색</button>
+          </div>
+
+
+          <div class="mt-5 mb-2">
+            검색 <strong class="text-cyan">23</strong>개 / 전체 103개
+          </div>
+
+          <div class="table-responsive mb-4 border rounded-1">
+            <table class="table text-nowrap mb-0 align-middle text-center">
+              <colgroup>
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+              </colgroup>
+              <thead class="">
+                <tr>
+                  <th>번호</th>
+                  <th>이름</th>
+                  <th>학번</th>
+                  <th>성별</th>
+                  <th>대학</th>
+                  <th>학부,학과</th>
+                  <th>학년</th>
+                  <th>관리</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>홍길동</td>
+                  <td>202412541</td>
+                  <td>남</td>
+                  <td>한양대학교</td>
+                  <td>건축공학과</td>
+                  <td>2학년</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="8">검색된 학생이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">닫기</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- 학생 대시보드 modal content -->
+  <div id="modal_std_dashboard" class="modal fade" tabindex="-1" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-header modal-colored-header bg-primary text-white">
+          <h4 class="modal-title text-white" id="primary-header-modalLabel">
+            학생 대시보드
+          </h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row">
+
+            <!-- 학생 프로필 -->
+            <div class="col-lg-12">
+              <div class="d-block d-sm-flex justify-content-between align-items-center gap-9 py-5 px-0 px-md-5">
+                <div class="d-block d-sm-flex align-items-center gap-2 text-center text-sm-start">
+                  <div class="position-relative m-auto" style="width:130px;">
+                    <a href="#" class="d-flex fs-6 rounded-pill overflow-hidden text-bg-dark position-absolute bottom-0 align-items-center justify-content-center" style="width:36px; height:36px; right:0;">
+                      <i class="ri-camera-line"></i>
+                    </a>
+                    <div class="rounded-circle overflow-hidden">
+                      <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+                    </div>
+                  </div>
+                  <div class="px-2 text-dark mt-2 mt-sm-0">
+                    <div class="mb-1">
+                      <strong class="fs-6">백강우님의 대시보드</strong>
+                    </div>
+                    <div class="d-block d-lg-flex align-items-center gap-3 fs-4">
+                      <div class="d-flex flex-wrap align-items-center">
+                        <select name="" id="" class="form-select bg-white">
+                          <option value="">2025학년도 1학기</option>
+                        </select>
+                      </div>
+                      <div>
+                        <strong class="text-cyan">D-63</strong>
+                      </div>
+                      <div>
+                        <div>
+                          <i class="ri-calendar-2-line"></i> 2025-03-03 ~ 2025-07-25
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-block d-sm-flex gap-2 mt-2 mt-sm-0 text-center text-sm-end">
+                  <button type="button" class="btn btn-white border">
+                    <i class="ri-add-line"></i> 카드 추가
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="ri-download-cloud-line"></i> 학습 리포트
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--// 학생 프로필 -->
+
+            <div class="mb-2">
+              <div class="form-check form-switch d-flex justify-content-end align-items-center mb-3 mb-md-0 fs-3 gap-1">
+                <input class="form-check-input" type="checkbox" id="color-primary">
+                <label class="form-check-label" for="color-primary">조회 기간 custom</label>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card" style="background-color:#c4dfff;">
+                <div class="py-3 px-4">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="text-dark">
+                      <div class="fs-2">총 학습시간</div>
+                      <h4 class="p-0 m-0 fs-8 fw-normal">20분 27초</h4>
+                      <div class="fs-2 mb-0 fw-bold text-cyan">지난 학기 대비 + 12%</div>
+                    </div>
+                    <div class="text-end">
+                      <i class="ri-time-line display-6 text-dark opacity-50"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card" style="background-color:#c2ece0;">
+                <div class="py-3 px-4">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="text-dark">
+                      <div class="fs-2">오늘 할 일</div>
+                      <h4 class="p-0 m-0 fs-8 fw-normal">3건</h4>
+                      <div class="fs-2 mb-0 fw-bold opacity-0">+ 6학점 이번 학기</div>
+                    </div>
+                    <div class="text-end">
+                      <i class="ri-list-check-3 display-6 text-dark opacity-50"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card" style="background-color:#d7eec7;">
+                <div class="py-3 px-4">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="text-dark">
+                      <div class="fs-2">이번주 접속일 수</div>
+                      <h4 class="p-0 m-0 fs-8 fw-normal">4일</h4>
+                      <div class="fs-2 mb-0 text-success fw-bold">연속 학습 4일</div>
+                    </div>
+                    <div class="text-end">
+                      <i class="ri-login-box-line display-6 text-dark opacity-50"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card" style="background-color:#eff2b8;">
+                <div class="py-3 px-4">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="text-dark">
+                      <div class="fs-2">총 보유 뱃지</div>
+                      <h4 class="p-0 m-0 fs-8 fw-normal">12개</h4>
+                      <div class="fs-2 mb-0 text-success fw-bold opacity-0">
+                        <i class="ri-circle-fill"></i> 목표까지 8%
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <i class="ri-verified-badge-line display-6 text-dark opacity-50"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">
+                      학습현황
+                      <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                    <div>
+                      <select class="form-select-sm bg-white" data-placeholder="Choose a Category" tabindex="1" title="기간 선택">
+                        <option value="Category 1">최근 7일</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="p-3 text-dark">
+                    학습지수 <span class="ms-1 text-success fw-bold">
+                      <i class="ri-circle-fill"></i> 양호
+                    </span>
+                  </div>
+                </div>
+                <div class="card-body p-3">
+                  출석률, 접속률, 학습 시간을 종합하여 학년 평균과 비교한 학습 참여 현황입니다
+
+                  <div class="row">
+
+                    <div class="col-sm-12 text-center py-3">
+
+                      <!-- 출석률 -->
+                      <div class="d-flex align-items-center w-100 py-4">
+                        <div class="text-end pe-2 flex-shrink-0 text-dark" style="width:60px;">출석율</div>
+
+                        <div class="position-relative flex-shrink-1 w-100">
+
+                          <!-- 나 -->
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:15px;">
+                            <div class="progress-bar bg-cyan" style="width: 83%"></div>
+                          </div>
+
+                          <!-- 나 -->
+                          <div class="position-absolute" style="left:83%; top:-22px; margin-left:-25px;">
+                            <span class="ms-1 text-dark fs-2 fw-bold">나 83%</span>
+                          </div>
+
+                          <!-- 평균 -->
+                          <div class="position-absolute d-flex flex-column align-items-center" style="width:70px; left:50%; bottom:-22px; margin-left:-35px;">
+                            <div class="p-1 bg-danger rounded-circle">
+                              <div class="bg-white rounded-circle" style="width:6px; height:6px;"></div>
+                            </div>
+                            <div class="mt-1 text-danger fs-2 fw-bold" style="left:50%;">평균 50%</div>
+                          </div>
+
+                        </div>
+
+                        <div class="text-end flex-shrink-0" style="width:50px;">
+                          <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">100%</h6>
+                        </div>
+                      </div>
+                      <!--// 출석률 -->
+
+                      <!-- 접속률 -->
+                      <div class="d-flex align-items-center w-100 py-4">
+                        <div class="text-end pe-2 flex-shrink-0 text-dark" style="width:60px;">접속율</div>
+
+                        <div class="position-relative flex-shrink-1 w-100">
+
+                          <!-- 나 -->
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:15px;">
+                            <div class="progress-bar bg-cyan" style="width: 39%"></div>
+                          </div>
+
+                          <!-- 나 -->
+                          <div class="position-absolute" style="left:39%; top:-22px; margin-left:-25px;">
+                            <span class="ms-1 text-dark fs-2 fw-bold">나 39%</span>
+                          </div>
+
+                          <!-- 평균 -->
+                          <div class="position-absolute d-flex flex-column align-items-center" style="width:70px; left:43%; bottom:-22px; margin-left:-35px;">
+                            <div class="p-1 bg-danger rounded-circle">
+                              <div class="bg-white rounded-circle" style="width:6px; height:6px;"></div>
+                            </div>
+                            <div class="mt-1 text-danger fs-2 fw-bold" style="left:43%;">평균 43%</div>
+                          </div>
+
+                        </div>
+
+                        <div class="text-end flex-shrink-0" style="width:50px;">
+                          <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">100%</h6>
+                        </div>
+                      </div>
+                      <!--// 접속률 -->
+
+                      <!-- 학습시간 -->
+                      <div class="d-flex align-items-center w-100 py-4">
+                        <div class="text-end pe-2 flex-shrink-0 text-dark" style="width:60px;">학습시간</div>
+
+                        <div class="position-relative flex-shrink-1 w-100">
+
+                          <!-- 나 -->
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:15px;">
+                            <div class="progress-bar bg-cyan" style="width: 60%"></div>
+                          </div>
+
+                          <!-- 나 -->
+                          <div class="position-absolute" style="left:60%; top:-22px; margin-left:-25px;">
+                            <span class="ms-1 text-dark fs-2 fw-bold">나 48분</span>
+                          </div>
+
+                          <!-- 평균 -->
+                          <div class="position-absolute d-flex flex-column align-items-center" style="width:70px; left:100%; bottom:-22px; margin-left:-35px;">
+                            <div class="p-1 bg-danger rounded-circle">
+                              <div class="bg-white rounded-circle" style="width:6px; height:6px;"></div>
+                            </div>
+                            <div class="mt-1 text-danger fs-2 fw-bold" style="left:100%;">평균 78분</div>
+                          </div>
+
+                        </div>
+
+                        <div class="text-end flex-shrink-0" style="width:50px;">
+                          <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">분</h6>
+                        </div>
+                      </div>
+                      <!--// 학습시간 -->
+
+                    </div>
+
+                    <div class="col-6 col-lg-4 mb-2">
+                      <div class="border rounded-2 p-3">
+                        <div class="text-dark text-center">평균 대비 출석률</div>
+                        <div class="text-center">
+                          <span class="fs-8 text-cyan">+13%</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-lg-4 mb-2">
+                      <div class="border rounded-2 p-3">
+                        <div class="text-dark text-center">평균 대비 진도율</div>
+                        <div class="text-center">
+                          <span class="fs-8 text-danger">-4%</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-lg-4 mb-2">
+                      <div class="border rounded-2 p-3">
+                        <div class="text-dark text-center">평균 대비 학습시간</div>
+                        <div class="text-center">
+                          <span class="fs-8 text-danger">-5분</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card">
+                <!-- To-Do List -->
+                <div class="d-flex justify-content-between border-bottom align-items-center">
+                  <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">To-Do List <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                      <i class="ri-information-line"></i>
+                    </a>
+                  </h5>
+                  <div class="p-3 text-dark">
+                    2025-10-01
+                  </div>
+                </div>
+
+                <div class="card-body py-3 px-3 overflow-auto" data-bs-spy="scroll" style="height:385px;">
+                  <div class="d-flex justify-content-between align-items-center border-bottom">
+                    <div class="form-check py-2">
+                      <input class="form-check-input" type="checkbox" value="" id="" />
+                      <label class="form-check-label text-dark fw-bold" for="">
+                        데이터 구조 과제 제출
+                        <span class="badge rounded-pill bg-dark bg-opacity-10 text-dark">과제</span>
+                      </label>
+                      <div class="fs-3">
+                        데이터 구조와 알고리즘
+                        <br />
+                        마감: 2025-06-05
+                      </div>
+                    </div>
+
+                    <!-- <div class="d-flex gap-3 text-end fs-6">
+									<a href="#" class=""  data-bs-toggle="tooltip" data-bs-placement="top" title="수정"><i class="ri-edit-2-line"></i></a>
+									<a href="#" class=""  data-bs-toggle="tooltip" data-bs-placement="top" title="삭제"><i class="ri-delete-bin-line"></i></a>
+									</div> -->
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center border-bottom">
+                    <div class="form-check py-2">
+                      <input class="form-check-input" type="checkbox" value="" id="" checked />
+                      <label class="form-check-label line-th fw-bold" for="">
+                        <del>알고리즘 퀴즈 응시</del>
+                        <span class="badge rounded-pill bg-dark bg-opacity-10 text-dark">시험</span>
+                      </label>
+                      <div class="fs-3">
+                        웹 개발 기초
+                        <br />
+                        마감: 2025-05-31
+                      </div>
+                    </div>
+
+                    <!-- <div class="d-flex gap-3 text-end fs-6" style="">
+									<a href="#" class=""  data-bs-toggle="tooltip" data-bs-placement="top" title="수정"><i class="ri-edit-2-line"></i></a>
+									<a href="#" class=""  data-bs-toggle="tooltip" data-bs-placement="top" title="삭제"><i class="ri-delete-bin-line"></i></a>
+									</div> -->
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center border-bottom">
+                    <div class="form-check py-2 ">
+                      <input class="form-check-input" type="checkbox" value="" id="" />
+                      <label class="form-check-label text-dark fw-bold" for="">
+                        프로젝트 팀 미팅
+                      </label>
+                      <div class="fs-2">마감: 2025-06-05</div>
+                    </div>
+
+                    <div class="d-flex gap-3 text-end fs-6">
+                      <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" title="수정">
+                        <i class="ri-edit-2-line"></i>
+                      </a>
+                      <a href="#" class="" data-bs-toggle="tooltip" data-bs-placement="top" title="삭제">
+                        <i class="ri-delete-bin-line"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center border-bottom">
+                    <div class="form-check py-2 ">
+                      <input class="form-check-input" type="checkbox" value="" id="" />
+                      <label class="form-check-label text-dark fw-bold" for="">
+                        비전 설정과 자기주도 성장 리포트 제출
+                        <span class="badge rounded-pill bg-dark bg-opacity-10 text-dark">시험</span>
+                      </label>
+                      <div class="fs-2">마감: 2025-06-05</div>
+                    </div>
+
+                    <!-- <div class="d-flex gap-3 text-end fs-6">
+									<a href="#" class=""  data-bs-toggle="tooltip" data-bs-placement="top" title="수정"><i class="ri-edit-2-line"></i></a>
+									<a href="#" class=""  data-bs-toggle="tooltip" data-bs-placement="top" title="삭제"><i class="ri-delete-bin-line"></i></a>
+									</div> -->
+                  </div>
+
+                  <div class="text-center pt-3">
+                    <a href="#" class="text-dark">일정 전체 보기 <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                  </div>
+
+                </div>
+                <!--// To-Do List -->
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">최근 학습한 온라인 콘텐츠 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body p-3">
+
+                  <div class="d-block d-md-flex justify-content-between align-items-center h-100 gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-2 bg-cyan bg-opacity-10 overflow-hidden" style="width:70px; height:70px;">
+                          <iconify-icon icon="solar:notebook-square-bold" class="fs-10 text-cyan"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-dark fw-bold">명화로 보는 문학</div>
+                        <div class="text-dark">미술 세계로의 시간 여행</div>
+                      </div>
+                    </div>
+                    <div class="flex-shrink-0 mt-3 pt-3 mt-md-0 pt-md-0 text-end border-top border-md-none">
+                      <button class="btn btn-sm btn-primary">이어서 학습 <i class="ri-play-circle-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card">
+
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">나의 활동유형 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                    <div>
+                      <select class="form-select-sm bg-white" data-placeholder="Choose a Category" tabindex="1" title="기간 선택">
+                        <option value="Category 1">최근 7일</option>
+                        <option value="Category 1">최근 30일</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card-body p-3">
+
+                  <div class="d-block d-md-flex justify-content-center align-items-center h-100 gap-5">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-primary bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:play-circle-bold" class="fs-10 text-primary"></iconify-icon>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="fs-5 text-primary fw-bold">콘텐츠 몰입형</div>
+                        <div class="text-dark">학습 콘텐츠를 하나도 놓치지 않고 잘 따라오고 있어요. 집중력이 아주 뛰어나네요!</div>
+                      </div>
+                    </div>
+
+                    <div class="flex-shrink-0 mt-3 mt-md-0 border-top text-center border rounded-2">
+                      <div class="p-2 px-3 border-bottom">
+                        <strong class="text-dark">
+                          <i class="ri-check-line"></i> 이런 모습도 있어요.
+                        </strong>
+                      </div>
+                      <ul class="p-2 px-3 d-flex flex-column gap-1">
+                        <li class="d-flex align-items-center gap-1">
+                          <span class="d-flex justify-content-center align-items-center rounded-circle bg-secondary bg-opacity-10" style="width:36px; height:36px;">
+                            <iconify-icon icon="solar:pen-new-round-bold-duotone" class="text-secondary fs-7"></iconify-icon>
+                          </span>
+                          <span class="text-secondary fw-bold">과제 성실형</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-1">
+                          <span class="d-flex justify-content-center align-items-center rounded-circle bg-info bg-opacity-10" style="width:36px; height:36px;">
+                            <iconify-icon icon="solar:sort-by-time-bold-duotone" class="text-info fs-7"></iconify-icon>
+                          </span>
+                          <span class="text-info fw-bold">꾸준함 유지형</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- 활동유형 목록 -->
+                  <div class="d-flex flex-column justify-content-center align-items-start h-100 gap-2 mt-3 pt-3 border-top">
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-primary bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:play-circle-bold" class="fs-10 text-primary"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-primary fw-bold">콘텐츠 몰입형</div>
+                        <div class="text-dark">학습 콘텐츠를 하나도 놓치지 않고 잘 따라오고 있어요. 집중력이 아주 뛰어나네요!</div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-secondary bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:pen-new-round-bold-duotone" class="fs-10 text-secondary"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-secondary fw-bold">과제 성실형</div>
+                        <div class="text-dark">기한을 잘 지키며 과제를 성실하게 수행했어요. 책임감 있는 학습 습관, 멋져요!</div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-info bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:sort-by-time-bold-duotone" class="fs-10 text-info"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-info fw-bold">꾸준함 유지형</div>
+                        <div class="text-dark">조금씩, 꾸준하게. 성장은 하루하루 쌓이는 습관에서 시작돼요. 멋지게 이어가고 있어요!</div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-danger bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:chat-round-call-bold" class="fs-10 text-danger"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-danger fw-bold">참여 중심형</div>
+                        <div class="text-dark">다른 친구들과의 소통도 활발하네요! 함께 배우는 힘을 잘 활용하고 있어요.</div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-warning bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:map-point-search-bold" class="fs-10 text-warning"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-warning fw-bold">진로 탐색형</div>
+                        <div class="text-dark">미래를 향한 탐색이 활발해요. 자신에게 맞는 길을 찾기 위해 잘 준비하고 있네요!</div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-success bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:face-scan-circle-bold" class="fs-10 text-success"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-success fw-bold">비교과 실천형</div>
+                        <div class="text-dark">배움은 교실 밖에서도 이어지고 있어요. 다양한 경험으로 자신을 풍성하게 만들고 있네요!</div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="flex-shrink-0">
+                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-dark bg-opacity-10 overflow-hidden" style="width:80px; height:80px;">
+                          <iconify-icon icon="solar:card-search-bold" class="fs-10 text-mute"></iconify-icon>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="fs-5 text-dark fw-bold">탐색형</div>
+                        <div class="text-dark">다양한 기능을 살펴보았네요. 이제 본격적으로 학습을 시작해볼까요?</div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--// 활동유형 목록 -->
+
+                </div>
+                <!--// To-Do List -->
+              </div>
+            </div>
+
+            <!-- 나의 수강정보 및 학습 활동 일정 -->
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">나의 수강정보 및 학습 활동 일정 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                      <i class="ri-information-line"></i>
+                    </a>
+                  </h5>
+                  <div class="p-3">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-bs-toggle="tab" href="#this_week" role="tab">
+                            <span>이번 주</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-bs-toggle="tab" href="#next_week" role="tab">
+                            <span>다음 주</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="w-40">
+                        <div class="d-flex justify-content-end align-items-center w-100">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:calc(100% - 50px);">
+                            <div class="progress-bar bg-primary" style="width: 83%"></div>
+                          </div>
+                          <div class="text-end" style="width:50px;">
+                            <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">83%</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="this_week" role="tabpanel">
+                        <div class="py-3">
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="card p-3 border-2">
+                                <div class="mb-2">
+                                  <span class="bedge px-2 rounded-2 border">교과</span>
+                                  <span class="text-dark ms-2">2주차</span>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                  <div class="text-center">
+                                    <div class="d-flex flex-column align-items-center justify-content-center text-bg-primary rounded-circle round-48">
+                                      <i class="ri-movie-line fs-6 fw-normal"></i>
+                                    </div>
+                                    <div class="fs-2 fw-bold">동영상</div>
+                                  </div>
+                                  <div>
+                                    <h5 class="m-0">현대인의 정신건강과 자기 발견</h5>
+                                    <span>김상진 교수</span>
+                                  </div>
+                                </div>
+
+                                <div class="py-2">
+                                  <i class="ri-time-line"></i> 2025-06-25 업데이트
+                                </div>
+
+                                <div class="d-flex justify-content-end align-items-center w-100">
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:calc(100% - 50px);">
+                                    <div class="progress-bar bg-danger" style="width: 75%"></div>
+                                  </div>
+                                  <div class="text-end" style="width:50px;">
+                                    <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">75%</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="card p-3 border-2">
+                                <div class="mb-2">
+                                  <span class="bedge px-2 rounded-2 border">비교과</span>
+                                  <span class="text-dark ms-2">소통/창의 2차시</span>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                  <div class="text-center">
+                                    <div class="d-flex flex-column align-items-center justify-content-center text-bg-success rounded-circle round-48">
+                                      <i class="ri-tv-2-line fs-6 fw-normal"></i>
+                                    </div>
+                                    <div class="fs-2 fw-bold">학습</div>
+                                  </div>
+                                  <div>
+                                    <h5 class="m-0">독서 치료 상담 기법을 활용한 직무 역량 강화</h5>
+                                    <span>이상현 교수</span>
+                                  </div>
+                                </div>
+
+                                <div class="py-2">
+                                  <i class="ri-time-line"></i> 2025-05-12 업데이트
+                                </div>
+
+                                <div class="d-flex justify-content-end align-items-center w-100">
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:calc(100% - 50px);">
+                                    <div class="progress-bar bg-dark bg-opacity-50" style="width: 100%"></div>
+                                  </div>
+                                  <div class="text-end" style="width:50px;">
+                                    <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">완료</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="card p-3 border-2">
+                                <div class="mb-2">
+                                  <span class="bedge px-2 rounded-2 border">교과</span>
+                                  <span class="text-dark ms-2">2주차</span>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                  <div class="text-center">
+                                    <div class="d-flex flex-column align-items-center justify-content-center text-bg-secondary rounded-circle round-48">
+                                      <i class="ri-discuss-line fs-6 fw-normal"></i>
+                                    </div>
+                                    <div class="fs-2 fw-bold">토론</div>
+                                  </div>
+                                  <div>
+                                    <h5 class="m-0">데이터 분석을 위한 파이썬 프로그램</h5>
+                                    <span>박데이터 교수</span>
+                                  </div>
+                                </div>
+
+                                <div class="py-2">
+                                  <i class="ri-time-line"></i> 2025-06-25 업데이트
+                                </div>
+
+                                <div class="d-flex justify-content-end align-items-center w-100">
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:calc(100% - 50px);">
+                                    <div class="progress-bar bg-danger" style="width: 83%"></div>
+                                  </div>
+                                  <div class="text-end" style="width:50px;">
+                                    <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">83%</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="next_week" role="tabpanel">
+                        <div class="py-3">
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="card p-3 border-2">
+                                <div class="mb-2">
+                                  <span class="bedge px-2 rounded-2 border">교과</span>
+                                  <span class="text-dark ms-2">2주차</span>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                  <div class="text-center">
+                                    <div class="d-flex flex-column align-items-center justify-content-center text-bg-secondary rounded-circle round-48">
+                                      <i class="ri-discuss-line fs-6 fw-normal"></i>
+                                    </div>
+                                    <div class="fs-2 fw-bold">토론</div>
+                                  </div>
+                                  <div>
+                                    <h5 class="m-0">사회 복지 현장 탐색과 진로개발</h5>
+                                    <span>김상진 교수</span>
+                                  </div>
+                                </div>
+
+                                <div class="py-2">
+                                  <i class="ri-time-line"></i> 2025-06-25 업데이트
+                                </div>
+
+                                <div class="d-flex justify-content-end align-items-center w-100">
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:calc(100% - 50px);">
+                                    <div class="progress-bar bg-danger" style="width: 32%"></div>
+                                  </div>
+                                  <div class="text-end" style="width:50px;">
+                                    <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">32%</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="card p-3 border-2">
+                                <div class="mb-2">
+                                  <span class="bedge px-2 rounded-2 border">교과</span>
+                                  <span class="text-dark ms-2">2주차</span>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                  <div class="text-center">
+                                    <div class="d-flex flex-column align-items-center justify-content-center text-bg-primary rounded-circle round-48">
+                                      <i class="ri-movie-line fs-6 fw-normal"></i>
+                                    </div>
+                                    <div class="fs-2 fw-bold">동영상</div>
+                                  </div>
+                                  <div>
+                                    <h5 class="m-0">현대인의 정신건강과 자기 발견</h5>
+                                    <span>김상진 교수</span>
+                                  </div>
+                                </div>
+
+                                <div class="py-2">
+                                  <i class="ri-time-line"></i> 2025-06-25 업데이트
+                                </div>
+
+                                <div class="d-flex justify-content-end align-items-center w-100">
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:calc(100% - 50px);">
+                                    <div class="progress-bar bg-danger" style="width: 75%"></div>
+                                  </div>
+                                  <div class="text-end" style="width:50px;">
+                                    <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">75%</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="card p-3 border-2">
+                                <div class="mb-2">
+                                  <span class="bedge px-2 rounded-2 border">비교과</span>
+                                  <span class="text-dark ms-2">소통/창의 2차시</span>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                  <div class="text-center">
+                                    <div class="d-flex flex-column align-items-center justify-content-center text-bg-success rounded-circle round-48">
+                                      <i class="ri-tv-2-line fs-6 fw-normal"></i>
+                                    </div>
+                                    <div class="fs-2 fw-bold">학습</div>
+                                  </div>
+                                  <div>
+                                    <h5 class="m-0">독서 치료 상담 기법을 활용한 직무 역량 강화</h5>
+                                    <span>이상현 교수</span>
+                                  </div>
+                                </div>
+
+                                <div class="py-2">
+                                  <i class="ri-time-line"></i> 2025-05-12 업데이트
+                                </div>
+
+                                <div class="d-flex justify-content-end align-items-center w-100">
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:calc(100% - 50px);">
+                                    <div class="progress-bar bg-dark bg-opacity-50" style="width: 100%"></div>
+                                  </div>
+                                  <div class="text-end" style="width:50px;">
+                                    <h6 class="mb-0 flex-shrink-0 w35 text-muted fs-3">완료</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// 나의 수강정보 및 학습 활동 일정 -->
+
+            <!-- 학점 취득현황 -->
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">학점 취득현황 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="row">
+
+                    <div class="col-6 col-lg-3 py-2 text-center">
+                      <div class="text-dark">교양필수</div>
+                      <img src="../../assets/images/navi_base/chart_half_1.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-lg-3 py-2 text-center">
+                      <div class="text-dark">교양선택</div>
+                      <img src="../../assets/images/navi_base/chart_half_2.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-lg-3 py-2 text-center">
+                      <div class="text-dark">전공필수</div>
+                      <img src="../../assets/images/navi_base/chart_half_3.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-lg-3 py-2 text-center">
+                      <div class="text-dark">전공선택</div>
+                      <img src="../../assets/images/navi_base/chart_half_4.png" alt="">
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--// 학점 취득현황 -->
+
+
+
+            <!-- 학습시간 분포도 -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">학습시간 분포도 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="row mb-3">
+                    <div class="col-12 col-sm-6 offset-sm-6">
+                      <div class="input-group">
+                        <input type="text" class="form-control daterange">
+
+                        <span class="input-group-text bg-light-gray">
+                          <i class="ti ti-calendar fs-5"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="table-responsive border rounded-2">
+                    <table class="table timetable mb-0">
+                      <thead class="fs-2">
+                        <tr>
+                          <th class="text-center">/</th>
+                          <th>
+                            <div class="d-flex m-auto flex-column justify-content-center align-items-center">
+                              <span>1</span>
+                              <span class="d-flex m-auto flex-column justify-content-center align-items-center bg-dark bg-opacity-75 rounded-circle fs-2 text-white" style="width:20px; height:20px;">월</span>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="d-flex m-auto flex-column justify-content-center align-items-center">
+                              <span>2</span>
+                              <span class="d-flex m-auto flex-column justify-content-center align-items-center bg-dark bg-opacity-75 rounded-circle fs-2 text-white" style="width:20px; height:20px;">화</span>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="d-flex m-auto flex-column justify-content-center align-items-center">
+                              <span>3</span>
+                              <span class="d-flex m-auto flex-column justify-content-center align-items-center bg-dark bg-opacity-75 rounded-circle fs-2 text-white" style="width:20px; height:20px;">수</span>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="d-flex m-auto flex-column justify-content-center align-items-center">
+                              <span>4</span>
+                              <span class="d-flex m-auto flex-column justify-content-center align-items-center bg-dark bg-opacity-75 rounded-circle fs-2 text-white" style="width:20px; height:20px;">목</span>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="d-flex m-auto flex-column justify-content-center align-items-center">
+                              <span>5</span>
+                              <span class="d-flex m-auto flex-column justify-content-center align-items-center bg-dark bg-opacity-75 rounded-circle fs-2 text-white" style="width:20px; height:20px;">금</span>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="d-flex m-auto flex-column justify-content-center align-items-center">
+                              <span>6</span>
+                              <span class="d-flex m-auto flex-column justify-content-center align-items-center bg-cyan rounded-circle fs-2 text-white" style="width:20px; height:20px;">토</span>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="d-flex m-auto flex-column justify-content-center align-items-center">
+                              <span>7</span>
+                              <span class="d-flex m-auto flex-column justify-content-center align-items-center bg-danger rounded-circle fs-2 text-white" style="width:20px; height:20px;">일</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="fs-2">
+                        <tr>
+                          <th class="text-center">24:00</th>
+                          <td class="bg-cyan bg-opacity-10"></td>
+                          <td class="bg-cyan bg-opacity-10"></td>
+                          <td class="bg-cyan bg-opacity-25"></td>
+                          <td class="bg-cyan bg-opacity-50"></td>
+                          <td></td>
+                          <td class="bg-cyan bg-opacity-75"></td>
+                          <td class="bg-cyan bg-opacity-100"></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">22:00</th>
+                          <td class="bg-cyan bg-opacity-50"></td>
+                          <td class="bg-cyan bg-opacity-10"></td>
+                          <td class="bg-cyan bg-opacity-25"></td>
+                          <td></td>
+                          <td class="bg-cyan bg-opacity-10"></td>
+                          <td></td>
+                          <td class="bg-cyan bg-opacity-75"></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">20:00</th>
+                          <td></td>
+                          <td></td>
+                          <td class="bg-cyan bg-opacity-10"></td>
+                          <td></td>
+                          <td class="bg-cyan bg-opacity-10"></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">18:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td class="bg-cyan bg-opacity-10"></td>
+                          <td class="bg-cyan bg-opacity-50"></td>
+                          <td class="bg-cyan bg-opacity-25"></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">16:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">14:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">12:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">10:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">08:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">06:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">04:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">02:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="text-center">00:00</th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--// 학습시간 분포도 -->
+
+            <!-- 동료 대비 학습 패턴 -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">동료 대비 학습 패턴 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                    <div>
+                      <select class="form-select-sm bg-white" data-placeholder="Choose a Category" tabindex="1" title="기간 선택">
+                        <option value="Category 1">최근 7일</option>
+                        <option value="Category 1">최근 30일</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="row">
+                    <div class="col-12 col-sm-4 offset-sm-8">
+                      <select name="" class="form-select">
+                        <option value="">같은 학년 전체 학생</option>
+                        <option value="">같은 학과의 같은 학년 학생</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- 챠트 삽입 -->
+                  <div class="text-center">
+                    <img src="../../assets/images/navi_base/chart_radial_gate_2.png" alt="">
+
+                    <div class="d-flex gap-2 justify-content-end align-items-center">
+                      <div class="d-flex gap-1 align-items-center">
+                        <i class="ri-circle-fill"></i> 동학년
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <i class="ri-circle-fill text-cyan"></i> 나
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 챠트 삽입 -->
+
+                </div>
+              </div>
+            </div>
+            <!--// 동료 대비 학습 패턴 -->
+
+            <!-- 나의 역량 -->
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">나의 역량<a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="text-dark mb-2">
+                    최근진단: 2025-05-05 [2025학년도 1학기 기초 학습 역량 진단(외국어영역)]
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center bg-cyan bg-opacity-10 p-3 rounded-1">
+                    <div>
+                      <h5 class="text-cyan m-0">종합점수</h5>
+                      <span class="text-dark">전체 평균 75점 대비 상위 15%</span>
+                    </div>
+                    <div>
+                      <strong class="fs-7 text-cyan">85점</strong>
+                    </div>
+                  </div>
+
+                  <!-- 막대챠트 -->
+                  <div class="py-3 text-center">
+                    <img src="../../assets/images/navi_base/chart_core_score3.png" alt="" style="max-width:100%;">
+                  </div>
+                  <!--// 막대챠트 -->
+
+                  <!-- 나의 강점, 약점 -->
+                  <!-- <div class="row mb-3">
+									<div class="col-lg-6 col-xs-12 mb-2">
+									<div class="bg-secondary bg-opacity-10 p-4 rounded-1">
+										<div class="d-flex gap-2 align-items-center mb-2">
+										<div class="text-white bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width:50px; height:50px;">강점</div>
+										<h5 class="m-0">작문</h5>                          
+										</div>
+										<div class="text-secondary">
+										논리적인 글 구성과 명확한 표현력이 뛰어납니다. 특히 주제에 맞는 적절한 어휘 선택과 문장구조의 다양성이 돋보입니다. 이러한 강점을 활용하여 보고서작성이나 에세이 과제에서 높은 성과를 기대할 수 있습니다.  
+										</div>
+									</div>
+									</div>
+
+									<div class="col-lg-6 col-xs-12 mb-2">
+									<div class="bg-warning bg-opacity-10 p-4 rounded-1">
+										<div class="d-flex gap-2 align-items-center mb-2">
+										<div class="text-white bg-warning rounded-circle d-flex align-items-center justify-content-center" style="width:50px; height:50px;">약점</div>
+										<h5 class="m-0">문법</h5>                          
+										</div>
+										<div class="text-warning">
+										복잡한 문법 구조 이해와 적용에 어려움이 있습니다. 특히 시제 일치와 관용적 표현사용에서 오류가 발견됩니다. 문법 연습 문제를 꾸준히 풀고, 첨삭 지도를 받는 것이 도움이 될 수 있습니다. 
+										</div>
+									</div>
+									</div>
+								</div> -->
+                  <!--// 나의 강점, 약점 -->
+                  <div class="text-center pt-3">
+                    <a href="#" class="text-dark">상세보기 <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--// 나의 역량 -->
+
+            <!-- 획득한 배지 -->
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">획득한 배지 <span class="ms-2 text-cyan">총 12개</span>
+                      <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card-body">
+
+                  <div class="row">
+                    <div class="col-6 col-lg-3 mb-2">
+                      <div class="border rounded-2 p-3">
+                        <div class="text-center">
+                          <img src="../../assets/images/navi_base/bedge_icon_01.png" alt="" style="max-width:100%;">
+                        </div>
+                        <div class="text-center">
+                          <div class="fs-4 text-dark fw-bold">연속 학습 7일</div>
+                          <div class="fs-2">2025년 9월 30일</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3 mb-2">
+                      <div class="border rounded-2 p-3">
+                        <div class="text-center">
+                          <img src="../../assets/images/navi_base/bedge_icon_02.png" alt="" style="max-width:100%;">
+                        </div>
+                        <div class="text-center">
+                          <div class="fs-4 text-dark fw-bold">완벽한 출석</div>
+                          <div class="fs-2">2025년 9월 2일</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-2">
+                      <div class="border rounded-2 p-3">
+                        <div class="text-center">
+                          <img src="../../assets/images/navi_base/bedge_icon_03.png" alt="" style="max-width:100%;">
+                        </div>
+                        <div class="text-center">
+                          <div class="fs-4 text-dark fw-bold">퀴즈 마스터</div>
+                          <div class="fs-2">2025년 8월 21일</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3 mb-2">
+                      <div class="border rounded-2 p-3">
+                        <div class="text-center">
+                          <img src="../../assets/images/navi_base/bedge_icon_04.png" alt="" style="max-width:100%;">
+                        </div>
+                        <div class="text-center">
+                          <div class="fs-4 text-dark fw-bold">토론 참여왕</div>
+                          <div class="fs-2">2025년 8월 25일</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="text-center pt-3">
+                    <a href="#" class="text-dark">배지 전체보기 <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--// 획득한 배지 -->
+
+            <!-- 나의 보유 에듀코인 -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">나의 보유 에듀코인 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="d-flex flex-column justify-content-center gap-1 py-2 rounded-2 bg-cyan bg-opacity-10 mb-1">
+                        <div class="px-3 text-dark text-start">보유 에듀코인</div>
+                        <div class="fs-9 text-cyan fw-bold text-center">1,350p</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <div class="d-flex flex-column justify-content-center gap-1 py-2 rounded-2 bg-cyan bg-opacity-10 mb-1">
+                        <div class="px-3 text-dark text-start">장학 전환 가능 금액</div>
+                        <div class="fs-9 text-cyan fw-bold text-center"> 270,000원</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center pt-3">
+                    <a href="#" class="text-dark">전체보기 <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--// 나의 보유 에듀코인 -->
+
+            <!-- 나의 상담 현황 -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">나의 상담 현황 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 상담 예약건이 있을 경우 -->
+                  <div class="" style="">
+                    <div class="d-flex flex-column gap-2 text-dark">
+                      <div class="text-dark fw-bold text-dark fs-5 px-2 text-center">예정된 상담</div>
+                      <div class="d-block d-sm-flex justify-content-center align-items-center gap-3 border-top pt-2 px-2">
+                        <div class="d-flex align-items-center gap-1">
+                          <i class="ri-calendar-schedule-line"></i> 8월 20일 14:00
+                        </div>
+                        <div class="fw-bold">진로 및 미래설계</div>
+                        <div class="d-flex align-items-center gap-1">
+                          <i class="ri-user-2-line"></i> 홍길동 선생님
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-2 text-center pt-3">
+                      <button type="button" class="btn btn-primary">
+                        상담 일정 변경 및 취소 <i class="ri-arrow-right-s-line"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!--// 상담 예약건이 있을 경우 -->
+
+                  <!-- 상담 예약건이 없을 경우 -->
+                  <div class="py-4 text-center" style="display:none;">
+                    <div class="d-flex justify-content-center align-items-center gap-1 fs-4">
+                      <i class="ri-chat-smile-2-line"></i>
+                      <strong class="fw-bold">예정된 상담 일정</strong>이 없습니다
+                    </div>
+                    <div class="p-2 text-center pt-3">
+                      <button type="button" class="btn btn-primary">
+                        상담 신청하기 <i class="ri-arrow-right-s-line"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!--// 상담 예약건이 없을 경우 -->
+
+                </div>
+              </div>
+            </div>
+            <!--// 나의 상담 현황 -->
+
+            <!-- 나를 위한 추천 프로그램 -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">나를 위한 추천 프로그램 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="row">
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card">
+                        <div class="position-relative">
+                          <div class="bedge ps-2 pe-2 rounded bg-info text-white position-absolute top-0 end-0 mt-2 me-2">D-6</div>
+                          <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle text-center position-absolute bottom-0 start-0 mb-2 ms-2">
+                            <i class="ri-heart-2-line fs-7"></i>
+                          </a>
+                          <img class="card-img-top img-responsive" src="../../assets/images/blog/blog-img4.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-wrap gap-1 py-1 mb-1">
+                            <span class="bedge p-1 ps-2 pe-2 fs-2 text-dark rounded bg-light-gray">직무역량</span>
+                            <span class="bedge p-1 ps-2 pe-2 fs-2 text-dark rounded bg-light-gray">핵심역량</span>
+                          </div>
+                          <div class="mb-0 text-danger fs-2 mb-1">
+                            한국교육혁신원 / 학생경력개발센터
+                          </div>
+                          <a href="javascript:void(0);" class="word-line2 mb-2">
+                            <h4 class="card-title">
+                              일본 IT 취업연계과정 설명회 일본 IT 취업연계과정 설명회일본 IT 취업연계과정 설명회
+                            </h4>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card">
+                        <div class="position-relative">
+                          <div class="bedge ps-2 pe-2 rounded bg-info text-white position-absolute top-0 end-0 mt-2 me-2">D-6</div>
+                          <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle text-center position-absolute bottom-0 start-0 mb-2 ms-2">
+                            <i class="ri-heart-2-line fs-7"></i>
+                          </a>
+                          <img class="card-img-top img-responsive" src="../../assets/images/blog/blog-img3.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-wrap gap-1 py-1 mb-1">
+                            <span class="bedge p-1 ps-2 pe-2 fs-2 text-dark rounded bg-light-gray">직무역량</span>
+                            <span class="bedge p-1 ps-2 pe-2 fs-2 text-dark rounded bg-light-gray">핵심역량</span>
+                          </div>
+                          <div class="mb-0 text-danger fs-2 mb-1">
+                            한국교육혁신원
+                          </div>
+                          <a href="javascript:void(0);" class="word-line2 mb-2">
+                            <h4 class="card-title">
+                              2025년 `빅데이터 분석 전문가` 양성과정
+                            </h4>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--// 나를 위한 추천 프로그램 -->
+
+            <!-- 동료들은 뭐 하지? -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="d-flex justify-content-between border-bottom">
+                  <div class="d-flex align-items-center gap-0">
+                    <h5 class="card-title p-0 m-0 p-3 d-flex align-items-center gap-1">동료들은 뭐 하지? <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="안내문구를 작성해주세요.">
+                        <i class="ri-information-line"></i>
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="p-3 text-dark">
+                    <a href="#" title="더보기">
+                      <i class="ri-more-2-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="row">
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card rounded-1 border text-center text-bg-info fw-bold p-3">
+                        초급토익연습
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card rounded-1 border text-center text-bg-secondary fw-bold p-3">
+                        4차산업혁명과 비즈니스
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card rounded-1 border text-center text-bg-success fw-bold p-3">
+                        생활속의 디자인
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card rounded-1 border text-center text-bg-warning fw-bold p-3">
+                        법과 생활
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--// 동료들은 뭐 하지? -->
+
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">닫기</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="../../assets/js/vendor.min.js"></script>
+  <script src="../../assets/js/navi_base.js"></script>
+  <script>$(function() { lxpMenuSupport.event_init(); });</script>
+
+  <script src="../../assets/js/config/globalConfig.js"></script>
+
+  <!-- Import Js Files -->
+  <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="../../assets/js/theme/app.init.js"></script>
+  <script src="../../assets/js/theme/theme.js"></script>
+  <script src="../../assets/js/theme/app.min.js"></script>
+
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="../../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../../assets/js/frontend-landingpage/homepage.js"></script>
+
+  <!-- select2 JS -->
+  <script src="../../assets/libs/select2/dist/js/select2.full.min.js"></script>
+  <script src="../../assets/libs/select2/dist/js/select2.min.js"></script>
+  <script src="../../assets/js/forms/select2.init.js"></script>
+
+  <!-- 날짜선택 폼 -->
+  <script src="../../assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="../../assets/js/forms/datepicker-init.js"></script>
+
+  <script src="../../assets/js/extra-libs/moment/moment.min.js"></script>
+  <script src="../../assets/libs/daterangepicker/daterangepicker.js"></script>
+  <script src="../../assets/js/forms/daterangepicker-init.js"></script>
+
+  <!-- Plugins js-->
+  <script src="../../assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+  <script src="../../assets/libs/clockpicker/bootstrap-clockpicker.min.js"></script>
+  <script src="../../assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="../../assets/libs/bootstrap-datepicker/locales/bootstrap-datepicker.ko.min.js"></script>
+  <script src="../../assets/libs/bootstrap-colorpicker/spectrum.min.js"></script>
+  <script src="../../assets/libs/moment/min/moment.min.js"></script>
+  <script src="../../assets/libs/moment/locale/ko.js"></script>
+  <script src="../../assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="../../assets/libs/quill/quill.min.js"></script>
+
+  <!-- calendar -->
+  <script src="../../assets/libs/fullcalendar/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.15/locales/ko.global.min.js"></script>
+  <script src="../../assets/js/apps/calendar-init.js"></script>
+
+  <!-- treeview -->
+  <script src="../../assets/libs/bootstrap-tree/dist/bootstrap-treeview.min.js"></script>
+  <script src="../../assets/js/plugins/bootstrap-treeview-init.js"></script>
+
+
+  <script>
+			$('.floating-labels .form-control').on('focus blur', function (e) {
+			$(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+			}).trigger('blur');
+
+			// 일정범례 하위레벨 show/hide		
+
+			$('.btn-legend-view').click(function(){
+				let sub_sub_legend = $(this).parent().parent().next('.sub_legend');
+
+				if (sub_sub_legend.is(':visible')) {
+					// alert('div가 보입니다. 이제 숨기겠습니다.');
+					$(this).empty().append('<i class="ri-add-line"></i>');
+					$(this).parent().parent().next('.sub_legend').slideToggle();
+				} 				
+				else if(!(sub_sub_legend.is(':visible'))){
+					// alert('div가 숨겨져 있습니다. 이제 보이게 하겠습니다.');
+					$(this).empty().append('<i class="ri-subtract-line"></i>');					
+					$(this).parent().parent().next('.sub_legend').slideToggle();
+				}
+
+
+				// if(sub_sub_legend.length > 0){
+				// 	alert('0보다 크다');
+				// 	$(this).empty().append('<i class="ri-subtract-line"></i>');
+				// }else if (sub_sub_legend.length <= 0){
+				// 	alert('0보다 작거나 같다');
+				// 	$(this).empty().append('<i class="ri-add-line"></i>');
+				// };
+				
+			});
+		</script>
+
+</body>
+
+</html>

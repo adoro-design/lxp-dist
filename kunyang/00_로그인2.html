@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Kunyang_Theme" data-layout="vertical">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/custom_css.css" />
+
+  <title>Login</title>
+
+  <!-- 슬라이딩 -->
+  <link href="../assets/css/slick/slick.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/slick/slick-theme.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body class="">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="../assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div>
+    <div class="row gx-0 shadow-lg overflow-hidden login_page">
+
+      <div class="col-12 col-md-6 col-lg-4 py-2 py-lg-5 py-lg-13 bg-body">
+        <div class="py-lg-13 justify-content-center align-items-center">
+          <div class="m-auto py-3 py-lg-2" style="width:320px;">
+
+            <div class="mb-2 text-center border-bottom pb-3">
+              <a href="../main/index.html" class="text-nowrap logo-img d-block w-100">
+                <img src="../assets/images/logos/logo_kunyang.png" class="dark-logo" alt="Logo-Dark" />
+              </a>
+            </div>
+
+            <!-- 로그인 박스 -->
+            <div class="item loginbox_grid">
+
+              <div class="loginbox">
+
+                <!-- 로그인 전 -->
+                <div class="before">
+
+                  <ul class="nav nav-underline nav-text d-flex justify-content-center gap-4" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="tab" href="#navpill-1" role="tab">
+                        <span class="fs-7">통합 로그인</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="tab" href="#navpill-2" role="tab">
+                        <span class="fs-7">일반 로그인</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content pt-2 px-3">
+                    <div class="text-center mb-2">건양대학교 LMS에 오신 걸 환영합니다.</div>
+                    <div class="tab-pane active" id="navpill-1" role="tabpanel">
+                      <a href="#" class="btn btn-primary w-100 py-8 rounded-2">학교 계정으로 통합 로그인</a>
+
+                      <div class="mt-2">※재학생이나 교직원의 경우 학교에서 사용하는 계정(id 또는 학번)을 사용하여 로그인할 수 있습니다.</div>
+                    </div>
+                    <div class="tab-pane" id="navpill-2" role="tabpanel">
+                      <div class="info_insert">
+                        <form>
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <label>
+                              <i class="ti ti-user me-2 fs-4"></i> 아이디
+                            </label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control" placeholder="Password">
+                            <label>
+                              <i class="ti ti-lock me-2 fs-4"></i> 비밀번호
+                            </label>
+                          </div>
+
+                          <!-- <div class="d-flex justify-content-between mb-4">
+                                                <div class="form-check">
+                                                <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked" checked />
+                                                <label class="form-check-label text-dark" for="flexCheckChecked">
+                                                    아이디 저장
+                                                </label>
+                                                </div>
+
+                                                <div>
+                                                <button class="btn btn-sm bg-light text-dark"><i class="ri-equalizer-2-line"></i> 아이디 통합하기</button>
+                                                </div>
+                                            </div> -->
+
+                          <a href="" class="btn btn-primary w-100 py-8 rounded-2">로그인</a>
+
+                          <div class="d-flex justify-content-between py-3 ps-3 pe-3 text-muted">
+                            <a href="">회원가입</a> | <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a>
+                          </div>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!--// 로그인 전 -->
+
+              </div>
+
+            </div>
+            <!--// 로그인 박스 -->
+
+            <!-- 바로가기 배너 -->
+            <div class="mt-4 pt-4 border-top d-flex justify-content-between align-items-center gap-3">
+              <div>
+                <a href="#" class="d-block text-center p-2 link-darkness">
+                  <img src="../assets/images/navi_base/login/quick_banner01.png" alt="">
+                  <div class="d-block fs-3 fw-bold">FAQ</div>
+                </a>
+              </div>
+
+              <div>
+                <a href="#" class="d-block text-center p-2 link-darkness">
+                  <img src="../assets/images/navi_base/login/quick_banner02.png" alt="">
+                  <span class="d-block fs-3 fw-bold ">Q&A</span>
+                </a>
+              </div>
+
+              <div>
+                <a href="#" class="d-block text-center p-2 link-darkness">
+                  <img src="../assets/images/navi_base/login/quick_banner03.png" alt="">
+                  <span class="d-block fs-3 fw-bold">매뉴얼</span>
+                </a>
+              </div>
+            </div>
+            <!-- 바로가기 배너 -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-8">
+
+        <!-- 슬라이드 존 -->
+        <div class="slide_login_visual">
+
+          <div class="swipe_banner">
+
+            <div class="slide_login_visual_box1 slider">
+
+              <div>
+                <div class="outline" style="background-image:url('../assets/images/navi_base/login/login_visual_kunyang_01.png');">
+
+                </div>
+              </div>
+
+              <div>
+                <div class="outline" style="background-image:url('../assets/images/navi_base/login/login_visual_kunyang_02.png');">
+
+                </div>
+              </div>
+
+              <div>
+                <div class="outline" style="background-image:url('../assets/images/navi_base/login/login_visual_kunyang_03.png');">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--// 슬라이드 존 -->
+
+        <!-- 공지사항 -->
+        <div class="p-4 p-lg-4 login_notice_box border-start">
+          <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <h4 class="fw-semibold">공지사항</h4>
+            <a href="">+ 더보기</a>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-3 my-1">
+              <a href="#" class="d-block rounded-1 border p-3">
+                <div class="mb-3 text-end">
+                  <span class="opacity-75">
+                    <i class="ri-time-line"></i> 2025.11.01
+                  </span>
+                </div>
+
+                <div class="fw-bolder mb-2 fs-4 word-line1">
+                  2025학년도 동계 계절학기 수요조사 및 운영안내
+                </div>
+
+                <div class="mt-3 text-end">
+                  자세히 보기 <i class="ri-arrow-right-line"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3 my-1">
+              <a href="#" class="d-block rounded-1 border p-3">
+                <div class="mb-3 text-end">
+                  <span class="opacity-75">
+                    <i class="ri-time-line"></i> 2025.11.01
+                  </span>
+                </div>
+
+                <div class="fw-bolder mb-2 fs-4 word-line1">
+                  LMS시스템 업데이트 안내
+                </div>
+
+                <div class="mt-3 text-end">
+                  자세히 보기 <i class="ri-arrow-right-line"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3 my-1">
+              <a href="#" class="d-block rounded-1 border p-3">
+                <div class="mb-3 text-end">
+                  <span class="opacity-75">
+                    <i class="ri-time-line"></i> 2025.11.01
+                  </span>
+                </div>
+
+                <div class="fw-bolder mb-2 fs-4 word-line1">
+                  2025학년도 2학기 Design Your Week(DYW) 운영 안내 2025학년도 2학기 Design Your Week(DYW) 운영 안내
+                </div>
+
+                <div class="mt-3 text-end">
+                  자세히 보기 <i class="ri-arrow-right-line"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3 my-1">
+              <a href="#" class="d-block rounded-1 border p-3">
+                <div class="mb-3 text-end">
+                  <span class="opacity-75">
+                    <i class="ri-time-line"></i> 2025.11.01
+                  </span>
+                </div>
+
+                <div class="fw-bolder mb-2 fs-4 word-line1">
+                  2025학년도 동계 계절학기 수요조사 및 운영안내
+                </div>
+
+                <div class="mt-3 text-end">
+                  자세히 보기 <i class="ri-arrow-right-line"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--// 공지사항 -->
+
+      </div>
+
+    </div>
+
+    <!-- 개설 프로그램 -->
+    <section class="py-3 py-md-7 py-lg-12 bg-light-gray">
+      <div class="container-fluid">
+        <h4 class="mb-2">개설 프로그램</h4>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-3</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_01.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    파이썬으로 시작하는 데이터 사이언스 완전정복 과정
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">12</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 20</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-5</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_02.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    글로벌 체스 교육과정
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">19</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 20</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-15</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_03.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    이론과 실습으로 배우는 머신러닝 A-Z
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">28</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 34</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-12</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_04.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    통계 입문자를 위한 기초수학
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">23</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 30</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-17</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_05.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    UI/UX 디자인 특강
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">10</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-2</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_06.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    조향클래스(나만의 향수 만들기)
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">20</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 25</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-21</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_07.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    홈바(HOME BAR) 칵테일 클래스
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">15</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 20</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <div class="position-relative">
+                <div class="position-absolute top-0 end-0 p-2 w-100 d-flex align-items-center justify-content-between">
+                  <div class="bedge px-2 py-1 rounded text-bg-success fs-2">D-12</div>
+                  <!-- <a href="#" class="btn_hart d-flex align-items-center justify-content-center round-40 rounded-circle active" title="찜하기"><i class="ri-heart-2-line fs-7"></i></a> -->
+                </div>
+                <img class="card-img-top img-responsive" src="../assets/images/navi_base/thum_degree_08.png" alt="">
+              </div>
+              <div class="card-body">
+                <div class="mb-0 text-dark fs-2 mb-1">
+                  개인 / 오프라인
+                </div>
+                <a href="javascript:void(0);" class="word-line2 mb-2">
+                  <h4 class="card-title">
+                    캘리그래피 아카데미
+                  </h4>
+                </a>
+                <div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ti ti-calendar me-1 fs-5"></i> 신청기간: 2025-09-08(월) ~ 2025-09-12(금)
+                  </div>
+                  <div class="d-flex align-items-center fs-2 text-dark">
+                    <i class="ri-edit-line me-1 fs-5"></i> 활동기간: 2025-10-13(월) ~ 2025-10-31(금)
+                  </div>
+                </div>
+
+                <div class="progress mt-3" style="height:6px">
+                  <div class="progress-bar text-bg-success fs-3" style="width: 0%" role="progressbar"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <div>
+                    <span class="text-dark fw-bold">신청 <strong class="text-danger">23</strong>
+                    </span>
+                  </div>
+                  <div class="text-dark">
+                    <span class="text-dark fw-bold">정원 32</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// 개설 프로그램 -->
+  </div>
+
+  <!-- Footer Start -->
+  <div class="bg-dark">
+    <div class="container-fluid">
+      <div class="row py-4">
+        <div class="col-lg-12">
+          <ul class="d-flex gap-9 mb-0">
+            <li>
+              <a href="javascript:void(0)" class="fs-3 text-secondary">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="fs-3 text-light">이메일무단수집거부</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-13 border-top border-dark-subtle">
+        <div class="text-white gap-3">
+          03737 서울특별시 서대문구 충정로29 동아일보사건물 15층 ㈜디유넷
+          <br />
+          TEL 02-6380-7206 FAX 02-364-7711
+
+          <p class="text-white opacity-50 mt-3 mb-0">COPYRIGHT ⓒ 2025 DUNET. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Scroll Top -->
+  <a href="javascript:void(0)" class="top-btn btn btn-primary d-flex align-items-center justify-content-center round-54 p-0 rounded-circle">
+    <i class="ti ti-arrow-up fs-7"></i>
+  </a>
+
+  <script src="../assets/js/vendor.min.js"></script>
+  <script src="../assets/js/navi_base.js"></script>
+  <script>$(function() { lxpMenuSupport.event_init(); });</script>
+
+  <!-- Import Js Files -->
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="../assets/js/theme/app.init.js"></script>
+  <script src="../assets/js/theme/theme.js"></script>
+  <script src="../assets/js/theme/app.min.js"></script>
+
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../assets/js/frontend-landingpage/homepage.js"></script>
+
+  <script src="../assets/js/jquery-1.11.0.js" charset="utf-8"></script>
+  <script src="../assets/js/navi_plus.js"></script>
+
+  <script src="../assets/js/slick/slick.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {                
+        $(".slide_login_visual_box1").slick({
+            dots: true,               //dot 모양의 pager          
+            infinite: true,           //무한 스와이프
+            arrows: false,            //화살표
+            speed: 1000,              //슬라이드 속도
+            autoplay:true,            //자동 슬라이드
+            autoplaySpeed: 5000,      //자동 슬라이드시, 한 슬라이드에 머무르는 시간
+            slidesToShow: 1,          //한 화면에 보이는 슬라이드 개수
+            slidesToScroll: 1,        //슬라이드 실행할때, 한번에 슬라이드 되는 개수
+            vertical : false, 
+
+            responsive: [             //반응형 슬라이드
+                {
+                breakpoint: 1024,     // 화면의 넓이가 1024px 이상일 때
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        
+
+        $(".slide_login_notice_box").slick({
+            dots: true,               //dot 모양의 pager          
+            infinite: true,           //무한 스와이프
+            arrows: false,            //화살표
+            speed: 1000,              //슬라이드 속도
+            autoplay:true,            //자동 슬라이드
+            autoplaySpeed: 5000,      //자동 슬라이드시, 한 슬라이드에 머무르는 시간
+            slidesToShow: 1,          //한 화면에 보이는 슬라이드 개수
+            slidesToScroll: 1,        //슬라이드 실행할때, 한번에 슬라이드 되는 개수
+            vertical : false, 
+
+            responsive: [             //반응형 슬라이드
+                {
+                breakpoint: 1024,     // 화면의 넓이가 1024px 이상일 때
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    });
+</script>
+
+</body>
+
+</html>

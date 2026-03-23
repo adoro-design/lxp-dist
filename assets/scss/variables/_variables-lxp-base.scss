@@ -1,0 +1,46 @@
+[data-bs-theme="light"][data-color-theme="Lxp_Base_Theme"],
+[data-bs-theme="dark"][data-color-theme="Lxp_Base_Theme"] {
+  $primary: #1843b9;
+  $light-primary: rgba($primary, 0.1);
+  $secondary: #56aeff;
+  $light-secondary: rgba($secondary, 0.1);
+
+  $direction: 135deg;
+  .bg-gradient-primary {
+    background-image: linear-gradient($direction, $primary 60%, $secondary 100%);
+  }
+  .bg-gradient-primary-0 {
+    background-image: linear-gradient($direction, $primary 0%, $secondary 100%);
+  }
+  // 나의 강의실 전용메뉴 bg
+  .bg-mylectrue-menu { 
+    background:#0a2540;
+  }
+
+  &:root {
+    --bs-primary: #{$primary};
+    --bs-primary-rgb: 24, 67, 185;
+    --bs-light-primary: #{$light-primary};
+    --bs-primary-bg-subtle: #{$light-primary};
+    
+    --bs-secondary: #{$secondary};
+    --bs-secondary-rgb: 86, 174, 255;
+    --bs-light-secondary: #{$light-secondary};
+    --bs-secondary-bg-subtle: #{$light-secondary};
+
+    .btn-primary {
+      --bs-btn-bg: #{$primary};
+      --bs-btn-border-color: #{$primary};
+      --bs-btn-hover-bg: #0f3ab0;
+      --bs-btn-hover-border-color: #0f3ab0;
+    }
+
+    .btn-secondary {
+      --bs-btn-bg: #{$secondary};
+      --bs-btn-border-color: #{$secondary};
+      --bs-btn-hover-bg: #4aa1f1;
+      --bs-btn-hover-border-color: #4aa1f1;
+      
+    }
+  }
+}

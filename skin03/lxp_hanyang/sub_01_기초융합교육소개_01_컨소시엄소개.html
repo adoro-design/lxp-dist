@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="hanyang_Theme" data-layout="vertical">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="../../assets/css/custom_css.css" />
+  <link rel="stylesheet" href="../../assets/css/navi_plus.css" />
+
+  <title>디유넷 LXP - SKIN-01</title>
+
+
+  <!-- 슬라이딩 -->
+  <link href="../../assets/css/slick/slick.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/slick/slick-theme.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="../../assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+
+  <!-- -------------------------------------------- -->
+  <!-- Header start -->
+  <!-- -------------------------------------------- -->
+  <!-- ------------------------------------- -->
+  <!-- Header : skin_01 Start -->
+  <!-- ------------------------------------- -->
+  <header class="p-0 w-100 bg-white">
+    <div class="">
+      <div class="container-fluid d-flex justify-content-between align-items-center py-4">
+        <div class="site-logo flex-shrink-0">
+          <a href="#" class="text-nowrap logo-img">
+            <img src="../../assets/images/navi_plus/logo_hanyang.png" alt="Logo" />
+          </a>
+        </div>
+
+        <!-- 회원가입, 로그인, 언어선택 -->
+        <div class="d-none d-lg-flex align-items-center gap-3">
+
+          <!-- 로그인 전 -->
+          <div class="d-none align-items-center gap-3">
+            <a href="javascript:void(0)" class="text-dark">회원가입</a>
+            <a href="javascript:void(0)" class="text-dark">로그인</a>
+          </div>
+          <!--// 로그인 전 -->
+
+          <!-- 로그인 후 -->
+          <div class="top-mymenu d-flex align-items-center gap-2 position-relative">
+
+            <!-- 메일 및 쪽지 -->
+            <div class="">
+              <a href="#" class="d-block pe-6 position-relative">
+                <i class="ri-mail-line fs-5"></i>
+                <div class="d-flex px-1 py-0 justify-content-center align-items-center rounded-pill text-white bg-danger fs-1 position-absolute top-0 start-25 ms-1 ">
+                  <span>99</span>
+                </div>
+              </a>
+            </div>
+            <!--// -->
+
+            <!-- 알림 -->
+            <div class="">
+              <a href="#" class="d-inline-block pe-6 position-relative">
+                <i class="ri-notification-3-line fs-5"></i>
+                <div class="d-flex px-1 py-0 justify-content-center align-items-center rounded-pill text-white bg-danger fs-1 position-absolute top-0 start-25 ms-1">
+                  <span>0</span>
+                </div>
+              </a>
+            </div>
+            <!--// -->
+
+            <a href="#" class="title d-flex align-items-center gap-2">
+              <div class="">류건우님</div>
+              <div class="rounded-circleoverflow-hidden" style="width:25px;">
+                <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+              </div>
+              <i class="ri-arrow-down-s-fill"></i>
+            </a>
+            <!-- 개인 메뉴 모달 -->
+            <div class="modal-mymenu" style="display:none;">
+              <div class="text-end position-relative">
+                <a href="#" class="btn-modal-mymenu-close">
+                  <i class="ri-close-line fs-7"></i>
+                </a>
+              </div>
+              <!-- 프로필 영역 -->
+              <div class="d-flex align-items-center pb-2 mb-2 border-bottom" style="">
+                <div class="position-relative flex-shrink-0" style="width:60px;">
+                  <div class="rounded-circle overflow-hidden">
+                    <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+                  </div>
+                </div>
+                <div class="px-2 text-dark" style="width:200px !important;">
+                  <div class="mb-1">
+                    <strong class="fs-4">류건우</strong>
+                  </div>
+                  <div class="">
+                    <ul class="fs-2">
+                      <li class="d-flex gap-2">
+                        <div>학번</div>
+                        <div class="text-wrap">2025002365</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div>전공</div>
+                        <div class="text-wrap">전자공학과 ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁ SDF SD S D</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div>이메일</div>
+                        <div class="text-wrap">hgd123@dunet.kr</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--// 프로필 영역 -->
+
+              <!-- 권한선택 -->
+              <div class="pb-2">
+                <label class="form-label mb-0">* 권한선택</label>
+                <select class="form-select" data-placeholder="Choose a Category" tabindex="1">
+                  <option value="Category 1">학생</option>
+                  <option value="Category 2">교수자</option>
+                  <option value="Category 3">시스템관리자</option>
+                </select>
+              </div>
+              <!--// 권한선택 -->
+
+              <!-- 개인 메뉴 영역 -->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-line-chart-line"></i> 대시보드
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-user-settings-line"></i> 관리자
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-computer-line"></i> 강의실
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-information-line"></i> 정보수정
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-logout-box-r-line"></i> 로그아웃
+                  </a>
+                </li>
+              </ul>
+              <!--// 개인 메뉴 영역 -->
+            </div>
+            <!--// 개인 메뉴 모달 -->
+          </div>
+          <!--// 로그인 후 -->
+
+          <!-- 구글 번역 위젯 -->
+          <div id="google_translate_element">
+            <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+              <div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;">
+              </div>
+            </div>
+          </div>
+
+          <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script th:inline="javascript">
+              window.onload = function(){
+                  new google.translate.TranslateElement({
+                      pageLanguage: 'ko',
+                      includedLanguages: 'ne,mn,uz,en,ko',
+                      autoDisplay: true,
+                      multilanguagePage: true,
+                      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                  }, 'google_translate_element');
+              };
+          </script>
+          <!--// 구글 번역 위젯 -->
+
+        </div>
+        <!--// 회원가입, 로그인, 언어선택 -->
+
+        <div class="d-flex d-lg-none gap-2 align-items-center">
+
+          <!-- 로그인 전 -->
+          <div class="mb-1">
+            <a href="javascript:void(0)" class="text-dark">로그인</a>
+          </div>
+          <!--// 로그인 전 -->
+
+          <button class="navbar-toggler border-0 p-0 shadow-none d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSideMenu" aria-controls="offcanvasRight">
+            <i class="ri-menu-2-line fs-8"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md py-10 bg-gradient-primary d-none d-lg-block">
+      <div class="container-fluid position-relative">
+
+        <ul class="gnb d-flex align-items-center">
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">기초융합교육 소개</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">소개</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">참여대학 현황</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">개설강좌</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">학위과정(A과정)</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">비학위과정(B과정)</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">학사안내</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">수업운영 안내</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">학사일정</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">학습자 매뉴얼</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">수강 가이드</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">알림마당</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">공지사항</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">FAQ</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">오픈배지</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="">
+          <a class="text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="ri-menu-2-line fs-5" title="전체메뉴"></i>
+          </a>
+
+          <!-- 전체 메뉴 -->
+          <div class="dropdown-menu dropdown-menu-nav border dropdown-menu-animate-up py-0 overflow-hidden">
+            <div class="position-relative">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="p-4 pb-3">
+
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">기초융합교육 소개</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">소개</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">참여대학 현황</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">개설강좌</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">학위과정(A과정)</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">비학위과정(B과정)</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">학사안내</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">수업운영 안내</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">학사일정</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">학습자 매뉴얼</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">수강 가이드</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">알림마당</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">공지사항</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">FAQ</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">오픈배지</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--// 전체 메뉴 -->
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- -------------------------------------------- -->
+  <!-- Header End -->
+  <!-- -------------------------------------------- -->
+
+
+  <!-- -------------------------------------------- -->
+  <!-- Header End -->
+  <!-- -------------------------------------------- -->
+
+  <div class="content-page-wrapper overflow-hidden border-top">
+    <!-- ------------------------------------- -->
+    <!-- 서브 페이지 본문 영역 Start -->
+    <!-- ------------------------------------- -->
+    <section class="py-0">
+
+      <!-- 반응형 여백 : 상단 -->
+      <div class="pt-3 d-none d-lg-block"></div>
+      <!--// 반응형 여백 : 상단 -->
+
+      <div class="container-fluid">
+
+        <!-- 서브 네비게이션 영역 -->
+        <div class="d-flex align-items-center gap-1 py-3">
+          <div>
+            <i class="ri-home-4-line" title="홈"></i>
+          </div>
+          <!-- 1뎁스 메뉴 -->
+          <div class="btn-group">
+            <a class="p-2 text-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              기초융합교육 소개
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">기초융합교육 소개</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">개설강좌</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">학사안내</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">알림마당</a>
+              </li>
+            </ul>
+          </div>
+          <!--// 1뎁스 메뉴 -->
+          <!-- 2뎁스 메뉴 -->
+          <div class="btn-group">
+            <a class="p-2 text-dark dropdown-toggle fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              소개
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">소개</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">참여대학 현황</a>
+              </li>
+            </ul>
+          </div>
+          <!--// 2뎁스 메뉴 -->
+        </div>
+        <!--// 서브 네비게이션 영역 -->
+
+        <!-- 페이지 제목 -->
+        <div class="pt-5 border-top text-center">
+          <h3>컨소시엄 소개</h3>
+        </div>
+        <!--// 페이지 제목 -->
+
+        <!-- 분문 영역 -->
+        <div class="pt-2 pb-12 height-600">
+
+
+          <strong>대학 기초·융합교육 컨소시엄 플랫폼</strong>은 기초·융합교육 강화라는 고등교육의 공통 과제에 대응하기 위해 구축된 대학 간 공유·협력 기반 교육 플랫폼입니다.
+          <br />
+          <br />
+
+          한양대학교의 다양한 교육혁신 경험과 더불어,
+          <br />
+          <strong class="fs-5">“대학이 아닌 대학교육에 기부한다”는 기부자(A&K Foundation 이용기 이사장님)의 뜻을 바탕으로 전국 대학이 함께 우수한 기초·융합 교과목을 개발하고 공유합니다.</strong>
+          <br />
+          <br />
+
+          본 플랫폼은 기부금이 특정 대학에 머무르지 않고, 교육 콘텐츠와 교과목, 플랫폼이라는 공공의 교육 자산으로 전환되어 참여 대학 모두가 활용할 수 있도록 설계되었습니다.
+          <br />
+          플랫폼에 등재된 강좌는 각 대학의 수요에 따라 학생들의 다양한 전공 수요와 산업계의 요구를 반영하여, 정규 학점 과정과 모듈형 학습 과정이 결합된 유연한 교육과정을 제공합니다.
+          <br />
+          <br />
+
+          <div class="row mb-2">
+            <div class="col-12 col-md-4">
+              <div class="card overflow-hidden">
+                <div class="d-flex align-items-center justify-content-center gap-2 p-2 text-center bg-primary bg-opacity-75 text-white fw-bold">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-white text-primary" style="width:60px; height:60px;">Type A</div>
+                  <div class="fs-5">정규 기초학점 과정</div>
+                </div>
+                <div class="p-3 border-top">
+                  미적분학, 일반물리학, 화학 등 이공계 및 융합 전공의 토대가 되는 기초 학문 핵심 지식을 <strong>16주 정규 강좌</strong>로 제공합니다.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="card overflow-hidden">
+                <div class="d-flex align-items-center justify-content-center gap-2 p-2 text-center bg-primary bg-opacity-75 text-white fw-bold">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-white text-primary" style="width:60px; height:60px;">Type B</div>
+                  <div class="fs-5">산업 맞춤형 모듈 과정</div>
+                </div>
+                <div class="p-3 border-top">
+                  반도체, 미래 자동차, 게임 등 첨단 산업 분야 진출을 위해 꼭 필요한 핵심 지식을 <strong>5~10주 단기 집중 모듈</strong>로 학습합니다. (예: 반도체 공정 이해를 위한 벡터/행렬 기초, 게임 엔진 구현을 위한 삼각함수 등)
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="card overflow-hidden">
+                <div class="d-flex align-items-center justify-content-center gap-2 p-2 text-center bg-primary bg-opacity-75 text-white fw-bold">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-white text-primary" style="width:60px; height:60px;">Type C</div>
+                  <div class="fs-5">융합 과정</div>
+                </div>
+                <div class="p-3 border-top">
+                  정규 기초과목(A)과 산업 모듈(B)을 결합하여, 기초 이론이 실제 산업 현장에서 어떻게 쓰이는지 체득하는 <strong>실무형 융합 교육</strong>을 실현합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mb-5">
+            차별화된 학습 경험을 위해 AI 기반 맞춤형 학습 및 Active Learning 모델을 통해 학습 효과를 극대화합니다.
+            <br />
+            단순한 동영상 시청을 넘어서 학습자의 수준과 선호도를 진단하여 최적의 교과목을 추천해 주는 AI 큐레이션 시스템을 갖추고 있습니다. 또한, '질문-탐구-협력-성찰'로 이어지는 혁신적인 온라인 Active Learning 모델을 적용하여 학생 스스로 문제를 해결하고 협업하는 능력을 기를 수 있도록 설계되었습니다.
+            <br />
+            <br />
+
+            대학 기초·융합교육 컨소시엄은 대학 교육의 새로운 패러다임입니다.
+            <br />
+            대학은 재정 부담 없이 교육 경쟁력을 강화하고, 교수와 학생은 대학의 경계를 넘어 공동의 학습 경험 속에서 성장합니다.
+            <br />
+            기초에서 출발해 융합으로 확장되는 새로운 대학 교육 협력, 기초·융합교육 컨소시엄 플랫폼은 기부와 공유가 만나 대한민국 대학교육의 미래를 함께 만들어갑니다.
+          </div>
+
+          <h5 class="pb-2 mb-2">
+            <i class="ri-record-circle-fill text-secondary"></i> 대학 기초·융합교육 컨소시엄 추진 목적
+          </h5>
+
+          <div class="mb-2">
+            '전공 자율 선택제' 정착과 '기초·융합 교육' 강화라는 전국 대학의 공통 과제를 해결하기 위해 교육내용-교육방법-교육인프라의 혁신 성과를 기반으로 새로운 대학 공유 협력 모델 구축 및 확산을 목적
+          </div>
+
+          <div class="mb-5 p-2 bg-white border rounded-2 text-center overflow-hidden">
+            <img src="../../assets/images/navi_plus/hanyang/intro_univ_img01.png" alt="">
+          </div>
+
+
+          <h5 class="pb-2 mb-2">
+            <i class="ri-record-circle-fill text-secondary"></i> 대학 기초·융합교육 컨소시엄 운영 체계
+          </h5>
+
+          <div class="mb-2">
+            기초·융합 교과목 중심의 교육 공유체계를 구축하여 공유 플랫폼 기반으로 기초융합 교과목의 공동개발을 통해 참여대학의 교육성과 확산 및 지속가능한 협력 네트워크 구축 실현
+          </div>
+
+          <div class="mb-5 p-2 bg-white border rounded-2 text-center overflow-hidden">
+            <img src="../../assets/images/navi_plus/hanyang/intro_univ_img02.png" alt="">
+          </div>
+
+
+          <h5 class="pb-2 mb-2">
+            <i class="ri-record-circle-fill text-secondary"></i> 대학 기초·융합교육 컨소시엄 프로세스
+          </h5>
+
+          <div class="mb-2">
+            '학습 진단을 통한 최적 경로 설계', '혁신적인 온라인 Active Learning 모델(질문-탐구-협력-성찰-확장) 적용', '정규 교육과정과 연계된 학점인정 체계 구축'의 3단계 프로세스 적용
+          </div>
+
+          <div class="mb-5 p-2 bg-white border rounded-2 text-center overflow-hidden">
+            <img src="../../assets/images/navi_plus/hanyang/intro_univ_img03.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- 서브 페이지 본문 영역 End -->
+    <!-- ------------------------------------- -->
+  </div>
+
+  <!-- Footer Start -->
+  <div class="pb-5" style="background-color:#1f2531;">
+    <div class="container-fluid">
+      <div class="row pt-5 pb-5">
+        <div class="py-2 py-sm-0 col-12 col-md-12 col-lg-4">
+
+          <div class="text-white">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="fs-4">학습문의</span>
+              <span class="fs-7">02-2220-1455</span>
+            </div>
+            <div class="d-inline-block p-2 px-3 bg-white bg-opacity-10 rounded-1">
+              - 평일 09:00~17:00(공휴일 휴무)
+              <br />
+              - 점심시간 12:00~13:00
+            </div>
+          </div>
+
+        </div>
+
+        <div class="py-4 py-sm-0 col-12 col-sm-7 col-lg-4 text-white">
+          <div class="d-flex align-items-center gap-2">
+            <div class="fs-5">- 주관기관:</div>
+            <div>한양대학교 에듀테크혁신팀</div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <div class="fs-5">- 위탁 운영기관:</div>
+            <div>㈜모티브랩</div>
+          </div>
+          <div class="mt-2">
+            (04763) 서울특별시 성동구 왕십리로 222
+          </div>
+        </div>
+
+        <div class="py-4 py-sm-0 col-12 col-sm-5 col-lg-4">
+
+          <div class="position-relative">
+            <a href="#" class="btn-family-site  border rounded-1">
+              <div class="d-flex justify-content-between">
+                <span>관련 사이트 바로가기</span>
+                <i class="ri-arrow-up-s-line"></i>
+              </div>
+            </a>
+            <!-- 관련사이트 목록 -->
+            <div class="relative-site-list" style="display:none; right:initial; left:0;">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">대학 기초융합교육 컨소시엄</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">SELC</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">군E러닝</a>
+                </li>
+              </ul>
+            </div>
+            <!--// 관련사이트 목록 -->
+          </div>
+
+          <div class="d-flex gap-2 mt-2">
+            <a href="javascript:void(0)" class="fs-3 text-warning">개인정보처리방침</a>
+            <span class="opacity-75 text-white">|</span>
+            <a href="javascript:void(0)" class="fs-3 text-light link-warning">이메일무단수집거부</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Mobile SideMenu Start -->
+  <!-- ------------------------------------- -->
+  <!-- Responsive Header Start -->
+  <!-- ------------------------------------- -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="mobileSideMenu" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="javascript:void(0)" class="text-nowrap logo-img mobile-logo">
+        <img src="../../assets/images/navi_plus/logo.png" alt="Logo" style="height:36px;" />
+      </a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <!-- 사용자 정보 -->
+      <div class="mb-3">
+        <div class="d-flex align-items-center">
+          <div class="position-relative" style="width:90px;">
+            <div class="rounded-circle overflow-hidden">
+              <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+            </div>
+          </div>
+          <div class="px-2 text-dark">
+            <div class="mb-1">
+              <strong class="fs-5">유건우</strong>
+            </div>
+            <div class="fs-2 text-gray opacity-50">
+              다시 만나 반가워요!
+              <br />오늘도 한 걸음 성장하는 하루 되세요.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// 사용자 정보 -->
+
+      <div class="row m-1">
+        <div class="col-5 m-0 p-0">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">교육원소개</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">개설과정안내</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">평생교육과정</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">공지사항</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">갤러리</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-6">게시판</a>
+          </div>
+        </div>
+        <div class="col-7 m-0 p-0">
+          <div class="position-relative p-3 overflow-auto" style="height:350px" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" tabindex="0">
+            <h6 id="list-item-1">
+              <i class="ri-tablet-line"></i> 교육원소개
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 2</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-2" class="pt-3 border-top">
+              <i class="ri-article-line"></i> 개설과정안내
+            </h6>
+            <p class="ps-2">
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-3" class="pt-3 border-top">
+              <i class="ri-article-line"></i> 평생교육과정
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 2</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-4" class="pt-3 border-top">
+              <i class="ri-plant-line"></i> 공지사항
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">공지사항</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-5" class="pt-3 border-top">
+              <i class="ri-question-answer-line"></i> 갤러리
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 2</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 3</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-6" class="pt-3 border-top">
+              <i class="ri-checkbox-circle-line"></i> 게시판
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">Q&A</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">FAQ</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">자료실</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">매뉴얼</a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-2 text-end">
+        <button type="button" class="btn">로그아웃</button>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- Responsive Header End -->
+  <!-- ------------------------------------- -->
+  <!-- Mobile SideMenu End -->
+
+  <!-- Scroll Top -->
+  <a href="javascript:void(0)" class="top-btn btn btn-primary d-flex align-items-center justify-content-center round-54 p-0 rounded-circle">
+    <i class="ti ti-arrow-up fs-7"></i>ㅇㄻㄴㅇㄹㄴ ㅇㄹ
+  </a>
+
+  <!-- Import Js Files -->
+  <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="../../assets/js/theme/app.init.js"></script>
+  <script src="../../assets/js/theme/theme.js"></script>
+  <script src="../../assets/js/theme/app.min.js"></script>
+  <script src="../../assets/js/forms/datepicker-init.js"></script>
+
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="../../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../../assets/js/frontend-landingpage/homepage.js"></script>
+
+  <!-- <script src="../assets/js/vendor.min.js"></script> -->
+  <!-- slick 작동을 막고 있어서 주석처리 함 -->
+
+  <script src="../../assets/js/jquery-1.11.0.js" charset="utf-8"></script>
+  <script src="../../assets/js/navi_plus.js"></script>
+  <script>$(function() { lxpMenuSupport.event_init(); });</script>
+
+  <!-- circle-progress 플러그인 -->
+  <script src="../../assets/js/circle-progress/circle-progress.min.js"></script>
+
+  <script type="text/javascript">
+			$(".circle-graph").each(function(index, node) {
+			let perNum = $(this).attr('circleProgress');
+			let fillColors = ["#009bea", "#00bbea", "#00eae7", "#00eaa0", "#74d700"] // 그래프의 색상 배열
+			let fillColor = fillColors[index];
+			
+			$(this).circleProgress({
+
+				size: 150, // 그래프 크기
+				value: perNum / 100, // 그래프에 표시될 값
+				startAngle: 300, // 시작지점
+				thickness: 14, // 그래프 두께
+				fill: { // 그래프 선 색
+					// color: fillColor
+					gradient: ["#f4999b", "#3c9af1"],
+				gradientAngle: Math.PI / 2
+				},
+				animation: {
+				duration: 2000,
+				},
+				lineCap: "round", // 그래프 선 모양
+				reverse: false, // 그래프가 진행되는 방향       
+
+			});
+			});
+		</script>
+
+</body>
+
+</html>

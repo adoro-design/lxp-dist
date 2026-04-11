@@ -1,0 +1,28 @@
+# 빌드 전 소스 파일 (dist에 불필요)
+assets/scss/
+
+# 대용량 파일
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 에디터 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 임시 파일
+*.tmp
+*.bak
+*~
+
+# Node (필요 시)
+node_modules/

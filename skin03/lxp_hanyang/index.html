@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="hanyang_Theme" data-layout="vertical">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="../../assets/css/custom_css.css" />
+  <link rel="stylesheet" href="../../assets/css/navi_plus.css" />
+
+  <title>디유넷 LXP - SKIN-01</title>
+
+
+  <!-- 슬라이딩 -->
+  <link href="../../assets/css/slick/slick.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/slick/slick-theme.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="../../assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+
+  <!-- -------------------------------------------- -->
+  <!-- Header start -->
+  <!-- -------------------------------------------- -->
+  <!-- ------------------------------------- -->
+  <!-- Header : skin_01 Start -->
+  <!-- ------------------------------------- -->
+  <header class="p-0 w-100 bg-white">
+    <div class="">
+      <div class="container-fluid d-flex justify-content-between align-items-center py-4">
+        <div class="site-logo flex-shrink-0">
+          <a href="#" class="text-nowrap logo-img">
+            <img src="../../assets/images/navi_plus/logo_hanyang.png" alt="Logo" />
+          </a>
+        </div>
+
+        <!-- 회원가입, 로그인, 언어선택 -->
+        <div class="d-none d-lg-flex align-items-center gap-3">
+
+          <!-- 로그인 전 -->
+          <div class="d-none align-items-center gap-3">
+            <a href="javascript:void(0)" class="text-dark">회원가입</a>
+            <a href="javascript:void(0)" class="text-dark">로그인</a>
+          </div>
+          <!--// 로그인 전 -->
+
+          <!-- 로그인 후 -->
+          <div class="top-mymenu d-flex align-items-center gap-2 position-relative">
+
+            <!-- 메일 및 쪽지 -->
+            <div class="">
+              <a href="#" class="d-block pe-6 position-relative">
+                <i class="ri-mail-line fs-5"></i>
+                <div class="d-flex px-1 py-0 justify-content-center align-items-center rounded-pill text-white bg-danger fs-1 position-absolute top-0 start-25 ms-1 ">
+                  <span>99</span>
+                </div>
+              </a>
+            </div>
+            <!--// -->
+
+            <!-- 알림 -->
+            <div class="">
+              <a href="#" class="d-inline-block pe-6 position-relative">
+                <i class="ri-notification-3-line fs-5"></i>
+                <div class="d-flex px-1 py-0 justify-content-center align-items-center rounded-pill text-white bg-danger fs-1 position-absolute top-0 start-25 ms-1">
+                  <span>0</span>
+                </div>
+              </a>
+            </div>
+            <!--// -->
+
+            <a href="#" class="title d-flex align-items-center gap-2">
+              <div class="">류건우님</div>
+              <div class="rounded-circleoverflow-hidden" style="width:25px;">
+                <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+              </div>
+              <i class="ri-arrow-down-s-fill"></i>
+            </a>
+            <!-- 개인 메뉴 모달 -->
+            <div class="modal-mymenu" style="display:none;">
+              <div class="text-end position-relative">
+                <a href="#" class="btn-modal-mymenu-close">
+                  <i class="ri-close-line fs-7"></i>
+                </a>
+              </div>
+              <!-- 프로필 영역 -->
+              <div class="d-flex align-items-center pb-2 mb-2 border-bottom" style="">
+                <div class="position-relative flex-shrink-0" style="width:60px;">
+                  <div class="rounded-circle overflow-hidden">
+                    <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+                  </div>
+                </div>
+                <div class="px-2 text-dark" style="width:200px !important;">
+                  <div class="mb-1">
+                    <strong class="fs-4">류건우</strong>
+                  </div>
+                  <div class="">
+                    <ul class="fs-2">
+                      <li class="d-flex gap-2">
+                        <div>학번</div>
+                        <div class="text-wrap">2025002365</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div>전공</div>
+                        <div class="text-wrap">전자공학과 ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁ SDF SD S D</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div>이메일</div>
+                        <div class="text-wrap">hgd123@dunet.kr</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--// 프로필 영역 -->
+
+              <!-- 권한선택 -->
+              <div class="pb-2">
+                <label class="form-label mb-0">* 권한선택</label>
+                <select class="form-select" data-placeholder="Choose a Category" tabindex="1">
+                  <option value="Category 1">학생</option>
+                  <option value="Category 2">교수자</option>
+                  <option value="Category 3">시스템관리자</option>
+                </select>
+              </div>
+              <!--// 권한선택 -->
+
+              <!-- 개인 메뉴 영역 -->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-line-chart-line"></i> 대시보드
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-user-settings-line"></i> 관리자
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-computer-line"></i> 강의실
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-information-line"></i> 정보수정
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="javascript:void(0)" class="">
+                    <i class="ri-logout-box-r-line"></i> 로그아웃
+                  </a>
+                </li>
+              </ul>
+              <!--// 개인 메뉴 영역 -->
+            </div>
+            <!--// 개인 메뉴 모달 -->
+          </div>
+          <!--// 로그인 후 -->
+
+          <!-- 구글 번역 위젯 -->
+          <div id="google_translate_element">
+            <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+              <div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;">
+              </div>
+            </div>
+          </div>
+
+          <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script th:inline="javascript">
+              window.onload = function(){
+                  new google.translate.TranslateElement({
+                      pageLanguage: 'ko',
+                      includedLanguages: 'ne,mn,uz,en,ko',
+                      autoDisplay: true,
+                      multilanguagePage: true,
+                      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                  }, 'google_translate_element');
+              };
+          </script>
+          <!--// 구글 번역 위젯 -->
+
+        </div>
+        <!--// 회원가입, 로그인, 언어선택 -->
+
+        <div class="d-flex d-lg-none gap-2 align-items-center">
+
+          <!-- 로그인 전 -->
+          <div class="mb-1">
+            <a href="javascript:void(0)" class="text-dark">로그인</a>
+          </div>
+          <!--// 로그인 전 -->
+
+          <button class="navbar-toggler border-0 p-0 shadow-none d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSideMenu" aria-controls="offcanvasRight">
+            <i class="ri-menu-2-line fs-8"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md py-10 bg-gradient-primary d-none d-lg-block">
+      <div class="container-fluid position-relative">
+
+        <ul class="gnb d-flex align-items-center">
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">기초융합교육 소개</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">소개</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">참여대학 현황</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">개설강좌</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">학위과정(A과정)</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">비학위과정(B과정)</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">학사안내</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">수업운영 안내</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">학사일정</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">학습자 매뉴얼</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">수강 가이드</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="title">알림마당</a>
+            <div class="gnb-submenu">
+              <div class="menu-row">
+                <a href="javascript:void(0)">공지사항</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">FAQ</a>
+              </div>
+              <div class="menu-row">
+                <a href="javascript:void(0)">오픈배지</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="">
+          <a class="text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="ri-menu-2-line fs-5" title="전체메뉴"></i>
+          </a>
+
+          <!-- 전체 메뉴 -->
+          <div class="dropdown-menu dropdown-menu-nav border dropdown-menu-animate-up py-0 overflow-hidden">
+            <div class="position-relative">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="p-4 pb-3">
+
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">기초융합교육 소개</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">소개</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">참여대학 현황</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">개설강좌</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">학위과정(A과정)</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">비학위과정(B과정)</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">학사안내</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">수업운영 안내</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">학사일정</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">학습자 매뉴얼</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">수강 가이드</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="position-relative">
+                          <a href="../../main/app-chat.html" class="d-flex align-items-center pb-2 border-bottom position-relative">
+                            <div>
+                              <h6 class="mb-0">알림마당</h6>
+                            </div>
+                          </a>
+                          <div class="p-3 mb-3">
+                            <ul>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">공지사항</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">FAQ</a>
+                              </li>
+                              <li class="py-1">
+                                <a href="#" class="text-muted link-primary">오픈배지</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--// 전체 메뉴 -->
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- -------------------------------------------- -->
+  <!-- Header End -->
+  <!-- -------------------------------------------- -->
+
+
+  <!-- -------------------------------------------- -->
+  <!-- Header End -->
+  <!-- -------------------------------------------- -->
+
+  <div class="main-wrapper overflow-hidden">
+
+    <!-- ------------------------------------- -->
+    <!-- 메인 슬라이드 영역 Start -->
+    <!-- ------------------------------------- -->
+    <section>
+      <div class="container-fluid position-relative">
+
+        <!-- 데스크탑에서 상단 여백 -->
+        <div class="mt-4 d-none d-lg-block"></div>
+        <!--// 데스크탑에서 상단 여백 -->
+
+        <!-- 슬라이드 존 -->
+        <div class="visual_banner_zone">
+
+          <div class="swipe_banner">
+
+            <div class="main_visual_rolling slider">
+
+              <div>
+                <div class="outline">
+                  <a href="#">
+                    <!-- 데스크탑만 노출되는 이미지 -->
+                    <img src="../../assets/images/navi_plus/main_sliding_banner_hanyang.png" class="card-img img-responsive d-none d-lg-block" alt="">
+                    <!-- 모바일만 노출되는 이미지 -->
+                    <img src="../../assets/images/navi_plus/main_sliding_banner_hanyang_mobile.png" class="card-img img-responsive d-block d-lg-none" alt="">
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="outline">
+                  <a href="#">
+                    <!-- 데스크탑만 노출되는 이미지 -->
+                    <img src="../../assets/images/navi_plus/main_sliding_banner_hanyang.png" class="card-img img-responsive d-none d-lg-block" alt="">
+                    <!-- 모바일만 노출되는 이미지 -->
+                    <img src="../../assets/images/navi_plus/main_sliding_banner_hanyang_mobile.png" class="card-img img-responsive d-block d-lg-none" alt="">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--// 슬라이드 존 -->
+
+        <!-- 로그인 박스 -->
+        <div class="position-absolute top-0 end-0 me-5 d-none d-lg-block login-box-container" style="width:350px; z-index:0;">
+
+          <!-- 로그인 전 -->
+          <div class="mt-3 mt-lg-4 mt-xl-5 bg-white rounded-3 shadow ">
+            <div class="py-1 rounded-top bg-gradient-primary-0">
+              <ul class="nav nav-text d-flex justify-content-center gap-4 index-login" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#navpill-1" role="tab">
+                    <span class="fs-5">대학 기초융합교육 컨소시엄 로그인</span>
+                  </a>
+                </li>
+                <!-- <li class="nav-item">
+										<a class="nav-link" data-bs-toggle="tab" href="#navpill-2" role="tab">
+											<span class="fs-5">통합 로그인</span>
+										</a>
+									</li> -->
+              </ul>
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active p-3" id="navpill-1" role="tabpanel">
+                <div class="">
+                  <div class="rounded-bottom px-3 text-center">
+                    <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#modal_univ_list">
+                      <i class="ri-school-line"></i> 소속 대학을 선택해 주세요.
+                    </button>
+                  </div>
+                  <form class="floating-labels">
+                    <div class="form-floating mb-1">
+                      <input type="text" class="form-control" placeholder="Username">
+                      <span class="bar"></span>
+                      <label>
+                        <i class="ri-emotion-happy-line me-2 fs-4"></i> 아이디
+                      </label>
+                    </div>
+                    <div class="form-floating mb-1">
+                      <input type="password" class="form-control" placeholder="Password">
+                      <span class="bar"></span>
+                      <label>
+                        <i class="ti ti-lock me-2 fs-4"></i> 비밀번호
+                      </label>
+                    </div>
+                  </form>
+
+                  <div class="d-flex justify-content-between pt-2">
+                    <div>
+                      <a href="javascript:void(0);" class="fs-2">비밀번호를 잊으셨나요?</a>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                      <label class="form-check-label text-dark fs-2" for="flexCheckChecked">
+                        아이디 저장
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rounded-bottom px-3 py-3 text-center">
+                  <button class="btn btn-primary bg-gradient-primary rounded-pill w-100">로그인</button>
+                </div>
+              </div>
+
+              <div class="tab-pane p-3" id="navpill-2" role="tabpanel">
+                <a href="#" class="btn btn-primary bg-gradient-primary rounded-pill w-100">통합 로그인</a>
+
+                <div class="py-2 text-end">
+                  <button class="btn btn-sm bg-light text-dark">
+                    <i class="ri-equalizer-2-line"></i> 아이디 통합하기
+                  </button>
+                </div>
+                <div class="pt-2 fs-2">※재학생이나 교직원의 경우 학교에서 사용하는 계정(id 또는 학번)을 사용하여 로그인할 수 있습니다.</div>
+              </div>
+            </div>
+
+          </div>
+          <!--// 로그인 전 -->
+
+          <!-- 로그인 후 -->
+          <div class="mt-3 mt-lg-4 mt-xl-5 bg-white rounded-3 shadow d-none">
+            <div class="p-2 rounded-top text-center text-white fs-4 fw-bold bg-gradient-primary-0">
+              원광대학교 평생능력개발원
+            </div>
+
+            <div class="px-3 pt-3">
+              <!-- 프로필 영역 -->
+              <div class="d-flex align-items-center pb-2 mb-2 border-bottom">
+                <div class="position-relative" style="width:60px;">
+                  <div class="rounded-circle overflow-hidden">
+                    <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+                  </div>
+                </div>
+                <div class="px-2 text-dark">
+                  <div class="mb-1">
+                    <strong class="fs-4">류건우</strong>님 환영합니다.
+                  </div>
+                </div>
+              </div>
+              <!--// 프로필 영역 -->
+
+              <!-- 권한선택 -->
+              <div class="">
+                <label class="form-label mb-0">* 권한선택</label>
+                <select class="form-select" data-placeholder="Choose a Category" tabindex="1">
+                  <option value="Category 1">학생</option>
+                  <option value="Category 2">교수자</option>
+                  <option value="Category 3">시스템관리자</option>
+                </select>
+              </div>
+              <!--// 권한선택 -->
+            </div>
+
+            <div class="rounded-bottom px-3 py-3 text-center">
+              <button class="btn btn-outline-dark rounded-pill w-100">로그아웃</button>
+            </div>
+          </div>
+          <!--// 로그인 후 -->
+
+        </div>
+        <!--// 로그인 박스 -->
+
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- 메인 슬라이드 영역 End -->
+    <!-- ------------------------------------- -->
+
+
+    <!-- ------------------------------------- -->
+    <!-- 메인 페이지 본문 영역 Start -->
+    <!-- ------------------------------------- -->
+    <!-- program-list -->
+    <section class="mt-5">
+      <div class="container-fluid">
+
+        <div class="d-flex justify-content-between align-items-center mb-3 mt-3">
+          <div class="">
+            <h4>개설강좌</h4>
+          </div>
+          <div>
+            <button class="btn btn-sm text-white bg-gradient-primary-0 px-3 rounded-pill d-flex align-items-center gap-1">과정 전체보기 <i class="ri-file-list-2-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="program-list">
+
+          <div class="swipe_banner">
+
+            <div class="program-slide slider">
+
+              <div>
+                <div class="outline">
+                  <a href="javascript:void(0);">
+                    <div class="card">
+                      <div class="card-img p-3 d-flex justify-content-center align-items-center" style="height:200px; background-image:url('../../assets/images/blog/blog-img4.jpg'); background-size: cover;">
+                        <h4 class="card-title text-white word-break">
+                          일본 IT 취업연계과정 설명회 일본 IT 취업연계과정 설명회일본 IT 취업연계과정 설명회
+                        </h4>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title word-line2 mb-2">
+                          일본 IT 취업연계과정 설명회 일본 IT 취업연계과정 설명회일본 IT 취업연계과정 설명회 일본 IT 취업연계과정 설명회 일본 IT 취업연계과정 설명회일본 IT 취업연계과정 설명회
+                        </h4>
+                        <div>
+                          <div class="fs-2 text-dark">
+                            교육기간
+                          </div>
+                          <div class="fs-3 text-dark fw-bold">
+                            2025-09-01 ~ 2025-10-31
+                            <br />
+                            (총 8주, 58시간)
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">
+                          <div class="d-flex align-items-center gap-1 text-dark">
+                            <i class="ri-user-2-line"></i> 홍길동
+                          </div>
+                          <div class="text-danger fw-bold">
+                            300,000원
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="outline">
+                  <a href="javascript:void(0);">
+                    <div class="card">
+                      <div class="card-img p-3 d-flex justify-content-center align-items-center" style="height:200px; background-image:url('../../assets/images/blog/blog-img11.jpg'); background-size: cover;">
+                        <h4 class="card-title text-white word-break">
+                          반려동물과 건강하게 공존하는 법
+                        </h4>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title word-line2 mb-2">
+                          반려동물과 건강하게 공존하는 법
+                        </h4>
+                        <div>
+                          <div class="fs-2 text-dark">
+                            교육기간
+                          </div>
+                          <div class="fs-3 text-dark fw-bold">
+                            2025-09-01 ~ 2025-10-31
+                            <br />
+                            (총 8주, 58시간)
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">
+                          <div class="d-flex align-items-center gap-1 text-dark">
+                            <i class="ri-user-2-line"></i> 홍길동
+                          </div>
+                          <div class="text-danger fw-bold">
+                            300,000원
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="outline">
+                  <a href="javascript:void(0);">
+                    <div class="card">
+                      <div class="card-img p-3 d-flex justify-content-center align-items-center" style="height:200px; background-image:url('../../assets/images/blog/blog-img3.jpg'); background-size: cover;">
+                        <h4 class="card-title text-white word-break">
+                          피아노 연주를 들으며 배우는 음악 기초
+                        </h4>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title word-line2 mb-2">
+                          피아노 연주를 들으며 배우는 음악 기초
+                        </h4>
+                        <div>
+                          <div class="fs-2 text-dark">
+                            교육기간
+                          </div>
+                          <div class="fs-3 text-dark fw-bold">
+                            2025-09-01 ~ 2025-10-31
+                            <br />
+                            (총 8주, 58시간)
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">
+                          <div class="d-flex align-items-center gap-1 text-dark">
+                            <i class="ri-user-2-line"></i> 이수남
+                          </div>
+                          <div class="text-danger fw-bold">
+                            300,000원
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="outline">
+                  <a href="javascript:void(0);">
+                    <div class="card">
+                      <div class="card-img p-3 d-flex justify-content-center align-items-center" style="height:200px; background-image:url('../../assets/images/blog/blog-img5.jpg'); background-size: cover;">
+                        <h4 class="card-title text-white word-break">
+                          코디얼 음료와 건강간식 만들기
+                        </h4>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title word-line2 mb-2">
+                          코디얼 음료와 건강간식 만들기
+                        </h4>
+                        <div>
+                          <div class="fs-2 text-dark">
+                            교육기간
+                          </div>
+                          <div class="fs-3 text-dark fw-bold">
+                            2025-09-01 ~ 2025-10-31
+                            <br />
+                            (총 8주, 58시간)
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">
+                          <div class="d-flex align-items-center gap-1 text-dark">
+                            <i class="ri-user-2-line"></i> 김재기
+                          </div>
+                          <div class="text-danger fw-bold">
+                            300,000원
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="outline">
+                  <a href="javascript:void(0);">
+                    <div class="card">
+                      <div class="card-img p-3 d-flex justify-content-center align-items-center" style="height:200px; background-image:url('../../assets/images/blog/blog-img7.jpg'); background-size: cover;">
+                        <h4 class="card-title text-white word-break">
+                          코디얼 음료와 건강간식 만들기
+                        </h4>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title word-line2 mb-2">
+                          코디얼 음료와 건강간식 만들기
+                        </h4>
+                        <div>
+                          <div class="fs-2 text-dark">
+                            교육기간
+                          </div>
+                          <div class="fs-3 text-dark fw-bold">
+                            2025-09-01 ~ 2025-10-31
+                            <br />
+                            (총 8주, 58시간)
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">
+                          <div class="d-flex align-items-center gap-1 text-dark">
+                            <i class="ri-user-2-line"></i> 김재기
+                          </div>
+                          <div class="text-danger fw-bold">
+                            300,000원
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="outline">
+                  <a href="javascript:void(0);">
+                    <div class="card">
+                      <div class="card-img p-3 d-flex justify-content-center align-items-center" style="height:200px; background-image:url('../../assets/images/blog/blog-img9.jpg'); background-size: cover;">
+                        <h4 class="card-title text-white word-break">
+                          코디얼 음료와 건강간식 만들기
+                        </h4>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title word-line2 mb-2">
+                          코디얼 음료와 건강간식 만들기
+                        </h4>
+                        <div>
+                          <div class="fs-2 text-dark">
+                            교육기간
+                          </div>
+                          <div class="fs-3 text-dark fw-bold">
+                            2025-09-01 ~ 2025-10-31
+                            <br />
+                            (총 8주, 58시간)
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">
+                          <div class="d-flex align-items-center gap-1 text-dark">
+                            <i class="ri-user-2-line"></i> 김재기
+                          </div>
+                          <div class="text-danger fw-bold">
+                            300,000원
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 반응형 여백 -->
+        <div class="mt-3 d-none d-lg-block"></div>
+        <div class="pt-3"></div>
+        <!-- 반응형 여백 -->
+
+      </div>
+    </section>
+    <!--// program-list -->
+
+    <!-- 공지영역 -->
+    <section class="py-5 bg-light-gray">
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- 공지사항 -->
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <h4>공지사항</h4>
+              <div>
+                <a href="javascript:void(0);">
+                  <i class="ri-add-line fs-5"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="border-top">
+              <ul>
+                <li class="py-3 px-3 border-bottom">
+                  <a href="javascript:void(0);" class="d-flex justify-content-between align-items-center text-dark text-decoration-none">
+                    <div class="d-flex flex-column gap-1">
+                      <h5 class="fw-bold">
+                        [공지] 2024년 2학기 평생교육원 수강신청 안내
+                      </h5>
+                      <div class="fs-3 text-dark opacity-50">
+                        2025-10-02
+                      </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="py-3 px-3 border-bottom">
+                  <a href="javascript:void(0);" class="d-flex justify-content-between align-items-center text-dark text-decoration-none">
+                    <div class="d-flex flex-column gap-1">
+                      <h5 class="">
+                        [공지] 2024년 2학기 평생교육원 수강신청 안내
+                      </h5>
+                      <div class="fs-3 text-dark opacity-50">
+                        2025-10-02
+                      </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="py-3 px-3 border-bottom">
+                  <a href="javascript:void(0);" class="d-flex justify-content-between align-items-center text-dark text-decoration-none">
+                    <div class="d-flex flex-column gap-1">
+                      <h5 class="">
+                        [공지] 2024년 2학기 평생교육원 수강신청 안내
+                      </h5>
+                      <div class="fs-3 text-dark opacity-50">
+                        2025-10-02
+                      </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <!--// 공지사항 -->
+
+          <!-- 단일 이벤트 배너 -->
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <a href="javascript:void(0);">
+              <img src="../../assets/images/navi_plus/main_event_banner_hanyang.png" alt="" class="card-img img-responsive rounded">
+            </a>
+          </div>
+          <!--// 단일 이벤트 배너 -->
+
+        </div>
+      </div>
+    </section>
+    <!--// 공지영역 -->
+
+    <!-- 바로가기 배너 -->
+    <section class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="py-1">
+              <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between py-3 px-4 rounded-4 border overflow-hidden text-dark link-danger bg-white">
+                <div>
+                  <div class="fs-5 fw-bold">학습자 매뉴얼</div>
+                  <div class="fs-2 text-dark opacity-50">서비스 이용 방법이 궁금할 때</div>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="rounded-circle d-flex align-items-center justify-content-center bg-light-gray p-3 hover-primary" style="background-color:#ecede9;">
+                    <img src="../../assets/images/navi_plus/main_banner_icon_3.png" alt="">
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="py-1">
+              <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between py-3 px-4 rounded-4 border overflow-hidden text-dark link-danger bg-white">
+                <div>
+                  <div class="fs-5 fw-bold">학습자 수강 가이드</div>
+                  <div class="fs-2 text-dark opacity-50">효율적인 수강을 위한 단계별 안내</div>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="rounded-circle d-flex align-items-center justify-content-center bg-light-gray p-3" style="background-color:#ecede9;">
+                    <img src="../../assets/images/navi_plus/main_banner_icon_1.png" alt="">
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="py-1">
+              <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between py-3 px-4 rounded-4 border overflow-hidden text-dark link-danger bg-white">
+                <div>
+                  <div class="fs-5 fw-bold">선호도 조사</div>
+                  <div class="fs-2 text-dark opacity-50">더 나은 교육을 위해 의견을 주세요</div>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="rounded-circle d-flex align-items-center justify-content-center bg-light-gray p-3" style="background-color:#ecede9;">
+                    <img src="../../assets/images/navi_plus/main_banner_icon_5.png" alt="">
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="py-1">
+              <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between py-3 px-4 rounded-4 border overflow-hidden text-dark link-danger bg-white">
+                <div>
+                  <div class="fs-5 fw-bold">카카오톡 1:1 문의</div>
+                  <div class="fs-2 text-dark opacity-50">실시간 채팅으로 빠르게 해결하세요</div>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="rounded-circle d-flex align-items-center justify-content-center bg-light-gray p-3" style="background-color:#ecede9;">
+                    <img src="../../assets/images/navi_plus/main_banner_icon_6.png" alt="">
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- 바로가기 배너 -->
+
+  <!-- ------------------------------------- -->
+  <!-- 메인 페이지 본문 영역 End -->
+  <!-- ------------------------------------- -->
+
+  </div>
+
+  <!-- Footer Start -->
+  <div class="pb-5" style="background-color:#1f2531;">
+    <div class="container-fluid">
+      <div class="row pt-5 pb-5">
+        <div class="py-2 py-sm-0 col-12 col-md-12 col-lg-4">
+
+          <div class="text-white">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="fs-4">학습문의</span>
+              <span class="fs-7">02-2220-1455</span>
+            </div>
+            <div class="d-inline-block p-2 px-3 bg-white bg-opacity-10 rounded-1">
+              - 평일 09:00~17:00(공휴일 휴무)
+              <br />
+              - 점심시간 12:00~13:00
+            </div>
+          </div>
+
+        </div>
+
+        <div class="py-4 py-sm-0 col-12 col-sm-7 col-lg-4 text-white">
+          <div class="d-flex align-items-center gap-2">
+            <div class="fs-5">- 주관기관:</div>
+            <div>한양대학교 에듀테크혁신팀</div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <div class="fs-5">- 위탁 운영기관:</div>
+            <div>㈜모티브랩</div>
+          </div>
+          <div class="mt-2">
+            (04763) 서울특별시 성동구 왕십리로 222
+          </div>
+        </div>
+
+        <div class="py-4 py-sm-0 col-12 col-sm-5 col-lg-4">
+
+          <div class="position-relative">
+            <a href="#" class="btn-family-site  border rounded-1">
+              <div class="d-flex justify-content-between">
+                <span>관련 사이트 바로가기</span>
+                <i class="ri-arrow-up-s-line"></i>
+              </div>
+            </a>
+            <!-- 관련사이트 목록 -->
+            <div class="relative-site-list" style="display:none; right:initial; left:0;">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">대학 기초융합교육 컨소시엄</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">SELC</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">군E러닝</a>
+                </li>
+              </ul>
+            </div>
+            <!--// 관련사이트 목록 -->
+          </div>
+
+          <div class="d-flex gap-2 mt-2">
+            <a href="javascript:void(0)" class="fs-3 text-warning">개인정보처리방침</a>
+            <span class="opacity-75 text-white">|</span>
+            <a href="javascript:void(0)" class="fs-3 text-light link-warning">이메일무단수집거부</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Mobile SideMenu Start -->
+  <!-- ------------------------------------- -->
+  <!-- Responsive Header Start -->
+  <!-- ------------------------------------- -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="mobileSideMenu" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="javascript:void(0)" class="text-nowrap logo-img mobile-logo">
+        <img src="../../assets/images/navi_plus/logo.png" alt="Logo" style="height:36px;" />
+      </a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <!-- 사용자 정보 -->
+      <div class="mb-3">
+        <div class="d-flex align-items-center">
+          <div class="position-relative" style="width:90px;">
+            <div class="rounded-circle overflow-hidden">
+              <img src="../../assets/images/navi_base/user_photo.png" alt="" class="rounded-circle img-fluid">
+            </div>
+          </div>
+          <div class="px-2 text-dark">
+            <div class="mb-1">
+              <strong class="fs-5">유건우</strong>
+            </div>
+            <div class="fs-2 text-gray opacity-50">
+              다시 만나 반가워요!
+              <br />오늘도 한 걸음 성장하는 하루 되세요.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// 사용자 정보 -->
+
+      <div class="row m-1">
+        <div class="col-5 m-0 p-0">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">교육원소개</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">개설과정안내</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">평생교육과정</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">공지사항</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">갤러리</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-6">게시판</a>
+          </div>
+        </div>
+        <div class="col-7 m-0 p-0">
+          <div class="position-relative p-3 overflow-auto" style="height:350px" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" tabindex="0">
+            <h6 id="list-item-1">
+              <i class="ri-tablet-line"></i> 교육원소개
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 2</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-2" class="pt-3 border-top">
+              <i class="ri-article-line"></i> 개설과정안내
+            </h6>
+            <p class="ps-2">
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-3" class="pt-3 border-top">
+              <i class="ri-article-line"></i> 평생교육과정
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 2</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-4" class="pt-3 border-top">
+              <i class="ri-plant-line"></i> 공지사항
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">공지사항</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-5" class="pt-3 border-top">
+              <i class="ri-question-answer-line"></i> 갤러리
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 1</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 2</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">서브메뉴 3</a>
+            </div>
+            </p>
+
+            <h6 id="list-item-6" class="pt-3 border-top">
+              <i class="ri-checkbox-circle-line"></i> 게시판
+            </h6>
+            <p>
+            <div class="py-1">
+              <a href="javascript:void(0)">Q&A</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">FAQ</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">자료실</a>
+            </div>
+            <div class="py-1">
+              <a href="javascript:void(0)">매뉴얼</a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-2 text-end">
+        <button type="button" class="btn">로그아웃</button>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- Responsive Header End -->
+  <!-- ------------------------------------- -->
+  <!-- Mobile SideMenu End -->
+
+  <!-- Scroll Top -->
+  <a href="javascript:void(0)" class="top-btn btn btn-primary d-flex align-items-center justify-content-center round-54 p-0 rounded-circle">
+    <i class="ti ti-arrow-up fs-7"></i>ㅇㄻㄴㅇㄹㄴ ㅇㄹ
+  </a>
+
+
+  <!-- 소속대학 목록 modal content -->
+  <div id="modal_univ_list" class="modal fade" tabindex="-1" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-header modal-colored-header bg-primary text-white">
+          <h4 class="modal-title text-white" id="primary-header-modalLabel">
+            소속대학 목록
+            <span class="d-block d-sm-inline fs-3 fw-normal">로그인 전에 본인의 <strong class="text-warning">소속대학</strong>을 선택해주세요.</span>
+          </h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- 자음선택 버튼 -->
+          <div class="overflow-auto">
+            <div class="py-2 mb-4 border-bottom d-flex justify-content-center align-items-center gap-1 flex-wrap text-nowrap">
+              <button type="button" class="btn btn-sm btn-primary">전체</a>
+                <button type="button" class="btn btn-sm btn-light">ㄱ</a>
+                  <button type="button" class="btn btn-sm btn-light">ㄴ</a>
+                    <button type="button" class="btn btn-sm btn-light">ㄷ</a>
+                      <button type="button" class="btn btn-sm btn-light">ㄹ</a>
+                        <button type="button" class="btn btn-sm btn-light">ㅁ</a>
+                          <button type="button" class="btn btn-sm btn-light">ㅂ</a>
+                            <button type="button" class="btn btn-sm btn-light">ㅅ</a>
+
+                              <button type="button" class="btn btn-sm btn-light">ㅇ</a>
+                                <button type="button" class="btn btn-sm btn-light">ㅈ</a>
+                                  <button type="button" class="btn btn-sm btn-light">ㅊ</a>
+                                    <button type="button" class="btn btn-sm btn-light">ㅋ</a>
+                                      <button type="button" class="btn btn-sm btn-light">ㅌ</a>
+                                        <button type="button" class="btn btn-sm btn-light">ㅍ</a>
+                                          <button type="button" class="btn btn-sm btn-light">ㅎ</a>
+                                            <button type="button" class="btn btn-sm btn-light">A-F</a>
+                                              <button type="button" class="btn btn-sm btn-light">G-L</a>
+                                                <button type="button" class="btn btn-sm btn-light">O-T</a>
+                                                  <button type="button" class="btn btn-sm btn-light">U-Z</a>
+            </div>
+          </div>
+          <!--// 자음선택 버튼 -->
+
+          <!-- 대학 목록 -->
+          <div class="px-4">
+
+            <div class="row">
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_01.png" alt="">
+                  </div>
+                  <div>강서대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_02.png" alt="">
+                  </div>
+                  <div>건국대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_03.png" alt="">
+                  </div>
+                  <div>경운대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_04.png" alt="">
+                  </div>
+                  <div>경인대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_05.png" alt="">
+                  </div>
+                  <div>광운대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_06.png" alt="">
+                  </div>
+                  <div>국립목포해양대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_07.png" alt="">
+                  </div>
+                  <div>김포대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_08.png" alt="">
+                  </div>
+                  <div>남서울대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_09.png" alt="">
+                  </div>
+                  <div>대전보건대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_10.png" alt="">
+                  </div>
+                  <div>덕성여자대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_11.png" alt="">
+                  </div>
+                  <div>동신대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_12.png" alt="">
+                  </div>
+                  <div>동아방송예술대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_40.png" alt="">
+                  </div>
+                  <div>동양미래대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_13.png" alt="">
+                  </div>
+                  <div>두원공과대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_14.png" alt="">
+                  </div>
+                  <div>루터대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_15.png" alt="">
+                  </div>
+                  <div>명지전문대학</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_16.png" alt="">
+                  </div>
+                  <div>목포가톨릭대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_17.png" alt="">
+                  </div>
+                  <div>배화여자대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_18.png" alt="">
+                  </div>
+                  <div>삼육대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_41.png" alt="">
+                  </div>
+                  <div>상명대학교 서울</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_41.png" alt="">
+                  </div>
+                  <div>상명대학교 천안</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_41.png" alt="">
+                  </div>
+                  <div>상명대학교(2024-1까지)</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/mark11.gif" alt="">
+                  </div>
+                  <div>서울교육대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_19.png" alt="">
+                  </div>
+                  <div>성운대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_20.png" alt="">
+                  </div>
+                  <div>세한대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_21.png" alt="">
+                  </div>
+                  <div>송원대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_22.png" alt="">
+                  </div>
+                  <div>숭의여자대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_23.png" alt="">
+                  </div>
+                  <div>신한대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_24.png" alt="">
+                  </div>
+                  <div>안양대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_25.png" alt="">
+                  </div>
+                  <div>예수대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_26.png" alt="">
+                  </div>
+                  <div>우송대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_27.png" alt="">
+                  </div>
+                  <div>울산과학대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_28.png" alt="">
+                  </div>
+                  <div>을지대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_29.png" alt="">
+                  </div>
+                  <div>인덕대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_30.png" alt="">
+                  </div>
+                  <div>전주대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_31.png" alt="">
+                  </div>
+                  <div>청강문화산업대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_32.png" alt="">
+                  </div>
+                  <div>청운대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_33.png" alt="">
+                  </div>
+                  <div>추계예술대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_34.png" alt="">
+                  </div>
+                  <div>컨소시엄대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_35.png" alt="">
+                  </div>
+                  <div>한국성서대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/mark24.gif" alt="">
+                  </div>
+                  <div>한국체육대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_36.png" alt="">
+                  </div>
+                  <div>한국항공대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_37.png" alt="">
+                  </div>
+                  <div>한동대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_38.png" alt="">
+                  </div>
+                  <div>한라대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/mark25.gif" alt="">
+                  </div>
+                  <div>한성대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/univ_39.png" alt="">
+                  </div>
+                  <div>한세대학교</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/mark26.gif" alt="">
+                  </div>
+                  <div>한양대학교 ERICA</div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 link-opacity-100-hover">
+                  <div class="d-flex justify-content-center align-items-center rounded-circle bg-light border overflow-hidden" style="width:30px; height:30px;">
+                    <img src="../../assets/images/univ_logo/mark26.gif" alt="">
+                  </div>
+                  <div>한양대학교 서울</div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <!--// 대학 목록 -->
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">닫기</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- Import Js Files -->
+  <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="../../assets/js/theme/app.init.js"></script>
+  <script src="../../assets/js/theme/theme.js"></script>
+  <script src="../../assets/js/theme/app.min.js"></script>
+  <script src="../../assets/js/forms/datepicker-init.js"></script>
+
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="../../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../../assets/js/frontend-landingpage/homepage.js"></script>
+
+  <!-- <script src="../assets/js/vendor.min.js"></script> -->
+  <!-- slick 작동을 막고 있어서 주석처리 함 -->
+
+  <script src="../../assets/js/jquery-1.11.0.js" charset="utf-8"></script>
+  <script src="../../assets/js/navi_plus.js"></script>
+  <script>$(function() { lxpMenuSupport.event_init(); });</script>
+
+  <script src="../../assets/js/slick/slick.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+			$(document).on('ready', function() {
+						
+				$(".main_visual_rolling").slick({
+					dots: true,               //dot 모양의 pager          
+					infinite: true,           //무한 스와이프
+					arrows: true,            //화살표
+					speed: 1000,              //슬라이드 속도
+					autoplay:true,            //자동 슬라이드
+					autoplaySpeed: 5000,      //자동 슬라이드시, 한 슬라이드에 머무르는 시간
+					slidesToShow: 1,          //한 화면에 보이는 슬라이드 개수
+					slidesToScroll: 1,        //슬라이드 실행할때, 한번에 슬라이드 되는 개수
+					vertical : false, 
+
+					responsive: [             //반응형 슬라이드
+						{
+						breakpoint: 1024,     // 화면의 넓이가 1024px 이상일 때
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+						}
+						// You can unslick at a given breakpoint now by adding:
+						// settings: "unslick"
+						// instead of a settings object
+					]
+				});
+
+				$(".program-slide").slick({
+					dots: true,               //dot 모양의 pager          
+					infinite: false,           //무한 스와이프
+					arrows: true,            //화살표
+					centerMode: false,       //센터모드
+					speed: 1000,              //슬라이드 속도
+					autoplay:true,            //자동 슬라이드
+					autoplaySpeed: 3500,      //자동 슬라이드시, 한 슬라이드에 머무르는 시간
+					slidesToShow: 3,          //한 화면에 보이는 슬라이드 개수
+					slidesToScroll: 3,        //슬라이드 실행할때, 한번에 슬라이드 되는 개수
+					vertical : false, 
+
+					responsive: [             //반응형 슬라이드
+						{
+						breakpoint: 1024,     // 화면의 넓이가 1024px 이상일 때
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3
+						}
+						},
+						{
+						breakpoint: 768,      // 화면의 넓이가 768px 이상일 때
+						settings: {
+							centerMode: true,
+							centerPadding: '50px 0 0 ',
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							arrows: false,
+							dots: true
+						}
+						},
+						{
+						breakpoint: 640,      // 화면의 넓이가 480px 이상일 때
+						settings: {
+							centerMode: true,
+							centerPadding: '20px 0 0 ',
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							arrows: false,
+							dots: true
+						}
+						}
+						
+						// You can unslick at a given breakpoint now by adding:
+						// settings: "unslick"
+						// instead of a settings object
+					]
+				});
+
+			});
+		</script>
+
+</body>
+
+</html>

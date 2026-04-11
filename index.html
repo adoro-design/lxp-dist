@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-	<title>NAVI | 퍼블리싱 파일 목록</title>
+	<title>디유넷 LXP | 퍼블리싱 파일 목록</title>
 	<link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
@@ -15,10 +15,10 @@
 		#wrap { position:relative; box-sizing:border-box; padding:20px; min-width:800px; max-width:1200px; margin:0 auto; }
 
 		/* 탭 네비게이션 */
-		.tab-nav { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:24px; margin-top:16px; }
+		.tab-nav { display:flex; flex-wrap:wrap; gap:1px; margin-bottom:24px; margin-top:16px; }
 		.tab-btn {
 			padding:10px 20px; font-size:1.4rem; font-weight:700; cursor:pointer;
-			border:none; border-radius:4px 4px 0 0;
+			border:none; border-radius:15px 15px 0 0;
 			background-color:#bbb; color:#fff; letter-spacing:-0.02em;
 			transition:background-color 0.2s;
 		}
@@ -50,21 +50,25 @@
 		.notyet { color:gray; text-decoration:line-through; pointer-events:none; }
 		.fc_red { color:#ff0000; }
 		.section-title td { background-color:#f5f5f5; font-weight:700; font-size:1.4rem; }
-		.update { display:inline-block; margin:8px 0 20px 0; padding:14px 22px; text-align:left; font-weight:bold; font-size:1.8rem; border:1px solid #888; background:#fff; }
+		.update {margin:8px 0 20px 0; padding:14px 22px; text-align:center; font-weight:bold; font-size:1.8rem; border:0px solid #888; background:#fff; }
 		.skin-badge { display:inline-block; padding:4px 10px; border-radius:3px; font-size:1.2rem; color:#fff; font-weight:700; margin-left:8px; vertical-align:middle; }
-	</style>
+	
+		/* 로고 바 */
+		.logo-bar { display:flex; align-items:center; gap:20px; padding:16px 20px; background:#fff; border:1px solid #e0e0e0; border-radius:6px; margin-bottom:20px; flex-wrap:wrap; }
+		.logo-bar img { height:30px; width:auto; object-fit:contain; filter:none; }
+		</style>
 </head>
 <body>
 <div id="wrap">
-	<p class="update">NAVI LXP 퍼블리싱 파일 리스트</p>
+	<h1 class="update">디유넷 LXP 퍼블리싱 파일 리스트</h1>
 
 	<!-- 탭 버튼 -->
 	<div class="tab-nav">
 		<button class="tab-btn active" onclick="showTab('common')">공통</button>
-		<button class="tab-btn skin01" onclick="showTab('skin01')">Skin01 · 원광대 · 화성 · 대동</button>
-		<button class="tab-btn skin02" onclick="showTab('skin02')">Skin02 · 평생능력개발원</button>
-		<button class="tab-btn skin03" onclick="showTab('skin03')">Skin03 · 한양대</button>
-		<button class="tab-btn skin04" onclick="showTab('skin04')">Skin04 · 원광대 CTL</button>
+		<button class="tab-btn skin01" onclick="showTab('skin01')">Skin01 (원광대 · 화성 · 대동)</button>
+		<button class="tab-btn skin02" onclick="showTab('skin02')">Skin02 (평생능력개발원)</button>
+		<button class="tab-btn skin03" onclick="showTab('skin03')">Skin03 (한양대)</button>
+		<button class="tab-btn skin04" onclick="showTab('skin04')">Skin04 (원광대 CTL)</button>
 		<button class="tab-btn kunyang" onclick="showTab('kunyang')">건양대</button>
 	</div>
 
@@ -121,6 +125,12 @@
 
 	<!-- ======================== SKIN01 ======================== -->
 	<div id="tab-skin01" class="tab-content">
+	<!-- Skin01 로고 바 -->
+	<div class="logo-bar">
+		<img src="logo_index/logo_wonkwang.png" alt="원광대학교" title="원광대학교">
+		<img src="logo_index/logo_hwasung_mediscience.png" alt="화성의과학대학교" title="화성의과학대학교">
+		<img src="logo_index/logo_daedong.png" alt="대동대학교" title="대동대학교">
+	</div>
 		<table>
 			<colgroup><col width="80px"/><col width="420px"/><col/><col width="120px"/><col width="180px"/></colgroup>
 			<thead><tr><th>번호</th><th>파일명(LINK)</th><th>화면 내용</th><th>수정여부</th><th>비고</th></tr></thead>
@@ -254,11 +264,15 @@
 
 	<!-- ======================== SKIN02 ======================== -->
 	<div id="tab-skin02" class="tab-content">
+	<!-- Skin02 로고 바 -->
+	<div class="logo-bar">
+		<img src="logo_index/logo_wonkwang_lifelong.png" alt="원광대학교 평생교육원" title="원광대학교 평생교육원">
+	</div>
 		<table>
 			<colgroup><col width="80px"/><col width="420px"/><col/><col width="120px"/><col width="180px"/></colgroup>
 			<thead><tr><th>번호</th><th>파일명(LINK)</th><th>화면 내용</th><th>수정여부</th><th>비고</th></tr></thead>
 			<tbody>
-				<tr><td class="ta_c pd_0" colspan="5"><h2 class="green">Skin02 · 평생능력개발원 (lxp_home)</h2></td></tr>
+				<tr><td class="ta_c pd_0" colspan="5"><h2 class="green">Skin02 (평생능력개발원) (lxp_home)</h2></td></tr>
 				<tr class="section-title"><td colspan="5"><strong>공통영역</strong></td></tr>
 				<tr><td class="rmks">0</td><td><a href="skin02/lxp_home/common_준비중입니다.html" target="lms_page" class="link">common_준비중입니다.html</a></td><td>준비중입니다.</td><td class="rmks"></td><td class="rmks">2025.11.20</td></tr>
 				<tr><td class="rmks">1</td><td><a href="skin02/lxp_home/index.html" target="lms_page" class="link">index.html</a></td><td>메인 - 로그인 전</td><td class="rmks"></td><td class="rmks">2025.10.24 업데이트</td></tr>
@@ -300,11 +314,15 @@
 
 	<!-- ======================== SKIN03 ======================== -->
 	<div id="tab-skin03" class="tab-content">
+	<!-- Skin03 로고 바 -->
+	<div class="logo-bar">
+		<img src="logo_index/logo_hanyang_k-foundation_edu_consortium.png" alt="한양대학교" title="한양대학교">
+	</div>
 		<table>
 			<colgroup><col width="80px"/><col width="420px"/><col/><col width="120px"/><col width="180px"/></colgroup>
 			<thead><tr><th>번호</th><th>파일명(LINK)</th><th>화면 내용</th><th>수정여부</th><th>비고</th></tr></thead>
 			<tbody>
-				<tr><td class="ta_c pd_0" colspan="5"><h2 class="orange">Skin03 · 한양대 기초융합교육 컨소시엄 (lxp_hanyang)</h2></td></tr>
+				<tr><td class="ta_c pd_0" colspan="5"><h2 class="orange">Skin03 (한양대) 기초융합교육 컨소시엄 (lxp_hanyang)</h2></td></tr>
 				<tr><td class="rmks">0</td><td><a href="skin03/lxp_hanyang/00_로그인.html" target="lms_page" class="link">00_로그인.html</a></td><td>메인 - 로그인</td><td class="rmks"></td><td class="rmks">2026.3.12</td></tr>
 				<tr><td class="rmks">0</td><td><a href="skin03/lxp_hanyang/index.html" target="lms_page" class="link">index.html</a></td><td>메인 - index</td><td class="rmks"></td><td class="rmks">2026.3.12 업데이트</td></tr>
 				<tr><td class="rmks">0</td><td><a href="skin03/lxp_hanyang/sub_00_강의실헤더.html" target="lms_page" class="link">sub_00_강의실헤더.html</a></td><td>강의실 헤더영역 적용</td><td class="rmks"></td><td class="rmks">2026.1.27</td></tr>
@@ -320,6 +338,10 @@
 
 	<!-- ======================== SKIN04 ======================== -->
 	<div id="tab-skin04" class="tab-content">
+	<!-- Skin04 로고 바 -->
+	<div class="logo-bar">
+		<img src="logo_index/logo_wonkwang.png" alt="원광대학교 CTL" title="원광대학교 CTL">
+	</div>
 		<table>
 			<colgroup><col width="80px"/><col width="420px"/><col/><col width="120px"/><col width="180px"/></colgroup>
 			<thead><tr><th>번호</th><th>파일명(LINK)</th><th>화면 내용</th><th>수정여부</th><th>비고</th></tr></thead>
@@ -357,6 +379,10 @@
 
 	<!-- ======================== 건양대 ======================== -->
 	<div id="tab-kunyang" class="tab-content">
+	<!-- 건양대 로고 바 -->
+	<div class="logo-bar">
+		<img src="logo_index/logo_konyang.png" alt="건양대학교" title="건양대학교">
+	</div>
 		<table>
 			<colgroup><col width="80px"/><col width="420px"/><col/><col width="120px"/><col width="180px"/></colgroup>
 			<thead><tr><th>번호</th><th>파일명(LINK)</th><th>화면 내용</th><th>수정여부</th><th>비고</th></tr></thead>
@@ -388,3 +414,4 @@ function showTab(name) {
 </script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

@@ -36,6 +36,204 @@
 
           <div class="row">
 
+            <div class="col-12">
+              <div class="card">
+
+                <div class="card-body">
+
+                  <div class="d-flex justify-content-end align-items-center gap-2 mb-2">
+                    <form>
+                      <div class="d-flex flex-column flex-md-row gap-2">
+                        <div class="input-group d-flex flex-nowrap">
+                          <select class="form-select w-auto bg-white" data-placeholder="Choose a Category" tabindex="1">
+                            <option value="Category 1">전체</option>
+                            <option value="Category 1">과목명</option>
+                            <option value="Category 1">교수명</option>
+                            <option value="Category 1">운영부서</option>
+                          </select>
+                          <input type="text" class="form-control bg-white" placeholder="제목을 입력해주세요." style="width:160px;">
+                          <button type="button" class="btn btn-primary" title="검색">
+                            <i class="ri-search-line"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary text-nowrap" data-bs-toggle="modal" data-bs-target="#board-management-modal">글쓰기</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="d-md-flex flex-column flex-md-row py-3 justify-content-between align-items-center border-top">
+                    <div class="d-flex flex-nowrap gap-2 overflow-x-auto">
+                      <button type="button" class="btn btn-sm btn-primary rounded-pill text-nowrap">전체</button>
+                      <button type="button" class="btn btn-sm btn-light rounded-pill text-nowrap">학사</button>
+                      <button type="button" class="btn btn-sm btn-light rounded-pill text-nowrap">비교과</button>
+                      <button type="button" class="btn btn-sm btn-light rounded-pill text-nowrap">비학위</button>
+                      <button type="button" class="btn btn-sm btn-light rounded-pill text-nowrap">교내조사</button>
+                      <button type="button" class="btn btn-sm btn-light rounded-pill text-nowrap">시스템</button>
+                      <button type="button" class="btn btn-sm btn-light rounded-pill text-nowrap">일반</button>
+                    </div>
+
+                    <div class="pt-2 pt-md-0">
+                      총 26건
+                    </div>
+                  </div>
+
+                  <div class="table-responsive mb-4 border rounded-1">
+                    <table class="table text-nowrap mb-0 align-middle text-center">
+                      <colgroup>
+                        <col width="80px" />
+                        <col width="10%" />
+                        <col width="" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                      </colgroup>
+                      <thead class="">
+                        <tr>
+                          <th>번호</th>
+                          <th>카테고리</th>
+                          <th>제목</th>
+                          <th>작성자</th>
+                          <th>등록일</th>
+                          <th>조회수</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>10</td>
+                          <td>
+                            <span class="badge bg-primary-subtle text-primary px-2 rounded-2 fw-normal fs-2">학사</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>
+                            <span class="badge bg-secondary-subtle text-secondary px-2 rounded-2 fw-normal fs-2">일반</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>
+                            <span class="badge bg-success-subtle text-success px-2 rounded-2 fw-normal fs-2">교내조사</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>
+                            <span class="badge bg-warning-subtle text-warning px-2 rounded-2 fw-normal fs-2">비학위</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>
+                            <span class="badge bg-info-subtle text-info px-2 rounded-2 fw-normal fs-2">비교과</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>
+                            <span class="badge bg-danger-subtle text-danger px-2 rounded-2 fw-normal fs-2">시스템</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>
+                            <span class="badge bg-primary-subtle text-primary px-2 rounded-2 fw-normal fs-2">학사</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>
+                            <span class="badge bg-primary-subtle text-primary px-2 rounded-2 fw-normal fs-2">학사</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>
+                            <span class="badge bg-primary-subtle text-primary px-2 rounded-2 fw-normal fs-2">학사</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <span class="badge bg-primary-subtle text-primary px-2 rounded-2 fw-normal fs-2">학사</span>
+                          </td>
+                          <td class="text-start">
+                            <a href="#" class="">재학생 교육 만족도 조사</a>
+                          </td>
+                          <td>관리자</td>
+                          <td>2026-04-13</td>
+                          <td>15</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+
+
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
             <div class="col-lg-6">
               <div class="card">
                 <div class="d-flex justify-content-between border-bottom">
@@ -199,7 +397,121 @@
     <!-- ------------------------------------- -->
     <!-- List End  -->
     <!-- ------------------------------------- -->
+
   </div>
+
+  <!-- modal : 게시판 관리 -->
+  <div id="board-management-modal" class="modal fade" tabindex="-1" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header modal-colored-header bg-primary text-white">
+          <h4 class="modal-title text-white" id="primary-header-modalLabel">
+            게시물 관리
+          </h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="border rounded-1 overflow-auto mb-4">
+            <table class="table mb-0">
+              <colgroup>
+                <col width="100px" />
+                <col width="" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th class="">게시판명</th>
+                  <td class="">알림마당 > 공지사항</td>
+                </tr>
+                <tr>
+                  <th class="">카테고리</th>
+                  <td class="">
+                    <select class="form-select w-auto bg-white" data-placeholder="Choose a Category" tabindex="1">
+                      <option value="Category 0">--카테고리 선택--</option>
+                      <option value="Category 1">학사</option>
+                      <option value="Category 1">비교과</option>
+                      <option value="Category 1">비학위</option>
+                      <option value="Category 1">교내조사</option>
+                      <option value="Category 1">시스템</option>
+                      <option value="Category 1">일반</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">공개 권한 <span class="text-danger">*</span>
+                  </th>
+                  <td class="">
+                    <div class="form-check form-check-inline text-dark">
+                      <input class="form-check-input primary check-light-primary" type="radio" name="radio-light-primary" id="primary-light-radio" value="option1">
+                      <label class="form-check-label" for="primary-light-radio">공개</label>
+                    </div>
+                    <div class="form-check form-check-inline text-dark">
+                      <input class="form-check-input primary check-light-primary" type="radio" name="radio-light-primary" id="primary2-light-radio" value="option1" checked="">
+                      <label class="form-check-label" for="primary2-light-radio">비공개</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">제목</th>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <input type="text" name="" id="" class="form-control w-100" value="" />
+                      <div class="text-nowrap">
+                        <input type="checkbox" name="" id="">
+                        <label for="" class="text-dark">상단고정</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">상담 내용 <span class="text-danger">*</span>
+                  </th>
+                  <td class="">
+                    <textarea name="" id="" class="form-control w-100" rows="5"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">첨부파일</th>
+                  <td class="">
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="form-control" id="inputGroupFile01">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="">팝업 사용</th>
+                  <td class="">
+                    <select class="form-select w-auto bg-white" data-placeholder="Choose a Category" tabindex="1">
+                      <option value="Category 1">미사용</option>
+                      <option value="Category 1">사용</option>
+                    </select>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn btn-light" data-bs-dismiss="modal">
+            닫기
+          </button>
+          <button type="button" class="btn bg-primary-subtle text-primary">
+            등록
+          </button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
 
   <!-- Scroll Top -->
   <a href="javascript:void(0)" class="top-btn btn btn-primary d-flex align-items-center justify-content-center round-54 p-0 rounded-circle">
